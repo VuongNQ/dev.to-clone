@@ -1,0 +1,17 @@
+.ButtonStartOptimize {
+  &__wp-button {
+    min-width: 130px;
+  }
+  &__button-task {
+    min-width: 130px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    // overflow: hidden;
+    justify-content: center;
+  }
+  // &__lottie {
+  //   width: 100px;
+  //   height: 100px;
+  // }
+}

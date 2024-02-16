@@ -1,0 +1,11 @@
+.BoostHistory{
+    .Polaris-IndexTable__TableCell{
+        width: 33%;
+    }
+
+    @media screen and (max-width: 36rem) {
+        .Polaris-IndexTable__TableCell{
+            width: initial;
+        }
+    }
+}

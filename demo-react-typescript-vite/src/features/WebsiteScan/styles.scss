@@ -1,0 +1,38 @@
+@import "../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.TabsCheckListSEO {
+
+  &__header  {
+    box-shadow: 0px -1px 0px 0px #e1e3e5 inset;
+  }
+
+  &__header-left {
+    width: 78%;
+  }
+
+  &__header-right {
+    width: 22%;
+  }
+
+  // &__wp-competitor {
+  //   padding: 0px 0px 20px 0px;
+  // }
+
+  &__input-competitor {
+    border-radius: 12px;
+  }
+
+  
+  @media #{$p-breakpoints-md-down} {
+    &__header  {
+      flex-direction: column;
+    }
+    &__header-left, &__header-right{
+      width: 100%;
+    }
+
+    &__header-right{
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.OneExpertPage {
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Polaris-Page {
+        padding: 0;
+    }
+  
+    .Polaris-Page__Content {
+        padding: 0;
+    }
+    &__title{
+        // color: var(--p-action-primary-depressed);
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    &__subtitle {
+        margin-top: 4px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--p-text-subdued);
+    }
+
+    &__topic {
+        // font-weight: 600;
+        // font-size: 12px;
+        // line-height: 16px;
+        // color: var(--p-text-subdued);
+        position: relative;
+        margin-bottom: 12px;
+        margin-left: 8px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -8px;
+            width: 4px;
+            height: 100%;
+            background-color: var(--p-swift-primary);
+            border-radius: 0px 8px 8px 0px;
+        }
+    }
+}

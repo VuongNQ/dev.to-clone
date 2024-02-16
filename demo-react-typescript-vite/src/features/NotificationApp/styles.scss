@@ -1,0 +1,13 @@
+.notification-app {
+    position: fixed;
+    z-index: 9999;
+    bottom: 1%;
+    left: 1%;
+    .Notification {
+        &:not(:last-child){
+            margin-bottom: var(--p-space-1);
+        }
+    }
+
+   
+}

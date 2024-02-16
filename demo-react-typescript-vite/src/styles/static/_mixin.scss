@@ -1,0 +1,30 @@
+@mixin generate($prefix, $property, $propertyOther: false, $sizes: 10) {
+  // List of sizes to generate for each
+  // $sizes: [0, 4, 8, 1, 1.5, 3];
+  // Spacing to multiply the sizes by
+  $spacing: 4px;
+  
+  // Loop through all of the sizes(we use @for rather than @each, as we want access to the index)
+  @for $i from 1 through $sizes {
+    // Get the size for the current index
+    // $size: nth($sizes, $i);
+    
+    // Create the rule
+    .#{$prefix}-#{$i - 1} {
+      #{$property}: $spacing * ($i - 1);
+      @if $propertyOther {
+        #{$propertyOther}: $spacing * ($i - 1);
+      }
+    }
+  }
+}
+
+
+@mixin dotText($line-clamp:2 ) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}

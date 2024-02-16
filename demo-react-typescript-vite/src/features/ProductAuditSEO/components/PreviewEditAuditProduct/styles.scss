@@ -1,0 +1,20 @@
+@import "../../../../styles/static/mixin";
+
+.PreviewEditAuditProduct {
+  border-radius: 12px;
+  border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  overflow: hidden;
+
+  &__store-name {
+    // font-size: var(--p-font-size-7);
+    // font-weight: var(--p-font-weight-medium);
+    @include dotText(2);
+  }
+  &__preview-des {
+    @include dotText(3);
+  }
+
+  &__title-header {
+    font-size: var(--p-font-size-5);
+  }
+}

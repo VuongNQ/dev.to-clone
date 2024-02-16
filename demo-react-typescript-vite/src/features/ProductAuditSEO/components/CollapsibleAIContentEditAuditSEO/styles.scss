@@ -1,0 +1,20 @@
+.CollapsibleAIContentEditAuditSEO {
+  border-radius: 8px;
+  background-color: var(--p-surface-subdued);
+
+  &__title {
+    font-weight: 600;
+    font-size: var(--p-font-size-1);
+    .Polaris-Icon {
+      height: 1rem;
+      width: 1rem;
+      margin: 0;
+    }
+  }
+
+  &__review {
+    // max-height: 370px;
+    // overflow-y: scroll;
+    white-space: break-spaces;
+  }
+}

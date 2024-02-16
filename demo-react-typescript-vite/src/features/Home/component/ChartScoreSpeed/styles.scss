@@ -1,0 +1,66 @@
+@use "sass:math";
+
+.ChartScoreSpeed {
+    &__chart {
+        position: relative;
+    }
+    &__chart-number {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__chart-background {
+        color: var(--p-action-secondary);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 100%;
+    }
+    &__wrap-border {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        border-radius: 50%;
+        // border: 2px solid var(--p-border-shadow);
+        transform: translate(-50%, -50%);
+        &.hidden {
+            opacity: 0;
+            transition: opacity 0.25s ease-in;
+        }
+    }
+
+    &__circle-custom {
+        .rc-progress-circle-trail,
+        .rc-progress-circle-path {
+            stroke-linecap: round;
+        }
+    }
+
+    &__chart {
+        &:hover .ChartScore__btn-re-scan {
+            display: block;
+        }
+    }
+
+    &__btn-re-scan {
+        display: none;
+    }
+
+    &__re-scan,
+    &__brg {
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        height: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__brg {
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(3px);
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,11 @@
+.SettingUninstall{
+    &__title{
+        .Polaris-Icon{
+            margin: 0;
+        }
+    }
+}
+// fix button primary on loading
+.Polaris-Button--outline.Polaris-Button--destructive.Polaris-Button--disabled.Polaris-Button--loading{
+    color: transparent;
+}

@@ -1,0 +1,44 @@
+.EditAuditProduct {
+  &__left {
+    width: calc(65% - 10px);
+  }
+
+  &__right {
+    width: calc(35% - 10px);
+  }
+
+  &__tabs,&__token {
+    border-radius: 12px;
+    border: 1px solid var(--border-shadow-divider, #E1E3E5);
+  }
+
+  &__setting-auto {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .EditAuditProduct__setting-auto.EditAuditProduct__rescan {
+    align-items: flex-start;
+  }
+  &__content-rescan {
+    flex: 1;
+  }
+
+  @media screen and (max-width: 48rem) {
+    & {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}

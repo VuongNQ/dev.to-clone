@@ -1,0 +1,72 @@
+
+@import 'variables';
+
+
+.preview-loading-text {
+    &.fw-regular {
+        font-weight: normal;
+    }
+    &.fw-medium {
+        font-weight: 500;
+    }
+    &.fw-bold {
+        font-weight: 700;
+    }
+
+    &__desktop {
+        &.fz {
+            &-very_small {
+                font-size: $font-size-desktop-very_small;
+                line-height: 1.4;
+            }
+
+            &-small {
+                font-size: $font-size-desktop-small;
+                line-height: 1.4;
+            }
+
+            &-medium {
+                font-size: $font-size-desktop-medium;
+                line-height: 1.4;
+            }
+
+            &-large {
+                font-size: $font-size-desktop-large;
+                line-height: 1.4;
+            }
+
+            &-very_large {
+                font-size: $font-size-desktop-very_large;
+                line-height: 1.4;
+            }
+        }
+    }
+    &__mobile {
+        &.fz {
+            &-very_small {
+                font-size: $font-size-mobile-very_small;
+                line-height: 1.4;
+            }
+
+            &-small {
+                font-size: $font-size-mobile-small;
+                line-height: 1.4;
+            }
+
+            &-medium {
+                font-size: $font-size-mobile-medium;
+                line-height: 1.4;
+            }
+
+            &-large {
+                font-size: $font-size-mobile-large;
+                line-height: 1.4;
+            }
+
+            &-very_large {
+                font-size: $font-size-mobile-very_large;
+                line-height: 1.4;
+            }
+        }
+    }
+}

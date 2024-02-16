@@ -1,0 +1,151 @@
+@import "../../../../styles/static/mixin";
+
+.TableAuditProductSEO {
+    &__container {
+        border-radius: 12px;
+        border: 1px solid var(--border-shadow-divider, #e1e3e5);
+    }
+    .Polaris-IndexTable-ScrollContainer {
+        border-radius: 0;
+        thead {
+            display: none;
+        }
+        tbody {
+            tr:first-child {
+                display: none;
+            }
+        }
+    }
+    // .Polaris-IndexTable__TableHeading {
+    //   border-top: 1px solid #e1e3e5;
+    // }
+
+    &__headerTable {
+        border-top: 1px solid #e1e3e5;
+        .headerTable_listLabel {
+            background: var(--p-color-bg-surface-secondary);
+            :nth-child(1) {
+                max-width: 74px;
+            }
+            :nth-child(2) {
+                max-width: 290px;
+            }
+            :nth-child(3) {
+                max-width: 160px;
+            }
+            :nth-child(4) {
+                max-width: 200px;
+            }
+            .headerTable_labelHeading {
+                --pc-index-table-heading-padding-x: var(--p-space-400);
+                --pc-index-table-heading-padding-y: var(--p-space-200);
+                padding: var(--pc-index-table-heading-padding-y) var(--pc-index-table-heading-padding-x);
+                text-align: left;
+                font-weight: var(--p-font-weight-medium);
+                color: var(--p-color-text-secondary);
+                font-size: var(--p-font-size-75);
+                white-space: nowrap;
+                border: 0;
+                width: 100%;
+            }
+        }
+        .headerTable_countItem {
+            font-weight: var(--p-font-weight-semibold);
+            color: var(--p-text-subdued);
+            background: var(--p-surface-subdued);
+            border-top: 1px solid #e1e3e5;
+            word-spacing: 1px;
+            span {
+                color: var(--p-text);
+                padding-left: 4px;
+            }
+        }
+    }
+
+    &__prd-issues {
+        font-weight: var(--p-font-weight-semibold);
+        color: var(--p-text-subdued);
+        background: var(--p-surface-subdued);
+        border-top: 1px solid #e1e3e5;
+        span {
+            color: var(--p-text);
+        }
+    }
+
+    &__name-prd {
+        max-width: 400px;
+        white-space: initial;
+        @include dotText(2);
+    }
+
+    .Polaris-IndexTable__TableCell {
+        &:first-child {
+            width: 40px;
+        }
+    }
+
+    &__header {
+        > .flex-1 > span {
+            font-weight: var(--p-font-weight-semibold);
+            font-size: var(--p-font-size-5);
+            line-height: var(--p-line-height-3);
+        }
+    }
+
+    p.TableGeneral__txt--no-data {
+        color: var(--p-text-subdued);
+        font-size: var(--p-font-size-3);
+        line-height: var(--p-line-height-2);
+    }
+
+    &__wp {
+        .TableAuditProductSEO__scrollable {
+            .Polaris-Scrollable {
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    height: 1px;
+                }
+            }
+        }
+
+        .Polaris-IndexTable__StickyTableHeader {
+            display: none;
+        }
+        .SkeletonTable {
+            justify-content: space-between;
+            .Polaris-SkeletonThumbnail {
+                height: 40px;
+                width: 40px;
+                margin: 0.5rem 1rem;
+            }
+            :nth-child(1) {
+                max-width: 74px;
+            }
+            :nth-child(2) {
+                max-width: 300px;
+            }
+            :nth-child(3) {
+                max-width: 160px;
+            }
+            :nth-child(4) {
+                max-width: 180px;
+            }
+            .contain-skeleton-text {
+                width: 100%;
+
+                .Polaris-SkeletonDisplayText--sizeMedium {
+                    height: 18px;
+                    width: 100%;
+                    max-width: 7.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 48rem) {
+        &__header {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+}

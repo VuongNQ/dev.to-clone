@@ -1,0 +1,80 @@
+.AIContentEditAuditProduct {
+  border-radius: 12px;
+  border: 1px solid var(--border-shadow-divider, #E1E3E5);
+  overflow: hidden;
+
+  &__title-section {
+    font-size: var(--p-font-size-5);
+    font-weight: var(--p-font-weight-semibold);
+    color: var(--p-swift-primary);
+    // margin-bottom: 4px;
+  }
+
+  &__header{
+    box-shadow: 0px -1px 0px 0px #E1E3E5 inset;
+  }
+  
+  &__no-data {
+    min-height: 370px;
+    p {
+      text-align: center;
+    }
+  }
+  &__preview {
+    max-height: 370px;
+    overflow-y: scroll;
+    white-space: break-spaces;
+  }
+
+  &__status {
+    strong {
+      font-size: var(--p-font-size-1);
+      text-transform: uppercase;
+    }
+  }
+  &__token-used {
+    background: var(--p-surface-subdued);
+    color: var(--p-text-success);
+    font-size: var(--p-font-size-75);
+    line-height: var(--p-line-height-1);
+    padding: var(--p-space-05) var(--p-space-1);
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--p-space-05);
+    border-bottom-left-radius: var(--p-border-radius-2);
+    border-bottom-right-radius: var(--p-border-radius-2);
+  }
+
+  &__list-issues {
+    color: var(--p-text-subdued);
+  }
+  &__title-issue {
+    text-transform: capitalize;
+  }
+  &__item-report {
+    .Polaris-Icon {
+      // height: 1rem;
+      // width: 1rem;
+      margin: 0;
+      margin-top: 1px;
+    }
+  }
+
+  &__box-suggestion {
+    max-height: 370px;
+    overflow-y: scroll;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: var(--p-surface);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}

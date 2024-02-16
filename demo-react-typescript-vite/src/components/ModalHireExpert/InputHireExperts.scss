@@ -1,0 +1,46 @@
+.InputHireExperts{
+    &__plus-minus{
+        position: absolute;
+        content: '';
+        gap: 2px;
+        z-index: 99;
+        top: 1.5px;
+        right: 0.75%;
+        margin-top: 1.3px;
+        .Polaris-Button {
+            height: 14px;
+            width: 22px;
+            border: none;
+            min-height: 0;
+            min-width: 0;
+            padding: 0 !important;
+            background-color: var(--p-surface-neutral);
+            .Polaris-Button__Content {
+                height: 100%;
+            }
+            .Polaris-Button__Text {
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            &:hover {
+                background-color: var(--p-surface-neutral-hovered);
+            }
+        }
+        .Polaris-Button.Polaris-Button--disabled {
+            background-color: var(--p-surface-neutral-disabled);
+        }
+
+        .Polaris-TextField__Input {
+            padding-right: 40px;
+        }
+
+        .Polaris-Icon {
+            height: 0.75rem;
+            width: 1.5rem;
+        }
+        .Polaris-Button__Icon{
+            display: flex;
+        }
+    }
+}

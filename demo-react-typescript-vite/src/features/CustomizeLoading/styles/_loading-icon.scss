@@ -1,0 +1,940 @@
+@use 'sass:math';
+$default-width: 60px;
+
+.preview-loading-icon {
+    svg{
+        path{
+            fill: currentColor;
+        }
+    }
+    .lds-default {
+        margin-bottom: 6px;
+        margin-right: 25px;
+    }
+    &__desktop {
+        $very-small: calc(40px * 3/4);
+        $small-width: calc(70px * 3/4);
+        $medium-width: calc(100px * 3/4);
+        $large-width: calc(130px * 3/4);
+
+        .preview-icon {
+            &-cat-spinner,
+            &-dog-spinner {
+                margin: auto;
+            }
+        }
+        &.very-small {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $very-small;
+                }
+            }
+            .lds-default {
+                margin-bottom: 6px;
+                margin-right: 13px;
+            }
+            
+            .lds-dual-ring {
+                margin-top: -5px;
+                margin-bottom: -10px;
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $very-small;
+                height: $very-small;
+            }
+
+            .lds-dual-ring:after {
+                width: $very-small - 16px;
+                height: $very-small - 16px;
+            }
+
+            .lds-loader {
+                $width: $very-small;
+                $height: $very-small + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -35px;
+                margin-top: -30px;
+                transform: scale(0.5);
+            }
+
+            .lds-facebook {
+                margin-bottom: -30px;
+                margin-top: -25px;
+                transform: scale(0.5);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $very-small/$default-width);
+                left: calc(66px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $very-small/$default-width);
+                left: calc(62px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $very-small/$default-width);
+                left: calc(52px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $very-small/$default-width);
+                left: calc(37px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $very-small/$default-width);
+                left: calc(22px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $very-small/$default-width);
+                left: calc(11px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $very-small/$default-width);
+                left: calc(7px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $very-small/$default-width);
+                left: calc(11px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $very-small/$default-width);
+                left: calc(22px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $very-small/$default-width);
+                left: calc(37px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $very-small/$default-width);
+                left: calc(52px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $very-small/$default-width);
+                left: calc(62px * $very-small/$default-width);
+            }
+        }
+        &.small {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $small-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $small-width;
+                height: $small-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $small-width - 16px;
+                height: $small-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $small-width;
+                $height: $small-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -30px;
+                margin-top: -15px;
+                transform: scale(0.9);
+            }
+
+            .lds-facebook {
+                margin-bottom: -25px;
+                transform: scale(1);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $small-width/$default-width);
+                left: calc(66px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $small-width/$default-width);
+                left: calc(62px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $small-width/$default-width);
+                left: calc(52px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $small-width/$default-width);
+                left: calc(37px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $small-width/$default-width);
+                left: calc(22px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $small-width/$default-width);
+                left: calc(11px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $small-width/$default-width);
+                left: calc(7px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $small-width/$default-width);
+                left: calc(11px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $small-width/$default-width);
+                left: calc(22px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $small-width/$default-width);
+                left: calc(37px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $small-width/$default-width);
+                left: calc(52px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $small-width/$default-width);
+                left: calc(62px * $small-width/$default-width);
+            }
+        }
+        &.medium {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $medium-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $medium-width;
+                height: $medium-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $medium-width - 16px;
+                height: $medium-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $medium-width;
+                $height: $medium-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -25px;
+                margin-top: -15px;
+                transform: scale(1.25);
+            }
+
+            .lds-facebook {
+                margin-bottom: -20px;
+                transform: scale(1.125);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $medium-width/$default-width);
+                left: calc(66px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $medium-width/$default-width);
+                left: calc(62px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $medium-width/$default-width);
+                left: calc(52px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $medium-width/$default-width);
+                left: calc(37px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $medium-width/$default-width);
+                left: calc(22px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $medium-width/$default-width);
+                left: calc(11px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $medium-width/$default-width);
+                left: calc(7px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $medium-width/$default-width);
+                left: calc(11px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $medium-width/$default-width);
+                left: calc(22px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $medium-width/$default-width);
+                left: calc(37px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $medium-width/$default-width);
+                left: calc(52px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $medium-width/$default-width);
+                left: calc(62px * $medium-width/$default-width);
+            }
+        }
+        &.large {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $large-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $large-width;
+                height: $large-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $large-width - 16px;
+                height: $large-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $large-width;
+                $height: $large-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -20px;
+                margin-top: -20px;
+                transform: scale(1.8);
+            }
+
+            .lds-facebook {
+                margin-bottom: -15px;
+                transform: scale(1.5);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $large-width/$default-width);
+                left: calc(66px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $large-width/$default-width);
+                left: calc(62px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $large-width/$default-width);
+                left: calc(52px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $large-width/$default-width);
+                left: calc(37px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $large-width/$default-width);
+                left: calc(22px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $large-width/$default-width);
+                left: calc(11px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $large-width/$default-width);
+                left: calc(7px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $large-width/$default-width);
+                left: calc(11px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $large-width/$default-width);
+                left: calc(22px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $large-width/$default-width);
+                left: calc(37px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $large-width/$default-width);
+                left: calc(52px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $large-width/$default-width);
+                left: calc(62px * $large-width/$default-width);
+            }
+        }
+        // .lds-dual-ring:after {
+        //     border-color: var(--background) transparent var(--background)
+        //         transparent;
+        // }
+    }
+    &__mobile {
+        $very-small: 15px;
+        $small-width: 30px;
+        $medium-width: 60px;
+        $large-width: 80px;
+        .preview-icon {
+            &-cat-spinner,
+            &-dog-spinner {
+                margin: auto;
+            }
+        }
+        .lds-default {
+            margin-right: 16px;
+        }
+
+        &.very-small {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $very-small;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $very-small;
+                height: $very-small;
+            }
+
+            .lds-dual-ring:after {
+                width: $very-small - 16px;
+                height: $very-small - 16px;
+            }
+
+            .lds-loader {
+                $width: $very-small;
+                $height: $very-small + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -40px;
+                margin-top: -25px;
+                transform: scale(0.5);
+            }
+
+            .lds-facebook {
+                margin-bottom: -40px;
+                margin-top: -25px;
+                transform: scale(0.5);
+            }
+
+            .lds-default {
+                margin-bottom: -3px;
+                margin-right: 12px;
+            }
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $very-small/$default-width);
+                left: calc(66px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $very-small/$default-width);
+                left: calc(62px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $very-small/$default-width);
+                left: calc(52px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $very-small/$default-width);
+                left: calc(37px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $very-small/$default-width);
+                left: calc(22px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $very-small/$default-width);
+                left: calc(11px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $very-small/$default-width);
+                left: calc(7px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $very-small/$default-width);
+                left: calc(11px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $very-small/$default-width);
+                left: calc(22px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $very-small/$default-width);
+                left: calc(37px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $very-small/$default-width);
+                left: calc(52px * $very-small/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $very-small/$default-width);
+                left: calc(62px * $very-small/$default-width);
+            }
+        }
+        &.small {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $small-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $small-width;
+                height: $small-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $small-width - 16px;
+                height: $small-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $small-width;
+                $height: $small-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -40px;
+                margin-top: -25px;
+                transform: scale(0.7);
+            }
+
+            .lds-facebook {
+                margin-bottom: -35px;
+                margin-top: -20px;
+                transform: scale(0.7);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $small-width/$default-width);
+                left: calc(66px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $small-width/$default-width);
+                left: calc(62px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $small-width/$default-width);
+                left: calc(52px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $small-width/$default-width);
+                left: calc(37px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $small-width/$default-width);
+                left: calc(22px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $small-width/$default-width);
+                left: calc(11px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $small-width/$default-width);
+                left: calc(7px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $small-width/$default-width);
+                left: calc(11px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $small-width/$default-width);
+                left: calc(22px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $small-width/$default-width);
+                left: calc(37px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $small-width/$default-width);
+                left: calc(52px * $small-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $small-width/$default-width);
+                left: calc(62px * $small-width/$default-width);
+            }
+        }
+        &.medium {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $medium-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $medium-width;
+                height: $medium-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $medium-width - 16px;
+                height: $medium-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $medium-width;
+                $height: $medium-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -35px;
+                margin-top: -20px;
+                transform: scale(0.9);
+            }
+
+            .lds-facebook {
+                margin-bottom: -35px;
+                margin-top: -20px;
+                transform: scale(0.9);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $medium-width/$default-width);
+                left: calc(66px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $medium-width/$default-width);
+                left: calc(62px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $medium-width/$default-width);
+                left: calc(52px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $medium-width/$default-width);
+                left: calc(37px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $medium-width/$default-width);
+                left: calc(22px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $medium-width/$default-width);
+                left: calc(11px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $medium-width/$default-width);
+                left: calc(7px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $medium-width/$default-width);
+                left: calc(11px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $medium-width/$default-width);
+                left: calc(22px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $medium-width/$default-width);
+                left: calc(37px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $medium-width/$default-width);
+                left: calc(52px * $medium-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $medium-width/$default-width);
+                left: calc(62px * $medium-width/$default-width);
+            }
+        }
+        &.large {
+            .preview-icon {
+                &-cat-spinner,
+                &-dog-spinner {
+                    width: $large-width;
+                }
+            }
+
+            .lds-ring,
+            .lds-default,
+            .lds-pen-ring,
+            .lds-pen-ring__loading,
+            .preloader__loading,
+            .lds-eclipse,
+            .lds-dual-ring,
+            .lds-gegga {
+                width: $large-width;
+                height: $large-width;
+            }
+
+            .lds-dual-ring:after {
+                width: $large-width - 16px;
+                height: $large-width - 16px;
+            }
+
+            .lds-loader {
+                $width: $large-width;
+                $height: $large-width + 8px;
+                width: $width;
+                height: $height;
+                span {
+                    border-top: calc($width * 18px / 60px) solid transparent;
+                    border-right: none;
+                    border-bottom:calc($width * 16px / 60px) solid transparent;
+                    border-left: calc($width * 30px / 60px) solid;
+                }
+            }
+
+            .lds-ellipsis {
+                margin-bottom: -35px;
+                margin-top: -20px;
+                transform: scale(1.1);
+            }
+
+            .lds-facebook {
+                margin-bottom: -22px;
+                transform: scale(1.3);
+            }
+
+            .lds-default div:nth-child(1) {
+                top: calc(37px * $large-width/$default-width);
+                left: calc(66px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(2) {
+                top: calc(22px * $large-width/$default-width);
+                left: calc(62px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(3) {
+                top: calc(11px * $large-width/$default-width);
+                left: calc(52px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(4) {
+                top: calc(7px * $large-width/$default-width);
+                left: calc(37px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(5) {
+                top: calc(11px * $large-width/$default-width);
+                left: calc(22px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(6) {
+                top: calc(22px * $large-width/$default-width);
+                left: calc(11px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(7) {
+                top: calc(37px * $large-width/$default-width);
+                left: calc(7px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(8) {
+                top: calc(52px * $large-width/$default-width);
+                left: calc(11px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(9) {
+                top: calc(62px * $large-width/$default-width);
+                left: calc(22px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(10) {
+                top: calc(66px * $large-width/$default-width);
+                left: calc(37px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(11) {
+                top: calc(62px * $large-width/$default-width);
+                left: calc(52px * $large-width/$default-width);
+            }
+
+            .lds-default div:nth-child(12) {
+                top: calc(52px * $large-width/$default-width);
+                left: calc(62px * $large-width/$default-width);
+            }
+        }
+        // .lds-dual-ring:after {
+        //     border-color: var(--background) transparent var(--background)
+        //         transparent;
+        // }
+    }
+}

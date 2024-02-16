@@ -1,0 +1,60 @@
+.SWSectionReportCountry {
+
+  &__left {
+    width: calc(61% - 10px);
+
+  }
+  &__right {
+    width: calc(39% - 10px);
+  }
+
+&__chart{
+  height: 290px;
+  &>div{
+    height: inherit;
+  }
+}
+
+  &__no-data {
+    height: 212px;
+  }
+
+  &__chart-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #6d7175;
+  }
+
+  &__chart-des {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    span:first-child {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 12px;
+    font-weight: var(--p-font-weight-regular);
+    border: none;
+    border-radius: 4px;
+    background: none;
+
+    &.active {
+      color: var(--p-text-success);
+      background-color: var(--p-surface-selected-pressed);
+    }
+  }
+
+  @media screen and (max-width: 48rem) {
+    flex-direction: column;
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}

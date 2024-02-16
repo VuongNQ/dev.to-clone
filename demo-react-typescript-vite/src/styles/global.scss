@@ -1,0 +1,55 @@
+@import "./static/reset";
+@import "./static/_root.scss";
+@import "./static/_mixin.scss";
+@import "./static/_utilities.scss";
+
+.global {
+  &__input {
+    border: var(--p-thin-border-subdued);
+    height: 40px;
+    overflow: hidden;
+    border-radius: 4px;
+    max-height: 150px;
+    width: 100%;
+    // font-family: var(--p-font-family-sans);
+    transition: box-shadow 0.3s ease;
+    background-color: var(--p-surface);
+    resize: none;
+    line-height: 20px;
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--p-focused);
+    }
+  }
+  &__input--error {
+    border-color: var(--p-border-critical);
+    background-color: var(--p-border-critical-subdued);
+  }
+  &__error-message {
+    display: inline-flex;
+    gap: 4px;
+    color: var(--p-color-text-critical);
+    fill: var(--p-color-icon-critical);
+  }
+}
+
+.Polaris-Button {
+  box-shadow: none;
+}
+
+.tox-notifications-container,
+.tox .tox-notification--warning,
+.tox .tox-notification--warn,
+.tox-statusbar__branding {
+  display: none !important;
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+//  css Feedback page
+.vue-opr-suggestion-list-main {
+  max-height: 500px;
+  overflow: scroll;
+}

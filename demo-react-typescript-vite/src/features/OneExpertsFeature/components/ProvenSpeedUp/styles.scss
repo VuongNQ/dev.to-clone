@@ -1,0 +1,89 @@
+.ProvenSpeedUpComponent {
+  .Polaris-LegacyCard {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--p-text-subdued);
+  }
+
+  &__container-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__reviews {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item-review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  &__app {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__app-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__number {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  &__number--yellow {
+    color: var(--p-text-secondary);
+  }
+  &__number--green {
+    color: var(--p-text-success);
+  }
+
+  &__container-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  &__list-achievement {
+    margin-top: 8px;
+  }
+
+  &__achievement {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: 48rem) {
+    .Polaris-LegacyCard {
+      flex-direction: column;
+    }
+    &__reviews {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__item-review {
+      align-items: center;
+    }
+  }
+}

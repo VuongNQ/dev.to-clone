@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Arvo&family=Cabin&family=Crimson+Text&family=Lora&family=Merriweather&family=Open+Sans&family=Playfair+Display&family=Poppins&family=Roboto&display=swap');
+.CustomizeLoading-Preview {
+    &__title {
+        color: var(--p-action-secondary-depressed);
+    }
+
+    button {
+        cursor: pointer;
+        border: none;
+        padding: 8px;
+        border-radius: 12px;
+        background-color: transparent;
+    }
+    .button--active {
+        background-color: var(--p-action-primary);
+        color: var(--p-icon-on-interactive);
+        svg {
+            path {
+                fill: currentColor;
+            }
+        }
+    }
+
+    // &__list-action{
+    //     min-height: 56px;
+    // }
+
+    &__body {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        height: 250px;
+    }
+    &__wrapper-demo {    
+        // width: fit-content;
+        // margin: 0 auto;
+        // border-radius: 24px;
+        // border: 3px solid rgb(54, 50, 50);
+        // overflow: hidden;
+        // max-width: 425px;
+        height: inherit;
+    }
+    &__demo {
+        position: relative;
+        height: inherit;
+        img {
+            max-width: 100%;
+            height: inherit;
+        }
+    }
+    &__demo-loading {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__demo-imgage {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

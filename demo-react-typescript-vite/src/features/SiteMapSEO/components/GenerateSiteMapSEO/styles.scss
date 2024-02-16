@@ -1,0 +1,25 @@
+.GenerateSiteMapSEO {
+    &__scan-time {
+      font-size: var(--p-font-size-1);
+      color: var(--p-text-subdued);
+    }
+  
+    &__title-section {
+      font-size: var(--p-font-size-5);
+      font-weight: var(--p-font-weight-semibold);
+      // margin-bottom: 4px;
+    }
+    
+    &__txt-link {
+      display: inline-flex;
+      color: var(--p-interactive);
+      margin-top: 8px;
+    }
+
+    @media screen and (max-width: 48rem) {
+      &__sitemap {
+        flex-direction: column;
+      }
+    }
+  }
+  

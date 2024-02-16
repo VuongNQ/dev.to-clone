@@ -1,0 +1,26 @@
+@import "/node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.CustomizeLoading {
+  // &__tabs{
+  //     border-radius: 12px;
+  //     border: 1px solid var(--border-shadow-divider, #E1E3E5);
+  // }
+
+  &__left {
+    width: calc(60.8% - 10px);
+  }
+  &__right {
+    width: calc(39.2% - 10px);
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__wp {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}

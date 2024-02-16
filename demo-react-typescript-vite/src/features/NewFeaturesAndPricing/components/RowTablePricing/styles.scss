@@ -1,0 +1,14 @@
+.RowTablePricing{
+    &__icon-empty {
+        width: 24px;
+        height: 24px;
+      }
+    &__row-btn{
+      td {
+        &:first-child{
+          padding-left: 52px;
+        }
+        padding: 12px 16px;
+      }
+    }
+}

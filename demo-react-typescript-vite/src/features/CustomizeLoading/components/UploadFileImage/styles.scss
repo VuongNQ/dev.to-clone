@@ -1,0 +1,63 @@
+.UploadFileImage {
+    .Polaris-DropZone {
+        overflow: hidden;
+        height: 100%;
+    }
+    .Polaris-DropZone__Container{
+        height: 100%;
+    }
+    .Polaris-Labelled--hidden{
+        height: 100%;
+    }
+    &__upload-preview {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+        font-weight: 500;
+        color: var(--p-text-subdued);
+    }
+    &__upload-img {
+        height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    &__delete {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: end;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+    &__delete-background {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        border-radius: 8px;
+    }
+    &__wrapper-icon {
+        position: absolute;
+        content: '';
+        opacity: 0;
+        padding: var(--p-space-2);
+        .Polaris-Icon {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    &__delete:hover  &__wrapper-icon{
+        opacity: 100%;
+    }
+    &__delete:hover  &__delete-background{
+        background-color: var(--p-background-hovered);
+    }
+}

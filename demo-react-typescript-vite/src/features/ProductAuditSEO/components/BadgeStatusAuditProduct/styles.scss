@@ -1,0 +1,14 @@
+.BadgeStatusAuditProduct {
+  &--critical {
+    background-color: var(--p-color-bg-critical-subdued);
+  }
+  &--warning {
+    background-color: var(--p-color-bg-caution-subdued);
+  }
+  &--success {
+    background-color: var(--p-color-bg-success-subdued);
+  }
+  &--subdued {
+    background-color: var(--p-surface-neutral-subdued);
+  }
+}

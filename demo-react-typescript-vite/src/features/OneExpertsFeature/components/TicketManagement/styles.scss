@@ -1,0 +1,63 @@
+.TicketManagement {
+    &__record {
+        width: calc(25% - 20px);
+        border-radius: 12px;
+        box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.25),
+            0px 2px 1px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &__record--base {
+        border: 1px solid var(--p-border-subdued);
+        background: var(--p-action-secondary-hovered);
+    }
+
+    &__record--warning {
+        background-color: var(--p-surface-warning-subdued);
+        border: 1px solid var(--p-surface-warning);
+        .TicketManagement__record-title {
+            color: var(--p-text-warning);
+        }
+    }
+    &__record--info {
+        background-color: var(--p-surface-highlight-subdued);
+        border: 1px solid var(--p-surface-highlight);
+        .TicketManagement__record-title {
+            color: var(--p-text-highlight);
+        }
+    }
+    &__record--success {
+        background-color: var(--p-surface-success-subdued);
+        border: 1px solid var(--p-surface-success);
+        .TicketManagement__record-title {
+            color: var(--p-text-highlight);
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .Polaris-Icon {
+            margin: 0;
+            svg {
+                path {
+                    fill: var(--p-interactive);
+                }
+            }
+        }
+    }
+
+    &__no-data {
+        min-height: 400px;
+    }
+
+    @media screen and (max-width: 48rem) {
+        &__header {
+            justify-content: start;
+            gap: 20px;
+        }
+        &__record {
+            width: calc(50% - 10px);
+        }
+    }
+}

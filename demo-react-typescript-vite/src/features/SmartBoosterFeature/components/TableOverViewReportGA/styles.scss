@@ -1,0 +1,32 @@
+@import "../../../../styles/static/mixin";
+.TableOverViewReportGA {
+  &__total-record {
+    font-size: var(--p-font-size-5);
+    font-weight: 600;
+    span {
+      font-size: var(--p-font-size-1);
+      font-weight: 400;
+      color: var(--p-text-subdued);
+    }
+  }
+
+  &__pagePath {
+    // width: 138px;
+    white-space: break-spaces;
+  }
+
+  .Polaris-IndexTable__TableHeading {
+    width: 115px;
+    white-space: break-spaces;
+    &:first-child{
+      width: 170px;
+    }
+  }
+  .Polaris-IndexTable__TableCell {
+    max-width: 115px;
+    &:first-child {
+      max-width: 170px;
+    }
+  }
+
+}

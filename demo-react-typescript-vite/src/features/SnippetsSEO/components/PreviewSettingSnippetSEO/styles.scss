@@ -1,0 +1,133 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.PreviewSettingSnippetSEO {
+  overflow: hidden;
+  border-radius: var(--p-space-3);
+  border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  text-align: center;
+  // &__img-preview{
+  //     width: 100%;
+  // }
+  // &__img-blur{
+  //     content: '';
+  //     width: 95%;
+  //     bottom: 0;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  // }
+
+  &__header-top {
+    border-bottom: 1px solid #dadce0;
+  }
+
+  &__logo-google {
+    width: 92px;
+    height: 30px;
+  }
+  &__form {
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+    border-radius: 24px;
+  }
+
+  &__line {
+    width: 1px;
+    height: 24px;
+    background-color: #70757a;
+  }
+
+  &__icon-search {
+    svg {
+      width: 24px;
+      path {
+        fill: #4285f4;
+      }
+    }
+  }
+
+  &__icon-close {
+    svg {
+      width: 24px;
+      path {
+        fill: #70757a;
+      }
+    }
+  }
+
+  &__badge {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #dadce0;
+  }
+
+  &__result-blur {
+    width: 55%;
+    height: 270px;
+  }
+  &__org-blur {
+    width: 45%;
+    height: 270px;
+  }
+
+  &__img-blur {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+  }
+
+  &__wp-org {
+    border-radius: 8px;
+    border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  }
+
+  &__wp-preview {
+    width: 90%;
+    margin: 0 auto;
+    // min-height: 500px;
+  }
+
+  &__img-logo {
+    border-radius: 4px;
+  }
+
+  &__preview-result {
+    content: "";
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--p-surface);
+  }
+
+  &__ratings {
+    .Polaris-Icon {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__title-result {
+    color: var(--p-interactive);
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    display: none;
+    &__wp-form {
+      flex-direction: column;
+    }
+    &__group-btn {
+      display: none;
+    }
+
+    &__wp-preview {
+      width: 100%;
+      flex-direction: column;
+    }
+    &__org-blur, &__result-blur {
+      width: 100%;
+    }
+    
+  }
+}

@@ -1,0 +1,13 @@
+.TemplateSettingText {
+
+
+    &__color-field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__select-lable{
+        margin-bottom: 4px;
+    }
+}

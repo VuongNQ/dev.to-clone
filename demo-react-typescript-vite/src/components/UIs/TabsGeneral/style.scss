@@ -1,0 +1,61 @@
+@import "../../../../node_modules/@shopify/polaris-tokens/dist/scss/media-queries.scss";
+
+.TabsGeneral {
+  background-color: var(--p-surface);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--p-shadow-xs);
+
+  &__menu {
+    width: 162px;
+    background-color: var(--p-surface-subdued);
+  }
+
+  &__body {
+    width: calc(100% - 162px);
+  }
+
+  &__btn {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    // font-size: var(--p-font-size-1);
+    padding: 4px 12px;
+    font-weight: var(--p-font-weight-regular);
+    border: none;
+    border-radius: var(--p-font-weight-regular);
+    background: none;
+    padding: 20px 8px 20px 14px;
+    text-align: left;
+    box-shadow: 0px -1px 0px 0px #e1e3e5 inset;
+    &.active {
+      color: var(--p-text-success);
+      background-color: var(--p-surface);
+      font-weight: var(--p-font-weight-medium);
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 2px;
+        height: 50%;
+        transform: translateY(-50%);
+        background-color: var(--swiper-theme-color);
+        border-radius: 0px 12px 12px 0px;
+      }
+    }
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__wp {
+      flex-direction: column;
+    }
+    &__menu {
+      width: 100%;
+      display: flex;
+    }
+    &__body {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.SkeletonTable {
+    &__text{
+        .Polaris-SkeletonDisplayText--sizeMedium{
+            height: 18px;
+        }
+    }
+   
+  &__btn-check {
+    .Polaris-SkeletonThumbnail {
+      height: 18px;
+      width: 18px;
+    }
+  }
+  &__img {
+    .Polaris-SkeletonThumbnail {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  
+}

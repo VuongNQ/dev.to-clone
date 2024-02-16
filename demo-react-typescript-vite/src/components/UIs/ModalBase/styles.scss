@@ -1,0 +1,58 @@
+.ModalBaseInfo {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+
+    &__title {
+        font-size: var(--p-font-size-7);
+        font-weight: var(--p-font-weight-medium);
+        // padding-bottom: 8px;
+        color: var(--p-action-primary);
+    }
+
+    &__des {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__img{
+        min-height: 50px;
+    }
+
+    // &__icon, img {
+    //     margin: 20px 0;
+    // }
+
+    // &__box-des {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    // &__list-des {
+    //     display: flex;
+    //     width: fit-content;
+    //     flex-direction: column;
+    //     gap: var(--p-space-4);
+    //     text-align: left;
+    // }
+    // &__item-des {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 8px;
+    // }
+    &__id-error{
+        width: 100%;
+        background-color: var(--p-surface-selected-hovered);
+        border-radius: 8px;
+        padding: 12px 20px;
+    }
+
+    &__btn-copy {
+        width: 28px;
+        height: 28px;
+        padding: 10px;
+         background-color: var(--p-action-secondary);
+         border-radius: 4px;
+       }
+}

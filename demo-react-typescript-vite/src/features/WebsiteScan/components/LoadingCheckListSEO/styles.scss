@@ -1,0 +1,28 @@
+.LoadingCheckListSEO {
+    position: relative;
+    &__box {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        // padding: 20px 0;
+        &:nth-child(odd){
+            box-shadow: 0px -1px 0px 0px #E1E3E5 inset;
+        }
+    }
+    &__row {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+    &__banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translate(-50%,-50%);
+    }
+    &__des-banner{
+        max-width: 369px;
+    }
+}

@@ -1,0 +1,23 @@
+
+
+
+.HireExpertsComponent{
+    &__title{
+        span{
+            font-size: 26px;
+            color: var(--p-swift-primary);
+            font-weight: inherit;
+        }
+    }
+
+    @media screen and (min-width: 0rem) {
+        &__image {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 30.625rem) {
+        &__image {
+            display: block;
+        }
+    }
+}

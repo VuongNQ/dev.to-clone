@@ -1,0 +1,34 @@
+.OnboardingFeature {
+  &__body {
+    .Polaris-Box {
+      box-shadow: var(--p-shadow-xs);
+    }
+  }
+
+  &__copywriting {
+    border: 1px solid var(--p-border-subdued);
+    border-radius: 50px;
+  }
+  &__step {
+    background-color: var(--p-color-bg-app);
+    z-index: 2;
+    .Polaris-Icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__lines {
+    content: "";
+    top: 31px;
+    left: 0;
+    z-index: 1;
+  }
+  &__line {
+    height: 1px;
+    background: var(--border-disabled, #d2d5d8);
+    &.active {
+      background: var(--border-default, #8c9196);
+    }
+  }
+}

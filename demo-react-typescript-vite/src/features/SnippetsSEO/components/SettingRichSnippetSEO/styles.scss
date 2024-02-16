@@ -1,0 +1,13 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.SettingRichSnippetSEO {
+  &__list-app {
+    border-radius: 12px;
+    background: var(--surface-subdued, #fafbfb);
+  }
+  @media #{$p-breakpoints-md-down} {
+    &__box {
+      flex-direction: column;
+    }
+  }
+}

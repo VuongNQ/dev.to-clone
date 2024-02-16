@@ -1,0 +1,53 @@
+/* Set css defualt */
+body {
+  font-family: "Inter", sans-serif, var(--p-font-family-sans);
+}
+a {
+  color: var(--p-interactive);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: var(--p-font-family-sans);
+}
+/*  # custom scroll # */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--p-background);
+  // background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* # custom scroll # */
+
+.Polaris-Backdrop {
+  z-index: 9999999 !important;
+}
+.Polaris-Modal-Dialog__Container {
+  z-index: 99999999 !important;
+}
+
+@media screen and (max-width: 48rem) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+}

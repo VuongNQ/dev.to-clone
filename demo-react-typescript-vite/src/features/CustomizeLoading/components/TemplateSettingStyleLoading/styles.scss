@@ -1,0 +1,42 @@
+.TemplateSettingStyleLoading {
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: 20px;
+    }
+
+    &__templ-loading {
+        width: 46px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 4px;
+        background-color: var(--p-surface-selected);
+        color: var(--p-border);
+        border-radius: 8px;
+    }
+
+    &__txt-loading {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    &__templ-loading--active {
+        background-color: var(--p-action-primary);
+        color: var(--p-text-on-interactive);
+        p {
+            color: inherit
+        }
+        svg {
+            path {
+                fill: var(--p-text-on-interactive);
+            }
+        }
+    }
+}

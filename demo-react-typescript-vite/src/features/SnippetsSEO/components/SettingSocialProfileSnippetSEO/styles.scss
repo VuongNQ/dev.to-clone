@@ -1,0 +1,17 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.SettingSocialProfileSnippetSEO {
+  &__col-2 {
+    width: calc(50% - 10px);
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__col-2 {
+      width: 100%;
+    }
+
+    &__box {
+      flex-direction: column;
+    }
+  }
+}

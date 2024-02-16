@@ -1,0 +1,36 @@
+.InputSelect__btn {
+  // width: fit-content;
+  min-width: 135px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  border: 1px solid #babfc3;
+  &.no-border{
+    border: none;
+    box-shadow: none;
+  }
+  .Polaris-Button {
+    width: 100%;
+    background-color: transparent;
+    padding: 0 12px !important;
+    border: none;
+  }
+
+  .Polaris-Button__Content {
+    justify-content: space-between;
+    .Polaris-Button__Text {
+      text-align: left;
+      font-weight: 400;
+    }
+  }
+}
+
+.InputSelect__popover {
+  // width: 100%;
+  .Polaris-Popover__Pane {
+    height: 200px;
+  }
+}
+
+.Polaris-Listbox-TextOption::after {
+  opacity: 0;
+}

@@ -1,0 +1,32 @@
+.DataLogAuditScanSEO {
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+  }
+  &__title {
+    font-size: 15px;
+  }
+  &__des {
+    color: var(--p-text-subdued);
+    word-break: break-word;
+  }
+  &__btn {
+    display: flex;
+
+    justify-content: end;
+    align-items: baseline;
+  }
+
+  &__show-more {
+    text-align: center;
+    .Polaris-Button {
+      padding: 20px 10px 0px 10px;
+    }
+  }
+  &__no-data{
+    min-height: 200px;
+    height: 100%;
+  }
+}

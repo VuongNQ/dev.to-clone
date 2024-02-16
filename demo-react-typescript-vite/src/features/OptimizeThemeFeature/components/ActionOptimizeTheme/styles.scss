@@ -1,0 +1,37 @@
+.ActionOptimizeTheme {
+  &__content {
+    max-width: 620px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  &__item {
+    box-shadow: 0px -1px 0px 0px #e1e3e5 inset;
+    &:last-child{
+      box-shadow: none;
+    }
+  }
+
+  &__explain {
+    color: var(--p-text-highlight);
+    font-size: var(--p-font-size-1);
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 48rem) {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__content {
+      max-width: max-content;
+      text-align: center;
+    }
+    &__wp-title {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

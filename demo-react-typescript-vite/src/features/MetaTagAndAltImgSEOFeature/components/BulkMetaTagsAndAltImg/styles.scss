@@ -1,0 +1,20 @@
+.BulkMetaTagsAndAltImg {
+  &__right {
+    width: 30%;
+  }
+
+  // &__title-img {
+  //   font-size: var(--p-font-size-7);
+  //   font-weight: var(--p-font-weight-medium);
+  //   line-height: 28px;
+  // }
+
+  @media screen and (max-width: 32rem) {
+    flex-direction: column;
+    &__left,
+    &__right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

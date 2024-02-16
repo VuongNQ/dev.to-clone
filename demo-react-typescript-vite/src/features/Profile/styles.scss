@@ -1,0 +1,111 @@
+@import "../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+@mixin defaultFont {
+	// font-family: var(--p-font-family-mono);
+	font-style: normal;
+	color: var(--p-text);
+}
+.Profile {
+	&__wp>.Polaris-Box{
+		box-shadow: var(--p-shadow-xs);  
+		border-radius: var(--p-border-radius-3); 
+	}
+	&__section {
+		/* 
+		background-color: #fff;
+		border-radius: var(--p-border-radius-3);
+		padding: var(--p-space-5); 
+		*/
+		@media #{$p-breakpoints-md-down} {
+			flex-direction: column;
+			padding: unset;
+		}
+	}
+	&__note{
+		border-bottom: 1px  dashed var(--border-border, #E3E3E3);
+	}
+	&-left {
+		width: 267px;
+		padding-right: 10px;
+		@media #{$p-breakpoints-md-down} {
+			width: 100%;
+			box-shadow: 0px -1px 0px 0px #e1e3e5 inset;
+			padding: var(--p-space-4);
+		}
+		&__plan {
+			border-radius: var(--p-space-3);
+			background: var(--p-surface-subdued, #fafbfb);
+			margin-bottom: 20px;
+			img {
+				width: 48px;
+				height: 48px;
+			}
+			&-define {
+				padding: var(--p-space-3) 0;
+			}
+		}
+		&__title {
+			border-radius: var(--p-space-3);
+			background: var(--p-surface-subdued, #fafbfb);
+			> .Polaris-Tooltip__TooltipContainer {
+				align-items: center;
+				gap: var(--p-space-2);
+				padding: var(--p-space-3);
+				margin-bottom: var(--p-space-1);
+				> img:last-child {
+					cursor: pointer;
+				}
+			}
+		}
+		&__banner {
+			margin-top: 20px;
+			object-fit: cover;
+			height: auto;
+			width: 100%;
+			@media #{$p-breakpoints-md-down} {
+				display: none;
+			}
+		}
+		> .Polaris-Button {
+			margin: auto;
+			margin-top: 10px;
+		}
+	}
+	&-right {
+		width: calc(100% - 267px);
+		padding-left: 10px;
+		@media #{$p-breakpoints-md-down} {
+			width: 100%;
+			padding: var(--p-space-4);
+		}
+		&__history {
+			border: 1px groove #e1e3e5;
+			border-radius: var(--p-space-3);
+			&-head {
+				> .Polaris-Tabs__Outer > .Polaris-Box {
+					padding: 0;
+				}
+			}
+			&-body {
+				&__empty {
+					border-top: 1px groove #e1e3e5;
+					min-height: 556px;
+				}
+				&__list {
+					&-detail {
+						padding: var(--p-space-2) var(--p-space-4);
+						border-top: 1px groove #e1e3e5;
+						> div {
+							width: calc(100% - 40px);
+						}
+						/* p.Polaris-Text--bodyMd {
+							border-bottom: 1px dashed #999;
+						} */
+						p.Polaris-Text--bodySm {
+							color: var(--p-text-subdued, #6d7175);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,112 @@
+
+.CustomersSayComponent {
+    .Polaris-LegacyCard {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .Polaris-Button {
+        box-shadow: 0px 1px 0px rgb(0 0 0 / 5%);
+    }
+
+    &__list {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    &__item {
+        flex: 1;
+        list-style: none;
+        position: relative;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05),
+            0px 1px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    &__top {
+        position: relative;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        // margin-bottom: 20px;
+        span:last-child {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            font-size: 12__avatarpx;
+            color: var(--p-text-subdued);
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__avatar {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__body {
+        margin-bottom: 20px;
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    &__footer {
+        // position: absolute;
+        // right: 20px;
+        // bottom: 20px;
+        // font-weight: 600;
+        // font-size: 28px;
+        // text-align: right;
+        svg {
+            path {
+                fill: currentColor;
+            }
+        }
+    }
+    &__footer--aqua {
+        color: var( --p-decorative-one-icon);
+        svg {
+            fill: inherit;
+        }
+    }
+    &__footer--yellow {
+        color: var(--p-decorative-four-icon);
+        svg {
+            fill: inherit;
+        }
+    }
+    &__footer--violet {
+        color: #45458d;
+        svg {
+            fill: inherit;
+        }
+    }
+
+    @media screen and (min-width: 0rem) {
+        &__list {
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width: 48rem) {
+        &__list {
+            flex-direction: row;
+        }
+    }
+}

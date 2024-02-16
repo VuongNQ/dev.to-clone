@@ -1,0 +1,104 @@
+
+@import 'variables';
+
+$height-desktop-very_small: calc((4px * $percent-size-desktop) * 3/4);
+$height-desktop-small: calc((8px * $percent-size-desktop) * 3/4);
+$height-desktop-medium: calc((12px * $percent-size-desktop) * 3/4);
+$height-desktop-large: calc((14px * $percent-size-desktop) * 3/4);
+$height-desktop-very_large: calc((18px * $percent-size-desktop) * 3/4);
+
+.swift-progress-bar {
+    width: 100%;
+    .progress-bar {
+        
+        border-radius: 8px;
+        margin: auto;
+        position: relative;
+    }
+    .progress-bar-percent {
+        border-radius: 8px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        max-width: 100% !important;
+    }
+    &.top {
+        .progress-bar, .progress-bar>div {
+            // border-radius: 8px 8px 0 0;
+            border-radius: 0;
+        }
+    }
+    &.bottom {
+        .progress-bar, .progress-bar>div {
+            border-radius: 0 0 8px 8px;
+        }
+    }
+    &.top, &.bottom {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        .progress-bar {
+            width: 100% !important;
+        }
+        .progress-bar, .progress-bar>div {
+            height: 4px !important;
+        }
+    }
+   
+    &.bottom {
+        bottom: 0px;
+    }
+    &.top {
+        top: 0;
+    }
+}
+
+.desktop-preview {
+    .progress-bar {
+        &.very_small {
+            height: $height-desktop-very_small;
+            width: 250px;
+        }
+        &.small {
+            height: $height-desktop-small;
+            width: 300px;
+        }
+        &.medium {
+            height: $height-desktop-medium;
+            width: 350px;
+        }
+        &.large {
+            height: $height-desktop-large;
+            width: 400px;
+        }
+        &.very_large {
+            height: $height-desktop-very_large;
+            width: 400px;
+        }
+    }
+}
+
+.mobile-preview {
+    .progress-bar {
+        &.very_small {
+            height: $height-desktop-very_small;
+            width: 150px;
+        }
+        &.small {
+            height: $height-desktop-small;
+            width: 200px;
+        }
+        &.medium {
+            height: $height-desktop-medium;
+            width: 250px;
+        }
+        &.large {
+            height: $height-desktop-large;
+            width: 300px;
+        }
+        &.very_large {
+            height: $height-desktop-very_large;
+            width: 300px;
+        }
+    }
+}

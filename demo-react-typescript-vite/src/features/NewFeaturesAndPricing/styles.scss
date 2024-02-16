@@ -1,0 +1,38 @@
+.NewFeaturesAndPricing {
+  &__header {
+    border-radius: 12px;
+    background: var(--surface-default, #fff);
+  }
+
+  &__txt-highlight {
+    // color: var(--text-highlight, #347c84);
+    color: var( --p-surface);
+    // text-decoration: underline;
+    // text-underline-offset: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color:var( --p-swift-primary) ;
+    padding: 2px 8px;
+  }
+
+  &__button {
+    border-radius: 12px;
+    cursor: pointer;
+    .Polaris-Icon {
+      margin: 0;
+    }
+    &:hover {
+      background-color: var(--p-surface-success-subdued);
+    }
+    &.active {
+      background-color: var(--p-surface-success-subdued);
+    }
+  }
+
+  &__banner-ticket{
+    background-color: var( --p-surface-highlight-subdued);
+    border-top: 2px solid var(--p-swift-primary);
+  }
+
+}

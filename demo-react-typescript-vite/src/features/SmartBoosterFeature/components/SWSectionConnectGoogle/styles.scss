@@ -1,0 +1,22 @@
+.SWSectionConnectGoogle {
+  // &__wp-loading {
+  //   border-radius: 12px;
+  //   border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  // }
+  &__wp-connect {
+    .Polaris-LegacyCard {
+      border: 1px solid var(--border-shadow-divider, #e1e3e5);
+      box-shadow: none;
+    }
+    .Polaris-Button:not(.Polaris-Button--loading, .Polaris-Button--disabled) {
+      background-color: var(--p-swift-primary);
+      color: var(--p-text-on-interactive);
+      &:hover {
+        background-color: var(--p-action-primary-hovered);
+      }
+    }
+  }
+
+  @media screen and (max-width: 48rem) {
+  }
+}

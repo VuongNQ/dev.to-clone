@@ -1,0 +1,49 @@
+@import "../../../../styles/static/mixin";
+
+.TabMetaTitleSEO {
+  // &__wp-preview,
+  // &__setting-auto,
+  // &__form,
+  // &__bulk {
+  //   border-radius: 12px;
+  //   border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  // }
+
+  &__box-google {
+    display: flex;
+    gap: 8px;
+  }
+  &__txt-goole {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+  &__store-name {
+    font-size: var(--p-font-size-7);
+    font-weight: var(--p-font-weight-medium);
+    @include dotText();
+  }
+  &__des-example {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff7ec;
+  }
+
+  &__input {
+    margin-top: 20px;
+  }
+
+  &__preview-des {
+    @include dotText();
+  }
+
+  &__wrapper-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 48rem) {
+  }
+}

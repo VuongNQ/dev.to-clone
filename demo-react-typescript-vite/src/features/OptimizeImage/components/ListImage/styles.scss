@@ -1,0 +1,144 @@
+@import "../../../../../node_modules/@shopify/polaris-tokens/dist/scss/media-queries.scss";
+
+.List-image {
+    border-radius: var(--p-space-3);
+    border: 1px solid var(--border-shadow-divider, #e1e3e5);
+    box-shadow: none;
+
+    &__empty {
+        padding: 40px 20px;
+    }
+
+    &__table-wrapper {
+        &.scrolled-bottom {
+            > .Polaris-IndexTable .Polaris-IndexTable-ScrollContainer::after {
+                display: none;
+            }
+        }
+
+        > .Polaris-IndexTable {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+            .Polaris-IndexTable {
+                &__EmptySearchResultWrapper {
+                    padding: 0;
+                }
+
+                &-ScrollContainer {
+                    &::-webkit-scrollbar {
+                        display: block;
+                    }
+
+                    max-height: 520px;
+                    --pc-scrollable-shadow-size: var(--p-space-5);
+                    --pc-scrollable-shadow-color: rgba(0, 0, 0, 0.15);
+                    --pc-scrollable-shadow-bottom: 0
+                        var(--pc-scrollable-shadow-size)
+                        var(--pc-scrollable-shadow-size)
+                        var(--pc-scrollable-shadow-size)
+                        var(--pc-scrollable-shadow-color);
+                    --pc-scrollable-shadow-top: 0
+                        calc(var(--pc-scrollable-shadow-size) * -1)
+                        var(--pc-scrollable-shadow-size)
+                        var(--pc-scrollable-shadow-size)
+                        var(--pc-scrollable-shadow-color);
+                    --pc-scrollable-max-height: none;
+                    -webkit-overflow-scrolling: touch;
+                    position: relative;
+                    // overflow-x: hidden;
+                    // overflow-y: hidden;
+                    isolation: isolate;
+
+                    &::after {
+                        content: "";
+                        position: sticky;
+                        left: 0;
+                        display: block;
+                        pointer-events: none;
+                        height: var(--p-space-0);
+                        width: 100%;
+                        z-index: 32;
+                        bottom: 0;
+                        box-shadow: var(--pc-scrollable-shadow-bottom);
+                    }
+
+                    .Polaris-IndexTable__TableRow,.Polaris-IndexTable__TableRow:last-child:not(
+                            .Polaris-IndexTable__TableRow.Polaris-IndexTable__TableRow--selected
+                        ):not(
+                            .Polaris-IndexTable__TableRow.Polaris-IndexTable__TableRow--hovered
+                        ) {
+                        background: transparent;
+                    }
+                }
+            }
+
+            .action-optimize {
+                &.Polaris-IndexTable__TableCell {
+                    padding-top: var(--p-space-3);
+                    padding-bottom: var(--p-space-3);
+                    text-align: center;
+                    > span.optimized {
+                        > .Polaris-Button {
+                            background-color: var(--p-surface-warning-subdued);
+                            border: 1px solid var(--p-surface-warning);
+                        }
+                    }
+                    > span > .Polaris-Button {
+                        height: 30px;
+                        min-width: 85px;
+                        padding: 5px 12px;
+                        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+                        background-color: var(--p-surface-success-subdued);
+                        border: 1px solid var(--p-surface-success);
+                    }
+                }
+            }
+
+            // hide scroll desktop
+            + .Polaris-IndexTable__ScrollBarContainer {
+                display: none;
+
+                @media #{$p-breakpoints-md-down} {
+                    display: block;
+                }
+            }
+        }
+        .skeleton-table-image {
+            display: flex;
+            align-items: center;
+            > .Polaris-SkeletonThumbnail {
+                &:first-child {
+                    height: 18px;
+                    width: 18px;
+                    margin-right: 33px;
+                }
+                &:nth-child(2) {
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 41px;
+                }
+            }
+            > .Polaris-SkeletonDisplayText__DisplayText {
+                height: 18px;
+                margin-right: 32px;
+                &:nth-child(3) {
+                    width: 5%;
+                }
+                &:nth-child(4) {
+                    width: 15%;
+                }
+                &:nth-child(5) {
+                    width: 20%;
+                }
+
+                &:nth-child(6) {
+                    width: 10%;
+                }
+                &:nth-child(7) {
+                    width: 12%;
+                }
+            }
+        }
+    }
+}

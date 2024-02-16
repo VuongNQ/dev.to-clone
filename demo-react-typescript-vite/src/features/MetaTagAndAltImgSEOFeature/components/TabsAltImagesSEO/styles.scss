@@ -1,0 +1,68 @@
+.TabsAltImagesSEO {
+
+  // &__setting-auto,
+  // &__form,
+  // &__bulk {
+  //   border: 1px solid var(--border-shadow-divider, #E1E3E5);
+  //   border-radius: 12px;
+  // }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__wrapper-auto {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+
+    .Polaris-LegacyCard {
+      width: calc(50% - 10px);
+      height: inherit;
+      margin: 0;
+    }
+  }
+  &__setting-auto {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__img-example {
+    max-width: 100%;
+    object-fit: cover;
+    padding-bottom: 8px;
+  }
+  &__des-example {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff7ec;
+    font-size: 15px;
+  }
+
+  &__title-section {
+    font-size: var(--p-font-size-5);
+    font-weight: var(--p-font-weight-semibold);
+    // margin-bottom: 4px;
+  }
+
+
+  @media screen and (max-width: 48rem) {
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      display: none;
+    }
+    &__wrapper-auto {
+      flex-direction: column-reverse;
+      .Polaris-LegacyCard {
+        width: 100%
+      }
+    }
+    // &__img-example{
+    //   display: none;
+    // } 
+  }
+}

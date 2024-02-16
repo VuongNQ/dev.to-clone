@@ -1,0 +1,63 @@
+.ItemStepSubmitSiteMap {
+  &__item-tasks {
+    border-bottom: 1px solid var(--p-border-subdued);
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__number-step {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--p-swift-primary);
+    border-radius: 50%;
+    color: var(--p-swift-primary);
+    font-weight: var(--p-font-weight-semibold);
+    &.active {
+      border: none;
+      background-color: var(--p-swift-primary);
+      color: var(--p-text-on-primary);
+    }
+  }
+
+  // &__wrapper-lottie {
+  //   position: relative;
+  //   width: 46px;
+  //   height: 46px;
+  //   overflow: hidden;
+  //   margin: 0 auto;
+  // }
+
+  // &__lottie{
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%,-50%);
+  // }
+
+  &__icon-success{
+    width: 46px;
+    height: 46px;
+  }
+  
+  @media screen and (max-width: 48rem) {
+    &__item-tasks {
+      flex-direction: column;
+      // align-items: center;
+    }
+
+    &__btn-connect {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__console-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

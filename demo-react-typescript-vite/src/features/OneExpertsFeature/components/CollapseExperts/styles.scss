@@ -1,0 +1,35 @@
+.collapse-experts {
+    position: relative;
+    .Polaris-Button {
+        position: relative;
+        z-index: 1;
+        border: none !important;
+        padding: 12px 20px !important;
+        background: var(--p-surface-subdued) !important;
+        box-shadow: none;
+    }
+
+    .Polaris-Button__Text {
+        width: calc(100% - 30px);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .Polaris-Button__Icon {
+        position: absolute;
+        right: 0;
+    }
+
+    .Polaris-Button svg {
+        fill: var(--p-swift-primary);
+    }
+
+    &__des {
+        background: var(--p-surface-subdued);
+        padding: 0px 20px 12px 20px;
+        color: var(--p-text-subdued);
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+

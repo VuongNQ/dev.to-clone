@@ -1,0 +1,61 @@
+@import 'variables';
+
+.swift-percentage-counter {
+    // width: fit-content;
+    // height: fit-content;
+    // margin: auto;
+    .fw {
+        &-regular {
+            font-weight: normal;
+        }
+        &-medium {
+            font-weight: 500;
+        }
+        &-bold {
+            font-weight: 700;
+        }
+    }
+}
+.desktop-preview {
+    .swift-percentage-counter {
+        .fz {
+            &-very_small {
+                font-size: $font-size-desktop-very_small;
+            }
+            &-small {
+                font-size: $font-size-desktop-small;
+            }
+            &-medium {
+                font-size: $font-size-desktop-medium;
+            }
+            &-large {
+                font-size: $font-size-desktop-large;
+            }
+            &-very_large {
+                font-size: $font-size-desktop-very_large;
+            }
+        }
+    }
+}
+
+.mobile-preview {
+    .swift-percentage-counter {
+        .fz {
+            &-very_small {
+                font-size:  $font-size-mobile-very_small;
+            }
+            &-small {
+                font-size: $font-size-mobile-small;
+            }
+            &-medium {
+                font-size: $font-size-mobile-medium;
+            }
+            &-large {
+                font-size: $font-size-mobile-large;
+            }
+            &-very_large {
+                font-size: $font-size-mobile-very_large;
+            }
+        }
+    }
+}

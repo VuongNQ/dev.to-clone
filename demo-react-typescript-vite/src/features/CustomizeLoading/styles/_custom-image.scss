@@ -1,0 +1,76 @@
+@import 'variables';
+
+.swift-custom-img {
+    @for $i from 1 through 10 {
+        .fade-in-#{$i} {
+            -webkit-animation: fadeIn #{$i}s ease-out;
+            -moz-animation: fadeIn #{$i}s ease-out;
+            -o-animation: fadeIn #{$i}s ease-out;
+            -ms-animation: fadeIn #{$i}s ease-out;
+            animation: fadeIn #{$i}s ease-out;
+        }
+    
+        .fade-out-#{$i} {
+            -webkit-animation: fadeOut #{$i}s ease-out;
+            -moz-animation: fadeOut #{$i}s ease-out;
+            -webkit-animation: fadeOut #{$i}s ease-out;
+            -o-animation: fadeOut #{$i}s ease-out;
+            -ms-animation: fadeOut #{$i}s ease-out;
+            animation: fadeOut #{$i}s ease-out;
+        }
+    }
+
+    .infinite {
+        animation-iteration-count: infinite;
+    }
+}
+
+.desktop-preview {
+    .swift-custom-img {
+        .very_small {
+            width: auto;
+            height: $icon-desktop-very_small;
+        }
+        .small {
+            width: auto;
+            height: $icon-desktop-small;
+        }
+        .medium {
+            width: auto;
+            height: $icon-desktop-medium;
+        }
+        .large {
+            width: auto;
+            height: $icon-desktop-large;
+        }
+        .very_large {
+            width: auto;
+            height: $icon-desktop-very_large;
+        }
+    }
+}
+
+.mobile-preview {
+    .swift-custom-img {
+        .very_small {
+            width: auto;
+            height: $icon-mobile-very_small;
+        }
+        .small {
+            width: auto;
+            height: $icon-mobile-small;
+        }
+        .medium {
+            width: auto;
+            height: $icon-mobile-medium;
+        }
+        .large {
+            width: auto;
+            height: $icon-mobile-large;
+        }
+        .very_large {
+            width: auto;
+            height: $icon-mobile-very_large;
+        }
+    }
+}

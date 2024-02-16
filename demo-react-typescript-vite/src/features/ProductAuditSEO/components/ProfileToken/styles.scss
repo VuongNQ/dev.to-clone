@@ -1,0 +1,73 @@
+@mixin defaultFont {
+	// font-family: var(--p-font-family-mono);
+	font-style: normal;
+	color: var(--p-text);
+}
+.Wallet {
+	&__free-plan {
+		margin-left: 12px;
+		font-weight: var(--p-font-weight-semibold);
+		font-size: var(--p-font-size-5);
+		line-height: var(--p-line-height-3);
+	}
+	&__section {
+		height: 100%;
+		> .Polaris-Card {
+			height: 100%;
+		}
+	}
+	&__token {
+		@include defaultFont;
+		font-weight: var(--p-font-weight-semibold);
+		font-size: var(--p-font-size-5);
+		line-height: var(--p-line-height-5);
+		&.expired {
+			color: var(--p-text-subdued);
+		}
+	}
+	&__sub-header {
+		@include defaultFont;
+		font-weight: var(--p-font-weight-regular);
+		font-size: var(--p-font-size-3);
+		line-height: var(--p-line-height-2);
+	}
+	&__expiration {
+		@include defaultFont;
+		font-weight: var(--p-font-weight-regular);
+		font-size: var(--p-font-size-1);
+		line-height: var(--p-line-height-1);
+
+		&.expired {
+			color: var(--p-text-critical);
+		}
+	}
+}
+
+.Skeleton {
+	&__top {
+		> .Polaris-SkeletonDisplayText__DisplayText {
+			width: 56px;
+			height: 28px;
+		}
+	}
+	&__bottom {
+		> .flex {
+			> .Polaris-SkeletonDisplayText__DisplayText {
+				&:first-child {
+					width: 120px;
+				}
+				&:last-child {
+					margin-left: 8px;
+					width: 20px;
+				}
+			}
+			+ .Polaris-SkeletonDisplayText__DisplayText {
+				width: 56px;
+			}
+		}
+		.Polaris-SkeletonDisplayText__DisplayText {
+			width: 120px;
+			height: 20px;
+		}
+	}
+}

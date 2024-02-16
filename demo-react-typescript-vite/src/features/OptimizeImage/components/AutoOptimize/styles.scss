@@ -1,0 +1,27 @@
+.require-upgrade {
+	.ModalBaseInfo {
+		&__title {
+			font-size: var(--p-font-size-7);
+			font-weight: var(--p-font-weight-regular);
+			color: var(--p-text);
+			strong {
+				font-weight: var(--p-font-weight-semibold);
+				color: var(--p-action-primary);
+			}
+		}
+	}
+}
+
+.Auto-optimize {
+	&__divider {
+		> hr {
+			width: 100%;
+		}
+	}
+
+	.Polaris-Box {
+		border-radius: var(--p-space-3);
+		border: 1px solid var(--border-shadow-divider, #e1e3e5);
+		box-shadow: none;
+	}
+}

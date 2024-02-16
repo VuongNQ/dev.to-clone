@@ -1,0 +1,20 @@
+.FrequentlyAskedQuestions {
+  border: 1px solid var(--border-shadow-divider, #E1E3E5);
+  border-radius: 12px;
+
+  &__title {
+    // font-size: var( --p-border-radius-5);
+    // font-weight: var(--p-font-weight-semibold);
+    border-bottom: 1px solid var(--border-shadow-divider, #E1E3E5);
+  }
+
+  &__icon {
+    border-radius: 12px;
+    background-color: var(--p-surface-highlight-subdued);
+  }
+
+  &__item-title {
+    font-size: var(--p-font-size-3);
+    font-weight: var(--p-font-weight-semibold);
+  }
+}

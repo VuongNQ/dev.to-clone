@@ -1,0 +1,28 @@
+.DetalFilesOptimized {
+  &__box {
+    min-width: 200px;
+    min-height: 128px;
+    //    top: 130%;
+    // right: 48px;
+    // border-radius: 4px;
+    // box-shadow: var(--p-shadow-popover);
+    // display: none;
+    white-space: break-spaces;
+    line-height: 20px;
+    // background: var( --p-surface);
+    // z-index: 100;
+    &.active {
+      display: block;
+    }
+  }
+
+  &__title {
+    min-width: 90px;
+  }
+
+  .Polaris-Popover__Content {
+    min-width: 220px;
+  }
+}
+
+

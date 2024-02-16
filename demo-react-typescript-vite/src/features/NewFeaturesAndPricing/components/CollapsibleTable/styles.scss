@@ -1,0 +1,15 @@
+.CollapsibleTable {
+  .Polaris-Icon {
+    height: 24px;
+    width: 24px;
+  }
+  
+  &__btn {
+    .Polaris-Icon {
+      height: 24px;
+      width: 24px;
+      max-width: none;
+      max-height: none;
+    }
+  }
+}

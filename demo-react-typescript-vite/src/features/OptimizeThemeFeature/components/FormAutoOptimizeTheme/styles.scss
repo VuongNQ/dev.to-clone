@@ -1,0 +1,28 @@
+.FormAutoOptimizeTheme {
+    // &__btn {
+    //   .Polaris-Button {
+    //     padding-left: 60px;
+    //   }
+    // }
+  
+    &__list-choice {
+      border-top: 1px solid #e1e3e5;
+      .Polaris-VerticalStack {
+        flex-direction: row;
+        gap: 5px 20px;
+        flex-wrap: wrap;
+      }
+      .Polaris-VerticalStack li {
+        width: calc(33.3% - 20px);
+      }
+    }
+  
+    @media screen and (max-width: 48rem) {
+      &__list-choice {
+        .Polaris-VerticalStack li {
+          width: calc(50% - 20px);
+        }
+      }
+    }
+  }
+  

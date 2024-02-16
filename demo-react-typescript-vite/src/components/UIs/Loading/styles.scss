@@ -1,0 +1,59 @@
+.LoadingContainer {
+    --p-swift-primary: #0A855C;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > .LoadingWrapper {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        margin-top: -40px;
+        div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            box-sizing: border-box;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            border-top-color: var(--p-swift-primary);
+            animation: spinnerOne 1.2s linear infinite;
+        }
+        div:nth-child(2) {
+            border: 10px solid transparent;
+            border-bottom-color: var(--p-swift-primary);
+            animation: spinnerTwo 1.2s linear infinite;
+        }
+    }
+
+    @keyframes spinnerOne {
+        0% {
+            transform: rotate(0deg);
+            border-width: 10px;
+        }
+        50% {
+            transform: rotate(180deg);
+            border-width: 1px;
+        }
+        100% {
+            transform: rotate(360deg);
+            border-width: 10px;
+        }
+    }
+
+    @keyframes spinnerTwo {
+        0% {
+            transform: rotate(0deg);
+            border-width: 1px;
+        }
+        50% {
+            transform: rotate(180deg);
+            border-width: 10px;
+        }
+        100% {
+            transform: rotate(360deg);
+            border-width: 1px;
+        }
+    }
+}

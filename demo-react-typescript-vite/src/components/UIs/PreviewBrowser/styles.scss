@@ -1,0 +1,33 @@
+@import "/node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.PreviewBrowser {
+  &__preview {
+    background-color: var(--p-surface-selected);
+  }
+
+  &__circle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    &--red {
+      background-color: #fa5252;
+    }
+    &--yellow {
+      background-color: #fae269;
+    }
+    &--green {
+      background-color: #61d45b;
+    }
+  }
+
+  &__form-preview {
+    background-color: var(--p-surface);
+    border-radius: 50px;
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__bar,&__bottom {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "/node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.CheckListProblemScanSEO {
+  &__top {
+    // background-color: #16162f;
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0.36) 0%, #fff 100%),
+    //   url("../../../../assets//images/basicSeo/bg-competitor.png"),
+    //   lightgray 50% / cover no-repeat;
+    background: url("../../../../assets//images/basicSeo/bg-competitor.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    // color: var(--p-text-on-primary);
+    // p,
+    // span {
+    //   font-weight: var(--p-font-weight-semibold);
+    // }
+    // .Polaris-Badge {
+    //   border-radius: 8px;
+    //   font-size: var(--p-font-size-200);
+    // }
+  }
+
+  &__img-compare {
+   max-width: 65px;
+  }
+
+  &__box-score {
+    max-width: 201px;
+    min-width: 200px;
+    border-radius: 12px;
+    border: 1px solid var(--surface-default, #fff);
+    background: linear-gradient(
+      227deg,
+      rgba(255, 255, 255, 0.52) 0%,
+      rgba(255, 255, 255, 0.46) 100%
+    );
+    backdrop-filter: blur(2px);
+
+    .Polaris-Badge {
+      span {
+        font-size: var(--p-font-size-300);
+        font-weight: var(--p-font-weight-semibold);
+      }
+    }
+  }
+  &__wp-score {
+    width: calc(45% - 10px);
+    img:last-child {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+  }
+
+  &__menu {
+    box-shadow: 0px -1px 0px 0px #e1e3e5 inset;
+  }
+
+  &__no-data {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__problem-store,
+  &__problem-competitor {
+    width: 50%;
+  }
+
+  &__problem-competitor {
+    background-color: var(--p-surface-subdued);
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__top,&__check-list {
+      flex-direction: column;
+    }
+    &__wp-score,
+    &__box-score,
+    &__problem-store,
+    &__problem-competitor {
+      width: 100%;
+    }
+    &__box-score{
+      max-width: none;
+    }
+    &__img-compare {
+      display: none;
+    }
+  }
+}

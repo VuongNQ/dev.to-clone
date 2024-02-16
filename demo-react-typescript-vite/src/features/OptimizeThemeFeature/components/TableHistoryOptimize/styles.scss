@@ -1,0 +1,18 @@
+@import "../../../../styles/static/mixin";
+
+.TableActionOptimize {
+  &__name-theme {
+    min-width: 200px;
+    white-space: initial;
+    @include dotText(1);
+  }
+
+  .Polaris-IndexTable__TableCell {
+    &:nth-child(n):not(:first-child) {
+      width: 17%;
+    }
+    &:first-child {
+      width: 400px;
+    }
+  }
+}

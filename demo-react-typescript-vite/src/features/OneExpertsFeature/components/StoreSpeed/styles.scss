@@ -1,0 +1,70 @@
+
+.StoreSpeedComponent {
+    .Polaris-LegacyCard {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    &__left {
+        flex: 1;
+    }
+
+    &__list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        // margin-top: 8px;
+    }
+
+    &__item {
+        list-style: none;
+    }
+    &__item-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 4px;
+    }
+    &__item-des {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--p-text-subdued);
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__business-day {
+        position: absolute;
+        content: '';
+        bottom: 13.5%;
+        left: 3%;
+        border-radius: 4px;
+        padding: 10px 30px;
+        background-color: var(--p-surface-selected);
+        box-shadow: 0px 26px 80px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        p {
+            color: #081362;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    
+
+    @media screen and (max-width: 48rem) {
+        .Polaris-LegacyCard {
+            flex-direction: column;
+        }
+        &__right {
+            display: none;
+        }
+    }
+
+}

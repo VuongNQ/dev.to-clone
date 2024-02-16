@@ -1,0 +1,28 @@
+$percent-size-desktop: 0.7;
+$percent-size-mobile: 0.5;
+
+
+$font-size-desktop-very_small: calc((14px * $percent-size-desktop) * 3/4);
+$font-size-desktop-small: calc((18px * $percent-size-desktop) * 3/4);
+$font-size-desktop-medium: calc((24px * $percent-size-desktop) * 3/4);
+$font-size-desktop-large: calc((36px * $percent-size-desktop) * 3/4);
+$font-size-desktop-very_large: calc((48px * $percent-size-desktop) * 3/4);
+
+$font-size-mobile-very_small: calc((10px * $percent-size-mobile) * 3/4);
+$font-size-mobile-small: calc((14px * $percent-size-mobile) * 3/4);
+$font-size-mobile-medium: calc((20px * $percent-size-mobile) * 3/4);
+$font-size-mobile-large: calc((32px * $percent-size-mobile) * 3/4);
+$font-size-mobile-very_large: calc((44px * $percent-size-mobile) * 3/4);
+
+
+$icon-desktop-very_small: calc((50px * $percent-size-desktop) * 3/4);
+$icon-desktop-small: calc((100px * $percent-size-desktop) * 3/4);
+$icon-desktop-medium: calc((200px * $percent-size-desktop) * 3/4);
+$icon-desktop-large: calc((250px * $percent-size-desktop) * 3/4);
+$icon-desktop-very_large: calc((300px * $percent-size-desktop) * 3/4);
+
+$icon-mobile-very_small: calc((20px * $percent-size-mobile) * 3/4);
+$icon-mobile-small: calc((50px * $percent-size-mobile) * 3/4);
+$icon-mobile-medium: calc((100px * $percent-size-mobile) * 3/4);
+$icon-mobile-large: calc((150px * $percent-size-mobile) * 3/4);
+$icon-mobile-very_large: calc((200px * $percent-size-mobile) * 3/4);

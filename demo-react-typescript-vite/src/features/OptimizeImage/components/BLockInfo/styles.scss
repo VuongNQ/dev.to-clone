@@ -1,0 +1,21 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+.Block-detail {
+    > .Polaris-HorizontalGrid > .Polaris-Box {
+        border-radius: var(--p-space-3);
+        border: 1px solid var(--border-shadow-divider, #e1e3e5);
+        box-shadow: none;
+        > div:first-child {
+            p {
+                margin-right: var(--p-space-1);
+            }
+        }
+    }
+
+    &_content > p {
+        @media #{$p-breakpoints-md-up} {
+            max-width: 75px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

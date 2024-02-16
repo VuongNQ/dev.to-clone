@@ -1,0 +1,28 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.SettingStoreProfileSnippetSEO {
+  &__body {
+    border-radius: 12px;
+    background: var(--surface-subdued, #fafbfb);
+  }
+
+  &__col-2 {
+    width: calc(50% - 10px);
+  }
+
+  &__logo-company {
+    img {
+      border-radius: 4px;
+    }
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    &__box {
+      flex-direction: column;
+    }
+
+    &__col-2 {
+      width: 100%;
+    }
+  }
+}

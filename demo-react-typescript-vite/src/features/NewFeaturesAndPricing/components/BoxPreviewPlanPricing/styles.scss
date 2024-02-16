@@ -1,0 +1,211 @@
+.BoxPreviewPlanPricing {
+  height: 100%;
+  .Polaris-Box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--p-shadow-xs); 
+    border-radius: var(--p-border-radius-3); 
+    // border: 1px solid var(--border-shadow-divider, #e1e3e5);
+  }
+
+  &__box-pricing {
+    // transition: height 0.5s ease-in-out;
+    max-height: 88px;
+    // border-bottom: 1px dashed #c9cccf;
+  }
+
+  // &__expert-care {
+  //   .Polaris-LegacyCard {
+  //     border: 1px solid var(--p-swift-primary);
+  //     background-color: var(--p-surface-success-subdued);
+  //   }
+  // }
+
+  &__highlight {
+    // color: var(--p-text-on-primary);
+    // .BoxPreviewPlanPricing__des {
+    //   color: var(--p-text-on-primary);
+    // }
+    // .BoxPreviewPlanPricing__pricing {
+    //   color: var(--p-swift-primary);
+    // }
+    // .BoxPreviewPlanPricing__method-pricing {
+    //   color: var(--p-text);
+    // }
+    // .BoxPreviewPlanPricing__title-review {
+    //   color: var(--p-text);
+    // }
+    // .BoxPreviewPlanPricing__discount {
+    //   // color: var(--p-text);
+    //   del {
+    //     color: var(--p-text);
+    //   }
+    // }
+    // .BoxPreviewPlanPricing__txt-plus {
+    //   color: var(--p-text-on-primary);
+    // }
+    // .BoxPreviewPlanPricing__header {
+    //   color: #e1e3e5;
+    // }
+    // .BoxPreviewPlanPricing__header {
+    //   .Polaris-Text--root {
+    //     color: var(--p-swift-primary);
+    //   }
+    // }
+
+    .Polaris-Box {
+      border: 1px solid var(--p-swift-primary);
+      background-color: var(--p-surface-success-subdued);
+    }
+  }
+
+  // &__experts {
+  //   .BoxPreviewPlanPricing__pricing {
+  //     color: #4183c8;
+  //   }
+
+  //   .BoxPreviewPlanPricing__num-pricing {
+  //     color: #4183c8;
+  //   }
+
+  //   // .Polaris-LegacyCard {
+  //   //   // background-color: var(--p-surface-selected);
+  //   //   // border: 1.5px solid #8db5de;
+  //   // }
+  // }
+
+  &__header {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__title-header {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    gap: 8px;
+  }
+  &__title {
+    position: relative;
+    font-weight: var(--p-font-weight-semibold);
+    font-size: var(--p-font-size-5);
+  }
+  &__title--expert-care {
+    color: var(--p-swift-primary);
+  }
+  // &__txt-plus {
+  //   font-weight: var(--p-font-weight-regular);
+  // }
+
+  &__des {
+    color: var(--p-text-subdued);
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  &__pricing {
+    font-size: var(--p-font-size-13);
+    font-weight: var(--p-font-weight-semibold);
+    span:first-child {
+      line-height: 44px;
+    }
+  }
+
+  &__discount {
+    font-size: var(--p-font-size-1);
+    color: var(--p-text-success);
+    margin-left: 4px;
+    font-weight: var(--p-font-weight-regular);
+    del {
+      color: var(--p-text-subdued);
+    }
+  }
+
+  &__method-pricing {
+    color: var(--p-text-subdued);
+  }
+  // &__banner {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 4px;
+  //   font-size: var(--p-font-size-1);
+  //   background-color: #e8e8ea;
+  //   padding: 0px 8px;
+  // }
+
+  &__wrapper-review {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title-review {
+    font-size: var(--p-font-size-1);
+    color: var(--p-text-highlight);
+    font-weight: 600;
+  }
+  &__list-review {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__item-review {
+    .Polaris-Icon{
+      margin: 0;
+    }
+    // display: flex;
+    // align-items: center;
+    // padding: 4px 0;
+    // font-size: var(--p-font-size-1);
+    // gap: 8px;
+    // box-shadow: inset 0px -1px 0px #e1e3e5;
+    // .Polaris-Icon {
+    //   margin: 0;
+    // }
+
+    // &:last-child {
+    //   box-shadow: none;
+    // }
+  }
+
+  &__footer {
+    // display: flex;
+    // align-items: stretch;
+    // flex-direction: column;
+    // gap: 8px;
+    // color: var(--p-text);
+    min-height: 112px;
+  }
+
+  &__txt-free {
+    font-size: var(--p-font-size-1);
+    color: var(--p-text-subdued);
+    margin-left: 4px;
+    font-weight: var(--p-font-weight-regular);
+  }
+
+  &__txt-plus {
+    position: absolute;
+    top: -4px;
+    right: -25px;
+    font-size: var(--p-font-size-1);
+    color: var(--p-swift-primary);
+    text-transform: capitalize;
+  }
+
+  &__badge {
+    content: "";
+    top: 0;
+    right: 0;
+    background-color: var(--p-border-highlight);
+    color: var(--p-text-on-interactive);
+    .Polaris-Icon {
+      svg {
+        path {
+          fill: var(--p-text-on-interactive);
+        }
+      }
+    }
+  }
+}

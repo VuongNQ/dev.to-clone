@@ -1,0 +1,16 @@
+include:
+  - project: 'gitlab-ci-templates/build-docker-images'
+    ref: master
+    file: '/general.yml'
+  - project: 'gitlab-ci-templates/build-docker-images'
+    ref: master
+    file: '/gitlab-ci-ecr.yml'
+  - project: 'gitlab-ci-templates/build-docker-images'
+    ref: master
+    file: '/scan-code.yaml'
+  - project: 'gitlab-ci-templates/build-docker-images'
+    ref: master
+    file: '/gitlab-ci-gitlab-registry.yml'
+  - project: 'gitlab-ci-templates/gitlab-ci-projects'
+    ref: master
+    file: '/swift/swift-fe-vite.yml'

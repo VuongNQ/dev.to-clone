@@ -1,0 +1,11 @@
+.SectionStepsConnectGA {
+  &__header {
+    border-bottom: 1px solid var(--border-shadow-divider, #e1e3e5);
+  }
+  &__video {
+    width: 80%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,50 @@
+.ModalBuyMore {
+	min-height: 150px;
+	// padding: var(--p-space-5);
+	> p {
+		margin-bottom: var(--p-space-5);
+	}
+	&__vertical {
+		.wrapper-vertical {
+			.block-detail {
+				position: relative;
+				border-radius: var(--p-space-3);
+				border: 1px solid var(--border-shadow-divider, #e1e3e5);
+				min-height: 72px;
+				&.selected  {
+					background: var(--surface-subdued, #fafbfb);
+				}
+				.highlight{
+					position: absolute;
+					top: 0;
+					right: 0;
+					padding: 2px var(--p-space-2);
+					border-radius: 0px 12px 0px 0px;
+					background: var(--border-highlight-default, #449DA7);
+					>span.Polaris-Icon
+					{
+						width: 16px;
+						height: 16px;
+						svg>path{
+							fill: #fff;
+						}
+					}
+					>span.Polaris-Text--root{
+						margin-left: var(--p-space-1);
+					}
+					+label>span.Polaris-Choice__Control{
+						margin-right: 0;
+					}
+				}
+				// &:hover,
+				// &.selected {
+				// 	cursor: pointer;
+				// 	border: 1px solid var(--p-swift-primary);
+				// 	/* shadow-hover */
+				// 	// box-shadow: 5px 5px 30px rgba(0, 18, 50, 0.15);
+				// 	// transform: scale(1, 1);
+				// }
+			}
+		}
+	}
+}

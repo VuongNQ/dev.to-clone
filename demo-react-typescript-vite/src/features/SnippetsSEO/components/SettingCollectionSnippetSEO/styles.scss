@@ -1,0 +1,9 @@
+@import "../../../../../node_modules/@shopify//polaris-tokens/dist/scss/media-queries.scss";
+
+.SettingCollectionSnippetSEO {
+  @media #{$p-breakpoints-md-down} {
+    &__box {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@include generate(ml, margin-left);
+@include generate(mt, margin-top);
+@include generate(mb, margin-bottom);
+@include generate(mr, margin-right);
+@include generate(mx, margin-left, margin-right);
+@include generate(my, margin-top, margin-bottom);
+@include generate(m, margin);
+@include generate(pl, padding-left);
+@include generate(pt, padding-top);
+@include generate(pb, padding-bottom);
+@include generate(pr, padding-right);
+@include generate(px, padding-left, padding-right);
+@include generate(py, padding-top, padding-bottom);
+@include generate(p, padding);
+@include generate(gap, gap);
+@include generate(border-r, border-radius);
+
+.cursor-pointer {
+	cursor: pointer;
+}
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline;
+}
+.inline-flex {
+	display: inline-flex;
+}
+.flex {
+	display: flex;
+}
+.grid {
+	display: grid;
+}
+.table {
+	display: table;
+}
+.hidden {
+	display: none;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+.flex-col {
+	flex-direction: column;
+}
+.flex-col-reverse {
+	flex-direction: column-reverse;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+.justify-end { 
+	justify-content: flex-end;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.justify-evenly {
+	justify-content: space-evenly;
+}
+.items-start {
+	align-items: flex-start;
+}
+.items-end {
+	align-items: flex-end;
+}
+.items-center {
+	align-items: center;
+}
+.items-baseline {
+	align-items: baseline;
+}
+.items-stretch {
+	align-items: stretch;
+}
+.flex-1-1 {
+	flex: 1 1 0%;
+}
+
+.flex-1 {
+	flex: 1;
+}
+.flex-auto {
+	flex: 1 1 auto;
+}
+.flex-initial {
+	flex: 0 1 auto;
+}
+.flex-none {
+	flex: none;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.position-a {
+	position: absolute;
+}
+.position-r {
+	position: relative;
+}
+
+.h-100 {
+	height: 100%;
+}
+.w-100 {
+	width: 100%;
+}
+.text-r {
+	text-align: right;
+}
+
+.over-hidden {
+	overflow: hidden;
+}
+
+
+.txt-one-line{
+	@include dotText(1)
+}
+.txt-two-line{
+	@include dotText(2)
+}
+
+.object-contain{
+	object-fit: contain;
+}
+.shadow-xs{
+	box-shadow: var(--p-shadow-xs);  
+}
+
+.txt-underline{
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+

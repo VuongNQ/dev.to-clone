@@ -1,0 +1,2061 @@
+{
+  "optimize_theme": {
+    "btn_view_store": "Ver Tienda",
+    "btn_preview": "Avance",
+    "btn_publish_now": "Publica ahora",
+    "btn_publish": "Publicar",
+    "btn_manage": "Gestionar temas Online Store",
+    "btn_retry": "Rever",
+    "btn_skip": "Saltar",
+    "btn_start": "Comenzar",
+    "btn_get_feature": "Obtener una característica",
+    "btn_lock": "Cerrar",
+    "txt_upgrade": "Exclusivo de planes premium o superiores",
+    "banner": {
+      "title": "¿Nuevo en el tema y la optimización de código?",
+      "des": "Desde la limpieza de archivos, minificación del código, hasta la optimización de la experiencia del usuario. Comencemos explorando las numerosas técnicas que cubrimos."
+    },
+    "banner_limit_theme": {
+      "title": "Límite de tema alcanzado, elimine un tema para continuar",
+      "des": "Has alcanzado el límite de tema de su plan Shopify, por lo que debe eliminar un tema antes de que Swift pueda duplicar y agregar uno nuevo."
+    },
+    "banner_change_theme": {
+      "title": "Tema en vivo diferente",
+      "des": "cambiaste el tema en vivo"
+    },
+    "banner_warning_police": {
+      "des": "Para minimizar los riesgos, duplicamos el tema de su Online Store durante la optimización, pero tenga en cuenta que el duplicado no recibirá actualizaciones automáticas de Shopify."
+    },
+    "banner_skip_trial": {
+      "des": "Hay algunas limitaciones porque su tienda todavía está en juicio. Para acceder y usar completamente todas las funciones, omita la prueba."
+    },
+    "list_task": {
+      "copy-theme": {
+        "title": "Copiar ...",
+        "des_proccess": "Por lo general, lleva 10-15 minutos."
+      },
+      "lazyload-images": {
+        "title": "Imágenes de Layyload",
+        "des": "Cargue solo las imágenes que son visibles para los usuarios en su primera visita. Las imágenes adicionales se cargan dinámicamente a medida que se desplazan hacia abajo.",
+        "des_proccess": "Por lo general, lleva 10-15 minutos."
+      },
+      "critical-css": {
+        "title": "Extraer CSS crítico",
+        "des": "Aislar y priorizar los estilos esenciales para hacer que el contenido superior se reduzca rápidamente para una mejor visualización de la página web.",
+        "des_proccess": "Por lo general, toma aproximadamente 1 minuto."
+      },
+      "optimize-css": {
+        "title": "Minificar archivos CSS",
+        "des": "Eliminar espaciado innecesario, sangría, nuevas líneas y comentarios. Haga que sea más fácil y rápido transmitir el código a través de Internet.",
+        "des_proccess": "Por lo general, lleva 10-15 minutos."
+      },
+      "optimize-html": {
+        "title": "Limpiar archivos HTML",
+        "des": "Elimine caracteres innecesarios, espacios y descansos de línea para hacer que las páginas sean más rápido, mejorando así la velocidad de carga sin afectar la funcionalidad.",
+        "des_proccess": "Por lo general, lleva 10-15 minutos."
+      },
+      "optimize-js": {
+        "title": "Minificar archivos JavaScript",
+        "des": "Acorta los nombres de variables y de funciones, reduciendo los datos transmitidos a través de la red. Habilite el navegador para analizar y ejecutar el código más rápidamente.",
+        "des_proccess": "Por lo general, lleva 10-15 minutos."
+      },
+      "preload-fonts": {
+        "title": "Fuentes web de precarga",
+        "des": "El navegador descargará archivos de fuentes antes, lo que dará como resultado una pantalla de texto más rápida y una velocidad de carga general mejorada.",
+        "des_proccess": "Por lo general, toma aproximadamente 1 minuto."
+      },
+      "optimize-html-plus": {
+        "title": "Optimizar archivos HTML",
+        "des": "Mejore el tiempo de respuesta utilizando archivos CSS y JavaScript externos, uso eficiente de recursos y etiquetas HTML apropiadas.",
+        "des_proccess": "Por lo general, toma aproximadamente 1 minuto.",
+        "explan_use": "Exclusivo de los planes Premium Plus facturados anualmente o más"
+      }
+    },
+    "publish_theme": {
+      "title": "Tu tema optimizado ahora está listo",
+      "des": "También puede obtener una vista previa y publicarla desde la lista de temas en su tienda en línea Shopify. Aparecerá como \"Optimized by Swift\" (por ejemplo, Optimized by Swift-Dawn).",
+      "tooltip": "Tómese un minuto para asegurarse de que todo funcione bien antes de publicar.",
+      "banner": {
+        "title": "Tema de publicación ...",
+        "des": "Por lo general, tarda 2-5 minutos en terminar."
+      },
+      "banner_success": {
+        "title": "Tema optimizado publicado",
+        "des": "Mejorar se ha publicado con éxito."
+      }
+    },
+    "modal_publish": {
+      "title_head": "¿Publicar un tema optimizado?",
+      "des": "Después de publicar, siempre puede restablecer el tema original dentro de la sección de su tienda en línea de Shopify."
+    },
+    "modal_delete_theme": {
+      "title_head": "Eliminar tema optimizado?",
+      "des": "Una vez eliminado, no puede deshacer esta acción. <break /> a partir de nuevo puede llevar algún tiempo."
+    },
+    "modal_publish_success": {
+      "title_head": "Tema publicado con éxito",
+      "des": "Su tema ha sido publicado y ahora está disponible para que otros lo usen.",
+      "btn": "Ver tienda en línea"
+    },
+    "notify": {
+      "title": "Progreso de optimización",
+      "title_copy": "Tema de duplicación",
+      "status": {
+        "0": "Éxito",
+        "1": "Fallido"
+      }
+    },
+    "table": {
+      "title": "Historia temática",
+      "header": {
+        "0": "Nombre del tema",
+        "1": "Última actualización",
+        "2": "Última publicidad",
+        "3": "Archivos optimizados"
+      },
+      "title_total_row": "{{number}} archivos"
+    },
+    "modal_bug_feature": {
+      "title_head": "Código en conflicto encontrado",
+      "des": "Su tema contiene un código menor en conflicto instalado por otra aplicación. Para resolver este problema con el soporte manual, contáctenos."
+    },
+    "auto_optimize": {
+      "validate": {
+        "0": "Mínimo 1 acción"
+      },
+      "title": "Optimización automática para el tema. El proceso comienza todos los martes a las 12:00 a.m. (UTC-5).",
+      "upgrade": "Disponible para Premium Plus y planes superiores."
+    },
+    "modal_upgrade": {
+      "title": "Acelera totalmente con más técnicas",
+      "des": "Desde la limpieza de archivos, minificación del código, hasta la optimización de la experiencia del usuario. Comencemos explorando las numerosas técnicas que cubrimos."
+    },
+    "modal_copy_failed": {
+      "title_header": "No se puede duplicar el tema",
+      "des": "No se puede copiar archivos: {{fileName}}.",
+      "des_server_trouble": "Lo sentimos, encontramos un problema del servidor mientras copiamos el tema. <br/> Vuelva a intentarlo en 5-10 minutos."
+    },
+    "modal_optimize_fail": {
+      "title_header": "No puede {{nameStep}}",
+      "des": "Hubo un problema inesperado al optimizar su tema. <br/> Para soporte rápido, contáctenos. Errores de archivo: {{fileName}}."
+    }
+  },
+  "monitor_404": {
+    "section_redirect_home": {
+      "title": "Redirigir a la página de inicio",
+      "des": "Cuando Shopify no puede encontrar una página para un enlace específico, mostrará la página 404 no encontrada de su tema. Encienda esta opción para redirigir al visitante a su página de inicio poco después de mostrar la página 404."
+    },
+    "section_send_email": {
+      "title": "Enviar correo electrónico de alerta cuando se detecte",
+      "des": "Cuando Swift registra un nuevo error 404, lo alertará por correo electrónico. Al rastrear activamente 404 errores, debe visitar la aplicación con frecuencia para crear redireccionamientos manuales hasta que se eliminen todos los 404."
+    },
+    "list_question": {
+      "0": {
+        "title": "¿Qué es un enlace roto?",
+        "des": "Tu tienda generará errores 404 cuando un visitante llegue a una página que falta, generalmente desde un antiguo vínculo de retroceso en un sitio web externo o una plataforma social. "
+      },
+      "1": {
+        "title": "¿Este código de instalación se instalará en mi tienda?",
+        "des": "Si bien esta herramienta agrega una línea adicional de javascript para registrar los errores 404, no agrega ningún código que afecte el rendimiento de su sitio. "
+      }
+    }
+  },
+  "feedback": {
+    "title": "Encuesta de características",
+    "des": "Comparta su voz, ayúdanos a comprender y priorizar las funciones que más desea."
+  },
+  "optimize_image": {
+    "title": "Imágenes",
+    "banner": {
+      "noti_out_remain": {
+        "title": "Optimización de imagen máxima",
+        "content": "Se alcanza el límite de optimización de imágenes. Para continuar, actualice su plan o aumente el límite."
+      },
+      "description": {
+        "title": "Explore Experts: solución personalizada para acelerar la velocidad de la tienda en días",
+        "content": "La optimización de imágenes puede mejorar su velocidad de carga general hasta en un 20%. Si desea una mejora integral en el rendimiento de su sitio web con menos tiempo y esfuerzo, consulte nuestro",
+        "link": "serviço de especialistas"
+      },
+      "free": {
+        "description": {
+          "title": "Optimizar con formato webp",
+          "content": "Reducir los tamaños de imagen hasta en un 70% sin\r\nafectando la calidad.",
+          "highlight_first": "26% más pequeño que las imágenes PNG",
+          "highlight_second": "25-34% más pequeño que las imágenes JPEG en un índice de calidad SSIM equivalente"
+        }
+      }
+    },
+    "block_detail": {
+      "un_optimized_title": "Imágenes no optimizadas",
+      "available_title": "Optimización de imágenes",
+      "total_title": "Imágenes totales"
+    },
+    "plan": {
+      "available_tooltip": "El número máximo de veces para optimizar las imágenes. El límite se restablece cada mes.",
+      "unlimited": "Ilimitado"
+    },
+    "auto_optimize": {
+      "content": "Optimización automática para imágenes recién cargadas. El proceso comienza semanalmente el lunes a las 12:00 a.m. (UTC-5).",
+      "warning": "Su tienda todavía está en juicio. Para acceder y usar completamente todas las funciones, omita la prueba.",
+      "warning_action": "Obtenga más optimizaciones de imágenes.",
+      "require_plan": "Disponible para premium plus o planes superiores.",
+      "modal_require_plan": "La característica requiere <bold> Premium Plus </bold> o <bold> Expert Care </bold> Paquete"
+    },
+    "status": {
+      "all": "Todo el estado",
+      "new_up_load": "Carga nueva",
+      "optimized": "optimizado",
+      "restored": "restaurado",
+      "optimizing": "Optimización",
+      "restoring": "restaurando",
+      "un_optimized": "No optimizado",
+      "failed": "No se pudo optimizar"
+    },
+    "filter": {
+      "all_time": "Todo el tiempo",
+      "all_date": "Todo el tiempo",
+      "seven_day": "Los últimos 7 días",
+      "thirty_day": "Últimos 30 días",
+      "ninety_day": "Últimos 90 días",
+      "one_year": "Últimos 12 meses",
+      "all_type": "Todas las páginas",
+      "product": "Producto",
+      "collection": "Recopilación",
+      "article": "Artículo",
+      "asset": "Activo",
+      "sync_tooltip": "Cargar imágenes de Shopify se limita a una vez al día.",
+      "sync_images_tooltip": "Los formatos de imagen compatibles son JPG, PNG y WebP. Cargar imágenes de Shopify se limita a una vez al día."
+    },
+    "button": {
+      "optimize_all": "Optimizar todo",
+      "re_sync_images": "Cargar imágenes"
+    },
+    "restore": {
+      "modal_title": "Restaurar imágenes originales?",
+      "modal_approve": "restaurar de todos modos",
+      "modal_content_top": "Esto puede llevar tiempo para optimizar nuevamente y ralentizar la velocidad de la página de su tienda.",
+      "modal_content_bottom": " "
+    },
+    "preview": {
+      "lable": {
+        "orgin": "Original - 300kb",
+        "compress15": "Alta calidad (100%) - 250kb (-15%)",
+        "compress50": "Buena calidad (80%) - 150 kb (-50%)",
+        "compress60": "Calidad moderada (60%) - 100kb (-60%)",
+        "choose_smallest": "Imagen más pequeña",
+        "choose_largest": "Imagen más grande",
+        "optimze_un_optimized": "Desoptimizar imagen",
+        "optimize_restored": "Imagen restaurada",
+        "optimize_all": "Todas las imágenes"
+      },
+      "number_optimize": "{{number}} imagen(es) seleccionada(s)",
+      "sub_title": "Seleccione la calidad de imagen deseada:",
+      "action_optimize": "Optimiza ahora",
+      "selected": "Seleccionado"
+    },
+    "buy_more": {
+      "content": "Escolha a quantidade de imagens que deseja comprar.",
+      "buy_now": "Comprar ahora",
+      "title": "Obtenha imagens mais otimizadas"
+    },
+    "list_image": {
+      "page": "Página",
+      "image": "Imagen",
+      "last_date": "Última actualización",
+      "status": "Estado",
+      "original_size": "Original",
+      "optimized_size": "Optimizado",
+      "pagination": "Página {{current}} de {{total}}",
+      "optimize": "Optimizar",
+      "restore": "Restaurar",
+      "images": "imágenes"
+    },
+    "toast": {
+      "optimize_success": "Imagem otimizada",
+      "restore_success": "Imagens restauradas",
+      "sync_images": "Imagens carregadas da Shopify"
+    },
+    "notification": {
+      "optimize": "Optimización ...",
+      "re_syncing": "Cargando imágenes más nuevas"
+    },
+    "modal_warning": {
+      "header": "Notificación",
+      "title": "Está a punto de exceder el límite de optimización",
+      "get_more": {
+        "title": "Obtenga más optimizaciones de imágenes.",
+        "content": "No se puede activar la optimización automática debido a los bajos usos disponibles. <break/> para continuar, obtenga más optimizaciones de imágenes."
+      },
+      "content_top": "Algunas imágenes no se pueden optimizar debido al límite de su plan actual.",
+      "content_bottom": "Para optimizar sin interrupción, actualice su plan o aumente el límite.",
+      "continue": "Continuar limitando"
+    },
+    "banner_warning_sync": {
+      "title": "Para asegurarse de tener la última versión de imágenes de Shopify, haga clic en el botón \"Cargar imágenes\"."
+    },
+    "banner_skip_trial": {
+      "title": "Para acceder rápidamente y usar completamente todas las funciones, puede omitir su prueba. Solo tenga en cuenta que no puede deshacer esta acción."
+    }
+  },
+  "CustomizeLoading_page": {
+    "common": {
+      "btns": {
+        "0": "Restablecer predeterminado",
+        "1": "Ahorrar"
+      },
+      "color": {
+        "lable": "color"
+      },
+      "size": {
+        "lable": "Tamaño",
+        "list_field": {
+          "0": "Muy pequeña",
+          "1": "Pequeña",
+          "2": "Medio",
+          "3": "Larga",
+          "4": "Muy grande"
+        }
+      }
+    },
+    "title": "  Personaliza tu propia pantalla de carga",
+    "des": " Crear pantalla de carga con su propio logotipo y animaciones llamativas",
+    "template_customizeLoading": {
+      "title": "Modelo",
+      "list_tabs": {
+        "0": "Icono",
+        "1": "Texto",
+        "2": "Bar",
+        "3": "Encimera",
+        "4": "Imagen de marca",
+        "5": "Carga de estilo"
+      },
+      "tabs_icon": {
+        "features": {
+          "0": {
+            "lable": "Tipo de icono"
+          }
+        }
+      },
+      "tabs_text": {
+        "features": {
+          "0": {
+            "lable": "Texto"
+          },
+          "1": {
+            "lable": "Fuente"
+          },
+          "2": {
+            "lable": "Peso de la fuente",
+            "list_field": {
+              "0": "regular",
+              "1": "Medio",
+              "2": "Negrita"
+            }
+          }
+        }
+      },
+      "tabs_bar": {
+        "features": {
+          "0": {
+            "lable": "Color de carga"
+          },
+          "1": {
+            "lable": "Color de barra"
+          },
+          "2": {
+            "lable": "Posición",
+            "list_field": {
+              "0": "Parte superior",
+              "1": "Medio",
+              "2": "Abajo"
+            }
+          },
+          "3": {
+            "lable": "Usar patrón de rayas"
+          },
+          "4": {
+            "lable": "Color rayado"
+          }
+        }
+      },
+      "tabs_customImage": {
+        "features": {
+          "0": {
+            "lable": "Elija imagen"
+          },
+          "1": {
+            "lable": "Animación",
+            "list_field": {
+              "0": "Ninguna",
+              "1": "Fundirse",
+              "2": "Desaparecer"
+            }
+          }
+        }
+      }
+    },
+    "background_customizeLoading": {
+      "title": "Fondo",
+      "features": {
+        "0": {
+          "lable": "Color sólido"
+        },
+        "1": {
+          "lable": "Fondo personalizado"
+        }
+      }
+    },
+    "display_customizeLoading": {
+      "title": "Monitora",
+      "features": {
+        "0": {
+          "lable": "Cuando mostrar",
+          "list_field": {
+            "0": "Primera visita",
+            "1": "Cada visita"
+          }
+        },
+        "1": {
+          "lable": "Página para mostrar",
+          "list_field": {
+            "0": "Cada página",
+            "1": "Página específica"
+          }
+        }
+      }
+    },
+    "loadingTime_customizeLoading": {
+      "title": "Tiempo de carga",
+      "features": {
+        "0": {
+          "lable": "Tiempo de retardo",
+          "des": "Cuánto tiempo tarda una pantalla de carga para cerrar"
+        },
+        "1": {
+          "lable": "Acción",
+          "list_field": {
+            "0": "Desaparecer",
+            "1": "Desaparecer a la izquierda",
+            "2": "Desvanecerse bien",
+            "3": "Disminuir el zoom"
+          }
+        },
+        "2": {
+          "lable": "Duración",
+          "des": "Cuánto tiempo tarda una pantalla de carga para completar"
+        }
+      }
+    },
+    "preview_customizeLoading": {
+      "title": "Manifestación"
+    },
+    "btn_active": "Activar la pantalla de carga",
+    "btn_de_active": "Desactivar la pantalla de carga"
+  },
+  "advanced_mode_page": {
+    "title": "Optimizador de velocidad",
+    "des": "Mejora la Velocidad de tu Tienda y aumenta la Conversión de Ventas",
+    "tabs": {
+      "0": "Refuerzo inteligente",
+      "1": "Optimizar imágenes",
+      "2": "Optimizar el tema",
+      "3": "Personalizar la carga",
+      "4": "Impulsando la historia"
+    }
+  },
+  "one_expert_page": {
+    "title": "OneExperts",
+    "des": "Mejora la Velocidad de tu Tienda y aumenta la Conversión de Ventas",
+    "common": {
+      "btn_hire": "Contratación de expertos",
+      "btn_Talk_to": "Habla con un Experto"
+    },
+    "banner_component": {
+      "title": "Maximice el rendimiento de su sitio web",
+      "des": "¿Sabes que: un retraso de 1 segundo en la respuesta de la página puede dar como resultado una reducción del 7% en las conversiones? Con nuestro servicio de velocidad, puede lograr su puntaje de velocidad deseado que contribuya a su SEO y al éxito del cliente.",
+      "SEOTitle": "Nuestro mensaje",
+      "SEODes": "Los mejores vendedores disfrutan y aman lo que hacen. Swift garantiza que los profesionales de marketing siempre tengan tiempo para la creatividad y los experimentos mientras nos ocupamos de los datos. Swift es el único software que permite a los profesionales de marketing construir, administrar y medir campañas en todos los canales para mejorar su visibilidad en línea. Swift es su miembro del equipo digital: su compañero de análisis, su mentor, su red de seguridad y una brújula a los nuevos mercados"
+    },
+    "proven_component": {
+      "text_img": "Días hábiles",
+      "text_positive": "Reseñas positivas",
+      "text_worldwide": "Comerciantes mundiales",
+      "text_years": "Años de experiencia",
+      "topic": "¿QUÉ ES UNO EXPERTOS?",
+      "title": "Un servicio de aceleración probado",
+      "des": "FireGroup es una compañía conocida que también posee <a target='_blank' href='https://apps.shopify.com/ali-reviews'>Ali Reviews</a> y <a target='_blank' href='https://apps.shopify.com/transcy-multiple-languages'>Transcy</a>. Nuestro objetivo es ayudar a las empresas en línea a establecer una base sólida para el éxito",
+      "des_achieve1": "Confianza por más de 1,000,000 de comerciantes mundiales",
+      "des_achieve2": "Tiene 7 años de experiencia en desarrollo de aplicaciones de Shopify",
+      "des_achieve3": "Con más de 14,000 reseñas en Shopify Apps Store"
+    },
+    "experience_component": {
+      "text_positive": "Revisiones positivas",
+      "text_worldwide": "Comerciantes mundiales",
+      "text_years": "Años de experiencia",
+      "topic": "¿POR QUÉ ELEGIRNOS?",
+      "title": "Valoramos su experiencia",
+      "des": "Respetamos su tiempo y trabajo.Por lo tanto, tenemos compromisos serios con cambios significativos en su sitio.",
+      "reliable_title": "DE CONFIANZA",
+      "reliable_sub_title1": "Aumento de la velocidad",
+      "reliable_des1": "Su tienda está garantizada para mejorar la velocidad.Si no, recuperará el 100% de su dinero.",
+      "reliable_sub_title2": "Sin códigos de trucos",
+      "reliable_des2": "No se requiere conocimiento de codificación ni ningún código de trucos.Disfruta tu actuación más rápida.",
+      "quality_title": "CALIDAD",
+      "quality_sub_title1": "Buen precio",
+      "quality_des1": "Servicio de paquete todo en uno a un precio razonable.Hecho dentro de 3-7 días hábiles.",
+      "quality_sub_title2": "Informes detallados",
+      "quality_des2": "Informes de velocidad de auditoría para resultados de optimización.No hay interrupción de venta en todo el proceso.",
+      "helpful_title": "ÚTIL",
+      "helpful_sub_title1": "Soporte de vida de clase mundial",
+      "helpful_des1": "Expertos fáciles de contactar en cualquier momento que desee sin limitación.",
+      "helpful_sub_title2": "Velocidad regularmente del chequeo",
+      "helpful_des2": "Realice un seguimiento de la velocidad de su sitio y notifíquele si comienza a disminuir la velocidad."
+    },
+    "store_speed_component": {
+      "topic": "¿QUÉ HACEMOS?",
+      "title": "Rápidamente optimizamos la velocidad de su tienda",
+      "des": "Ve con expertos. Puedes concentrarte en ganar dinero",
+      "feat_title1": "Optimización de imágenes y videos",
+      "feat_des1": "Reduzca el tiempo de retraso al servir imágenes receptivas y la carga de imágenes o videos 'perezoso' solo cuando sea necesario",
+      "feat_title2": "Optimización de aplicaciones de terceros",
+      "feat_des2": "Reduzca el script Java de las aplicaciones de terceros sin causar ninguna interrupción",
+      "feat_title3": "Código del tema de limpieza",
+      "feat_des3": "Eliminar el código sobrante de aplicaciones desinstaladas que está ralentizando la velocidad del tema",
+      "feat_title4": "Recursos críticos precipitados",
+      "feat_des4": "Según Google Analytics, asigne un nivel de prioridad y dígale al navegador que precarga el contenido"
+    },
+    "perfomance_component": {
+      "title": "Solo <span>$150</span>, maximice el rendimiento de su sitio web con <span>OneExperts</span>"
+    },
+    "customer_say_component": {
+      "title": "¿QUÉ DICEN NUESTROS CLIENTES?",
+      "review_title1": "Algotsson",
+      "review_sub_title1": "Fundador A Tops Gadgets",
+      "review_des1": "laAplicaciónLiteralmenteGuardóMiTiendaAntesDeUsarLosExpertosEnFireApps,Tenía25EnPuntajeEnLaVelocidadDelSitioDeGoogleY40EnLaComputadoraDespuésDePagar,LoQueEraMuyBarato,Obtuve96EnLaComputadoraY78EnElMóvilPierdesAlrededorDe65%DeSusClientesSiTieneUnaPuntuaciónSimilarALoQueTeníaGracias ",
+      "review_title2": "Ericboyd",
+      "review_sub_title2": "directorDeLlegarAQuiet ",
+      "review_des2": "No puedo expresar con palabras lo increíble que fue esta aplicación y por $ 150 adicionales limpiaron el código y nos obtuvieron de un puntaje de Google Lighthouse de 35 a 95. Hemos pasado un año tratando de lograr esto y lo hicieron en 2días. Tienen mis más altas recomendaciones ",
+      "review_title3": "emmy",
+      "review_sub_title3": "Fundador en Emmy Jane Boutique",
+      "review_des3": "Aplicación absolutamente brillante y el soporte no podría ser más útil. He utilizado el servicio de expertos de FireApps para aumentar la velocidad de mi tienda. El precio fue muy razonable y los resultados son excelentes. La velocidad móvil de mi tienda ha aumentado en alrededor de 30 puntos.Feliz. No puedo recomendar lo suficiente "
+    },
+    "questions_component": {
+      "topic": "PREGUNTAS FRECUENTES",
+      "title": "¿Tienes una pregunta? Obtén ayuda en cualquier momento, 24/7",
+      "des": "Hemos probado en miles de tiendas para descubrir qué funciona mejor.",
+      "list_question": {
+        "0": {
+          "title": "¿Necesito proporcionar permiso de la tienda para que comience el proceso?",
+          "des": "Sí, necesitamos permisos de aplicaciones, temas, productos e informes para evaluar y optimizar la velocidad de su tienda. "
+        },
+        "1": {
+          "title": "¿Qué puedo esperar del servicio de OneExperts?",
+          "des": "Una puntuación de velocidad móvil más alta en Google PageSpeed ​​Insights Senior Developers con 5 años de experiencia en el mercado de Shopify se encargará de la velocidad de su sitio web. <br/>- Carga perezosa de imágenes y videos. <br/>- Renderizar imágenes en un tamaño adecuado <br/>- Minimizar código JS/CSS <br/>- Implementar tácticas de precarga<br/>- Optimizar código CSS y Liquid<br/>- Análisis de aplicaciones <br/>Revisaremos mensualmente su rendimiento de velocidad después de la optimización y nuestro Especialista de atención al cliente lo consultará de forma gratuita."
+        },
+        "2": {
+          "title": "¿Afectará la optimización al diseño de mi tienda?",
+          "des": "No, nuestro proceso de optimización solo aumentará la velocidad de su tienda y no afectará nada más (diseño, componentes, características...). "
+        },
+        "3": {
+          "title": "¿Qué pasa si noto que no hay mejoría después de la optimización?",
+          "des": "Como garantizamos obtener resultados positivos, proporcionaremos un reembolso completo si el sitio no está optimizado en absoluto. "
+        },
+        "4": {
+          "title": "¿Puedo hacer cambios en el sitio mientras su equipo está trabajando en él?",
+          "des": "Recomendamos encarecidamente tener solo 1 persona trabajando en el sitio a la vez. "
+        },
+        "5": {
+          "title": "¿Los cambios que realiza están preparados para el futuro?",
+          "des": "Hacemos todo lo posible para prepararlo para el futuro tanto como sea posible editando el código del tema Liquid y usando JavaScript en cualquier lugar cuando corresponda. <br/>- Cambia la plantilla/estructura de tu tema <br/>- Cambiar el diseño de su sitio web (fuente, imágenes, videos, contenidos, etc.) <br/>- Añade más productos a tu tienda <br/> - Agregar más aplicaciones de terceros <br/>- Eliminar nuestro código de optimización sin nuestro aviso <br/> En ese caso, podemos hacer un análisis técnico gratuito para usted y, si es necesario, deberá abrir una nueva solicitud para que optimicemos su tienda nuevamente."
+        }
+      }
+    },
+    "ticket_Management": {
+      "list_status": {
+        "0": {
+          "title": "Solicitud recibida",
+          "des": "Nuestro equipo se comunicará con usted pronto para solicitar acceso a su tienda."
+        },
+        "1": {
+          "title": "En progreso",
+          "des": "Optimización de su tienda. Mientras espera, puede consultar el archivo de auditoría de velocidad. Tenga en cuenta también que no se debe realizar ninguna actualización durante este tiempo."
+        },
+        "2": {
+          "title": "Optimizada",
+          "des": "Optimizado con éxito.Verifique el archivo del informe para ver el resultado de la optimización y contáctenos que necesita soporte."
+        },
+        "3": {
+          "title": "Cerrada",
+          "des": "El boleto se cerrará automáticamente dentro de los 7 días."
+        }
+      },
+      "header_table": {
+        "0": "Identificación de entradas",
+        "1": "Fecha de creacion",
+        "2": "Agente",
+        "3": "Estado",
+        "4": "#Boleto",
+        "5": "Total",
+        "6": "Última actualización",
+        "7": "Reporte"
+      },
+      "no_ticket": "No se ha encontrado ningún billete",
+      "btn_upgrade": "Actualizar los expertos de los expertos ahora"
+    },
+    "checkup_expert_care": {
+      "status": {
+        "awaiting": "En espera",
+        "monitoring": "Supervisión",
+        "delivered": "Entregado",
+        "cancel": "Cancelar"
+      },
+      "table_header": {
+        "0": "Comprueba la actualización",
+        "1": "Agente",
+        "2": "Estado",
+        "3": "Informe"
+      }
+    },
+    "tabs": {
+      "0": "Servicios",
+      "1": "Expertos de SEO",
+      "2": "Mi billete",
+      "3": "Cuidado de expertos"
+    },
+    "modal_title_header": "Solicitud recibida",
+    "modal_title": "¡Excelente!",
+    "modal_des": "Gracias por su compra <br/> Nuestros expertos se comunicarán con usted dentro de las 24 horas.",
+    "seo_experts": {
+      "optimization_flow": {
+        "heading": " Flujo de optimización de SEO",
+        "subHeading": "Servicio de paquete todo en uno a un precio razonable. Hecho dentro de 3-7 días hábiles.",
+        "subStep1": "Verifique el puntaje de SEO",
+        "subStep2": "Obtener acceso y activar",
+        "subStep3": "Disfruta el problema de la solución"
+      },
+      "hire_expert": {
+        "heading": "Optimizar el SEO",
+        "subHeading": "Obtenga expertos para verificar los errores y arreglarlos rápidamente para usted"
+      },
+      "support_team": {
+        "heading": "Equipo de apoyo",
+        "subHeading": "Aunque hemos crecido de una pequeña startup a una gran empresa internacional, seguimos completamente comprometidos con los valores fundamentales que nos llevaron a donde estamos ahora: adaptarse al cambio versus seguir un plan estricto y colocar a las personas sobre los procesos. En Swift, adoptamos un enfoque ágil donde aporta el mayor valor"
+      }
+    }
+  },
+  "boost_history": {
+    "text_no_data": "Sin datos",
+    "badge": {
+      "success": "Éxito",
+      "fail": "Fallar"
+    },
+    "status_action": {
+      "manual_booster": "Manual",
+      "auto_booster": "Auto"
+    },
+    "table_headings": {
+      "0": "Tiempo de impulso",
+      "1": "Tipo",
+      "2": "Estado"
+    }
+  },
+  "smart_booster_page": {
+    "title": "Smart Booster",
+    "txt_upgrade": "Disponible para planes premium y superiores.",
+    "btn_connect": "Conecte Google Analytics",
+    "btn_connect_ga": "Conectar",
+    "btn_dissconnect": "Desconectar",
+    "box_video": {
+      "title": "Ver video de demostración",
+      "des": "Cargue su tienda más rápido para aumentar la experiencia del cliente."
+    },
+    "banner_connected": {
+      "title": "Perfil de Google Analytics conectado",
+      "des": "Última actualización: 19 de enero de 2022"
+    },
+    "popover_error": {
+      "des": "Copie la ID de error y envíe a nuestro equipo de atención al cliente para obtener ayuda.Lamentamos cualquier inconveniente."
+    },
+    "popover_error_store_dev": {
+      "title": "error",
+      "des": "No podrá usar Smart Booster con una tienda de desarrollo.Póngase en contacto con nuestro equipo de atención al cliente para obtener más información.",
+      "btn": "Póngase en contacto con atención al cliente"
+    },
+    "popover_no_account": {
+      "title": "Notificación",
+      "des": "No se encontró perfil de Google Analytics para esta cuenta de Google",
+      "btn": "Seleccione otra cuenta"
+    },
+    "popover_dont_permission": {
+      "title": "Notificación",
+      "des": "Su cuenta de Google no tiene permiso completo para este perfil de Google Analytics",
+      "btn": "Seleccione otra cuenta"
+    },
+    "popover_confirm_disconnect": {
+      "title": "¿Desconectar el perfil de Google Analytics?",
+      "des": "No podrá usar la precarga inteligente una vez que el perfil de Google Analytics esté desconectado.",
+      "btn": "Desconectar"
+    },
+    "modal_choose_profile": {
+      "title": "Conectar perfil de Google Analytics",
+      "btn_sync": "Sincronizar datos",
+      "header_link": "Seleccione el perfil de Google Analytics para",
+      "message_error": "El perfil seleccionado no coincide con tu tienda. ",
+      "link_use_another": "Usar otra cuenta"
+    },
+    "modal_notification": {
+      "title_header": "Notificación",
+      "des": "La conexión a Google Analytics llevará algún tiempo, dé un paseo y vuelva a verle.",
+      "btn": "Entiendo"
+    },
+    "banner": {
+      "des": "Predecir la página siguiente del cliente y descargar su contenido por adelantado.",
+      "title": "Carregamento de velocidade X3 com Google Analytics 4"
+    },
+    "section_step": {
+      "title": "¿Cómo conectar Google Analytics?"
+    },
+    "section_disconnect_google": {
+      "title": "cuenta Google"
+    },
+    "section_connect_ga": {
+      "title": "Conecte una propiedad de Google Analytics",
+      "des": "Usted ({{email}}) no tiene acceso a una propiedad de Google Analytics 4. Para comenzar, cree una nueva propiedad GA4.",
+      "sub_des": "Conecte una propiedad existente o cree una nueva propiedad para compartir sus datos de Shopify con Google Analytics. Con Google Analytics, podrá rastrear el rendimiento de su tienda en línea.",
+      "title_connect_success": "Su propiedad de Google Analytics",
+      "txt_not_found_properties": "No se encontraron propiedades",
+      "btn_create_property": "Crear una nueva propiedad",
+      "banner_success": {
+        "title": "Has configurado con éxito Google Analytics 4",
+        "des": "Ahora puede obtener información sobre el rendimiento de su tienda en línea con Google Analytics"
+      }
+    },
+    "table_over_view": {
+      "title": "Descripción general",
+      "heading": {
+        "0": "Página",
+        "1": "Puntos de vista",
+        "2": "Usuarios",
+        "3": "Vistas por usuario",
+        "4": "Recuento de eventos",
+        "5": "Conversiones"
+      },
+      "txt_avg": "AVG 0%",
+      "txt_total": "100% del total"
+    },
+    "modal_waring_connect_google": {
+      "title_header": "Conecte su cuenta de Google",
+      "des": "Debe conectar su cuenta de Google antes de continuar con la configuración más avanzada."
+    },
+    "section_report_chart": {
+      "btn_user_total": "Usuario",
+      "btn_new_user": "Nuevo Usuario"
+    },
+    "section_report_country": {
+      "txt_country": "País",
+      "txt_users": "Usuarios"
+    },
+    "txt_last_time": "Último {{day}} días"
+  },
+  "country": {
+    "english": "English",
+    "spanish": "Spanish",
+    "france": "French",
+    "german": "German",
+    "japanese": "Japanese",
+    "portuguese": "Portuguese"
+  },
+  "common": {
+    "btn_hire": "Contratar expertos",
+    "btn_learn": "Aprende más",
+    "btn_cancel": "Cancelar",
+    "btn_upgrade": "Actualizar ahora",
+    "btn_downgrade": "Degradar",
+    "btn_delete": "Borrar",
+    "btn_got_it": "Entendido",
+    "btn_keep_premium": "Mantener el plan Premium",
+    "btn_skip": "Saltar prueba",
+    "btn_skip_now": "Omitir el juicio ahora",
+    "btn_configure": "Configurar",
+    "btn_save": "Ahorrar",
+    "btn_discard": "Desechar",
+    "btn_uninstall": "Aplicación Desactivar",
+    "btn_re_install": "Reinstalar",
+    "btn_save_changes": "Guardar cambios",
+    "txt_show_more": "Mostrar más",
+    "txt_show_less": "Muestra menos",
+    "btn_ok": "DE ACUERDO",
+    "btn_change_theme": "Cambiar de tema",
+    "btn_contact_team": "Póngase en contacto con el equipo de soporte",
+    "btn_retry": "Rever",
+    "btn_contact": "Contactar con soporte",
+    "btn_reset_default": "Restablecen a los predeterminados",
+    "btn_disconnect": "Desconectar",
+    "btn_my_ticket": "Mi billete",
+    "btn_try_again": "Inténtalo de nuevo",
+    "btn_generate_link": "Generar enlace",
+    "btn_contact_customer_support": "Contactar con soporte",
+    "txt_copy": "Copiar",
+    "txt_copied": "copiado",
+    "txt_error_id": "ID de error:",
+    "btn_try_premium_plan": "Prueba el plan premium",
+    "btn_get_more": "Obtener más",
+    "menu": {
+      "one_experts": "OneXperts",
+      "advanced_mode": "Optimizador de velocidad",
+      "boost_seo": "SEO",
+      "pricing": "Fijación",
+      "usage": "Uso",
+      "setting": "Ajustes",
+      "recommend_app": "Integración"
+    },
+    "btn_view": "Vista",
+    "txt_last_update": "Última actualización: {{number}}",
+    "page_not_found": {
+      "heading": "No hay página en esta dirección",
+      "description": "Verifique la URL y vuelva a intentarlo, o use la barra de búsqueda para encontrar lo que necesita."
+    },
+    "btn_more_feature": "Más característica",
+    "btn_turn_on": "Encender",
+    "btn_turn_off": "Apagar",
+    "txt_turn_on": "En",
+    "txt_turn_off": "Apagado",
+    "btn_get_free_trial": "Conseguir prueba gratuita",
+    "btn_upgrade_simple": "Mejora",
+    "btn_check_out": "Verificar",
+    "btn_upgrade_plan": "Plan de actualización",
+    "btn_get_trial": "Obtener {{numberDay}}-prueba de día",
+    "btn_get_upgrade": "Obtener {{planName}} Plan",
+    "btn_continue": "Continuar",
+    "txt_page_table": "Página {{current_page}} de {{last_page}}",
+    "btn_accept": "Aceptar",
+    "txt_last_scan": "Último escaneo {{score_number}}",
+    "btn_active": "Activar",
+    "btn_de_active": "Desactivar",
+    "txt_upgrade_PRL_EC": "Disponible para Premium Plus y planes superiores.",
+    "txt_upgrade_PR_PRL_EC": "Disponible para planes premium y superiores.",
+    "title_extension_app": "Encender la aplicación Swift incrustada",
+    "des_extension_app": "Para permitir la pantalla de carga rápida y las funciones en su tienda, debe encenderlos a través de la aplicación de Shopify.",
+    "btn_fix_with_experts": "Arreglar con expertos",
+    "btn_re_scan": "Volver a escanear"
+  },
+  "modal": {
+    "hire_experts": {
+      "title_speed": "OneExperts",
+      "title_seo": "Optimizar el SEO",
+      "des_speed": "Optimizamos rápidamente la velocidad de su tienda",
+      "des_seo": "Optimizamos rápidamente la velocidad de su tienda",
+      "sub_des": "USD/boleto",
+      "text_all_services": "Todos los servicios:",
+      "form_charge": {
+        "form_ticket": {
+          "title": "Número de entradas"
+        },
+        "form_tip": {
+          "title": "Propina o tarifa adicional",
+          "tooltip": "La entrega rápida puede incluir un \"cargo por servicio\" obligatorio y una \"propina\" opcional.<br/> Verifique el cargo por servicio existente y considere una propina por un buen servicio.<br/> Póngase en contacto con el soporte para obtener ayuda."
+        },
+        "form_bill": {
+          "txt_tip": "Recargo",
+          "txt_total": "Total"
+        }
+      },
+      "services": {
+        "0": "Optimización de imágenes",
+        "1": "Optimización JS y CSS",
+        "2": "Imágenes de carga perezosa y videos",
+        "3": "Código de limpieza del tema",
+        "4": "Recursos críticos precipitados",
+        "5": "Auditoría de velocidad"
+      },
+      "policies": {
+        "0": "Acepto proporcionar acceso a OneExperts a mi tienda, tema y producto.",
+        "1": "He leído y aceptado <a href='https://support.fireapps.io/en/article/terms-of-service-1yvcj8h/?bust=1650967073648' target='_blank'>Términos de servicio</a> y <a href='https://support.fireapps.io/en/article/privacy-policy-5e0qee/' target='_blank'>Política de privacidad.</a>"
+      },
+      "error_required": "¡Ingrese personajes numéricos!",
+      "error_integer": "¡Ingrese el número entero!",
+      "error_min_ticket": "El número mínimo de boletos permitidos es 1",
+      "error_max_total_shopify": "El monto total máximo permitido es de $ 10,000 por Shopify",
+      "error_min_extra_price": "El número más bajo es 0"
+    },
+    "pricing": {
+      "check_plan": {
+        "title_head": "Consultar plano",
+        "title": "estas usando {{planName}} plan",
+        "des": "Vuelva a cargar la página para obtener actualizaciones."
+      },
+      "skip_trial": {
+        "title_head": "¿Skip {{planName}} prueba?",
+        "des": "Para acceder rápidamente y usar completamente todas las funciones, puede omitir su prueba. Solo tenga en cuenta que no puede deshacer esta acción."
+      },
+      "skip_trial_optimize_theme": {
+        "title_head": "¿Skip {{planName}} prueba?",
+        "des": "Para acceder rápidamente y usar completamente todas las funciones, puede omitir su prueba. Solo tenga en cuenta que no puede deshacer esta acción."
+      }
+    },
+    "setting": {
+      "uninstall": {
+        "title_header": "Notificación",
+        "title": "Desactivar Swift?",
+        "des": "Lamentamos la asistencia limitada que podemos ofrecer en este momento."
+      }
+    },
+    "sitemap": {
+      "disconnect": {
+        "title_header": "¿Desconectar la conexión de Google?",
+        "des": "Si se desconecta, se eliminará la integración con Google Search Console para su mapa del sitio y puede llevar algún tiempo volver a empezar."
+      },
+      "step_error": {
+        "title_header": "{{step}} Error"
+      },
+      "task_add_site_error": {
+        "title_header": "No se puede agregar el sitio web a Google"
+      },
+      "task_verify_site_error": {
+        "title_header": "No se puede verificar el sitio web con Google"
+      },
+      "task_submit_sitemap_error": {
+        "title_header_try": "Intente enviar de nuevo o póngase en contacto con nosotros",
+        "title_header_cant": "No se puede enviar el mapa del sitio a Google"
+      },
+      "dissconnect_error": {
+        "title_header": ""
+      }
+    },
+    "boostSEO": {
+      "confirm_redirect": {
+        "title_header": "¡Tiene cambios sin guardar!",
+        "des": "Si abandona esta página ahora, se perderán los cambios no guardados.<br/>Guarde su trabajo antes de salir de esta página.",
+        "title_secondary_action": "Permanecer",
+        "title_primary_action": "Dejar página"
+      }
+    },
+    "buy_more": {
+      "token": {
+        "days_use": "Días para usar"
+      },
+      "best_price": "Más popular"
+    },
+    "optimize_image": {
+      "title_upgrade_plan": "Plan de actualización",
+      "title_get_more_image_advice": "Obtenga más optimizaciones de imágenes",
+      "content_get_more_image_advice": "No se puede activar la optimización automática debido a los bajos usos disponibles. <break /> para continuar, obtenga más optimizaciones de imágenes."
+    }
+  },
+  "message_error_input": {
+    "input_number": {
+      "0": "¡Ingrese caracteres numéricos!",
+      "1": "¡Ingrese el número entero!",
+      "2": "El número mínimo de entradas permitidas es {{minNumber}}",
+      "3": "el numero mas grande es {{maxNumber}}",
+      "4": "La cantidad total máxima permitida es ${{max_picing}} por Shopify",
+      "5": "El número más bajo es {{minNumber}}"
+    },
+    "upload_file": {
+      "title": "Este archivo no se pudo agregar:",
+      "message": {
+        "0": "Cargar archivos que terminan en .jpg, .gif, .png o .webp.",
+        "1": "Tamaño máximo del archivo de carga: 5MB"
+      }
+    }
+  },
+  "uninstall_page": {
+    "title": "Me alegra verte de vuelta",
+    "des": "Nuestros expertos están actualizando activamente nuevas funciones todos los días. <br/> Tal vez los extrañaste.",
+    "btn": "Republicar"
+  },
+  "home": {
+    "breadcrumb": "Panel",
+    "title": "Lograr el rendimiento superior de SEO más fácilmente",
+    "subtitle": "Herramientas para mejorar el contenido de SEO de su tienda, aumentar la visibilidad del motor de búsqueda y mejorar la clasificación.",
+    "seo_basic": {
+      "alt_image_title": "Textos alternativos de imagen\r",
+      "alt_image_description": "Agregue el texto alternativo (o la etiqueta alt) a sus imágenes de forma manual o automáticamente.",
+      "meta_tag_title": "Metaetics\r",
+      "meta_tag_description": "Agregue el título, la meta descripción y las palabras clave meta a sus páginas.",
+      "product_audit_title": "Auditoría de productos",
+      "product_audit_description": "Analice las páginas de productos individuales con chatgpt.",
+      "sitemap_title": "Mapa del sitio",
+      "sitemap_description": "Haga que sea más fácil acceder y rastrear contenido indexando la estructura del sitio."
+    },
+    "score_warning": "Tu puntaje de SEO es bajo. Vamos a mejorar y aumentar su visibilidad en línea.",
+    "banner": {
+      "title": "SEO ayuda a mejorar la clasificación de Page",
+      "description": "Swift ofrece una amplia gama de soluciones que cubren varios aspectos, diseñados para mejorar significativamente su puntaje de SEO.",
+      "first": {
+        "title": "Las páginas se cargan más rápido",
+        "description": "Sus páginas se clasifican más alto y brindan una mejor experiencia para los clientes."
+      },
+      "second": {
+        "title": "SEO fácil de usar",
+        "description": "Encontrar una página o contenido relevante se vuelve más fácil, lo que aumenta las posibilidades de compra."
+      },
+      "third": {
+        "title": "Servicio de expertos",
+        "description": "Ayude a identificar los problemas centrales de las páginas para una optimización rápida y eficiente."
+      },
+      "upgrade": {
+        "title": "Obtenga una prueba gratuita de Premium Plus Today",
+        "improve_first": "La velocidad de la página aumenta hasta un 50%",
+        "improve_second": "Agregue rápidamente el texto alternativo básico y las metaetiquetas a granel",
+        "improve_third": "Optimizar productos con chatgpt",
+        "btn": "Obtenga una prueba gratuita de 3 días"
+      }
+    },
+    "feature": {
+      "optimize_image": {
+        "title": "Optimizar imágenes",
+        "content": "Haga que las imágenes sean más pequeñas por hasta un 70% sin afectar la calidad."
+      },
+      "optimize_theme": {
+        "title": "Optimizar el tema",
+        "content": "Limpie el código, minifique CSS, HTML, archivos JS y más."
+      },
+      "basic_seo": {
+        "title": "SEO básico",
+        "content": "Textos alternativos, metaetiquetas, escaneo de la competencia, auditoría de productos."
+      },
+      "advanced_seo": {
+        "title": "SEO avanzado",
+        "content": "Optimización de expertos, mapa del sitio, enlaces rotos, redireccionamientos, fragmentos"
+      },
+      "audit_product": {
+        "title": "Auditoría de productos",
+        "content": "Analice y optimice las páginas de productos individuales con ChatGPT."
+      },
+      "ga": {
+        "title": "Google Analytic 4",
+        "content": "Acelere los tiempos de carga precargando el contenido de la página utilizando GA4."
+      },
+      "custom_loading": {
+        "title": "Cargando pantalla",
+        "content": "Personalice la pantalla de carga para mejorar la velocidad percibida de los clientes."
+      },
+      "scan_competitor": {
+        "title": "Escaneo de la competencia",
+        "content": "Revise las páginas de la competencia para la evaluación comparativa perspicaz."
+      },
+      "broken_link": {
+        "title": "Enlaces rotos",
+        "content": "Identifique y repare enlaces rotos para garantizar una navegación perfecta."
+      },
+      "snippet": {
+        "title": "Fragmentos de Google",
+        "content": "Fragmentos informativos en los resultados de búsqueda para mejorar la visibilidad y el CTR."
+      },
+      "site_map": {
+        "title": "Mapa del sitio",
+        "content": "Haga que sea más fácil acceder y rastrear contenido indexando la estructura del sitio."
+      },
+      "btn_show_more": "Mostrar más",
+      "btn_show_less": "Muestra menos"
+    },
+    "score_block": {
+      "title_performance": "Actuación",
+      "btn_view_detail": "Ver detalles",
+      "btn_scan": "Escanear"
+    },
+    "txt_score": "Núcleo de SEO",
+    "txt_not_good": "No es bueno",
+    "txt_normal": "Normal",
+    "txt_very_good": "Muy bien"
+  },
+  "new_pricing_page": {
+    "common": {
+      "text_monthly": "Mensual",
+      "text_year": "año",
+      "text_month": "mes",
+      "btn_current_plan": "Plan actual",
+      "btn_get_started": "Empezar",
+      "btn_hide": "Ocultar características",
+      "btn_view": "Mostrar todas las características",
+      "txt_annually": "Anual",
+      "txt_unlimited": "Ilimitado",
+      "txt_ai_experts": "AI + expertos",
+      "txt_experts": "Expertos experimentados",
+      "txt_basic": "Básico",
+      "txt_advanced": "Avanzado",
+      "btn_back_home": "Estoy bien con el plan actual, vaya a la página de inicio",
+      "txt_free_forever": "Siempre libre",
+      "btn_not_now": "Ahora no",
+      "btn_continue": "Continuar",
+      "text_one_time": "Cargo por una sola vez",
+      "unit_ticket": "USD/boleto",
+      "btn_swich_annual": "Cambiar a Anual",
+      "btn_swich_monthly": "Cambiar a Mensual"
+    },
+    "banner_promo": {
+      "0": "Ticket gratis de 1 Swift Experts",
+      "1": "para una suscripción anual"
+    },
+    "title": "Características destacadas",
+    "tabs": {
+      "0": "Paquete",
+      "1": "Servicio"
+    },
+    "plan_free": {
+      "title": "Gratis",
+      "des": "Acceda a ideas y análisis gratuitos. Comience a optimizar con las herramientas básicas de mejora de SEO y velocidad, incluido el fragmento de negocios locales, la generación rápida del mapa del sitio, la personalización de la pantalla de carga, la precarga de los recursos de la página y más.",
+      "title_footer": "Y algunas características básicas:",
+      "des_footer": "Carga de personalización de la pantalla, recursos de página previos, base de conocimiento."
+    },
+    "plan_basic": {
+      "title": "Básico",
+      "title_footer": "Y características mejoradas:",
+      "des_footer": "Compresión de imagen sin pérdidas, copia de seguridad de imágenes de 60 días, optimización básica de temas y soporte."
+    },
+    "plan_premium": {
+      "title": "De primera calidad",
+      "title_footer": "Y características avanzadas:",
+      "des_footer": "Características completas de SEO, optimización avanzada de temas, copia de seguridad de 90 días, chat en vivo."
+    },
+    "plan_premium_plus": {
+      "title": "Premium Plus",
+      "title_footer": "Y extensas características:",
+      "des_footer": "Características y soporte de SEO avanzados, copia de seguridad de 120 días, análisis de palabras clave."
+    },
+    "plan_expert_care": {
+      "title": "Expertos cuidado",
+      "title_footer": "Rendimiento sobresaliente, centrándose en algo más que la velocidad",
+      "des_footer": "Optimización de terceros, sugerencias de aplicaciones y temas, tamaño de imagen receptivo, chequeo mensual y más."
+    },
+    "swift_experts": {
+      "title": "Expertos rápidos",
+      "title_footer": "Se le garantiza un puntaje más alto en Google PageSpeed ​​Insights",
+      "des_footer": "Optimización personalizada de desarrolladores experimentados, cheques de calidad exhaustivos y administrador de cuentas dedicado."
+    },
+    "descriptions_overview_free": {
+      "title": "Lo que se incluye en gratis:",
+      "list_des": {
+        "0": "Análisis de SEO y velocidad",
+        "1": "Encuentre el contenido de SEO faltante",
+        "2": "Fragmento de negocios locales",
+        "3": "Sitemap Generación rápida"
+      }
+    },
+    "descriptions_overview_basic": {
+      "title": "Todo en el plan gratuito y:",
+      "list_des": {
+        "0": "Sugerencias de ChatGPT",
+        "1": "10 Konkurrenzscans/Mo",
+        "2": "FAQ-Ausschnitte",
+        "3": "Presentación de sitemap"
+      }
+    },
+    "descriptions_overview_premium": {
+      "title": "Todo en el plan básico y:",
+      "list_des": {
+        "0": "Mejora automática de velocidad",
+        "1": "30 escaneos de competidores/mes",
+        "2": "Fragmentos de calificación de productos",
+        "3": "Precarga basada en GA4"
+      }
+    },
+    "descriptions_overview_premium_plus": {
+      "title": "Todo en Premium y:",
+      "list_des": {
+        "0": "Optimización automática",
+        "1": "100 escaneos de la competencia/mes",
+        "2": "A granel, contenido de SEO automático",
+        "3": "Enlace de gestión de la salud"
+      }
+    },
+    "descriptions_overview_expert_care": {
+      "title": "Atención continua y de ahorro de costos después de expertos rápidos:",
+      "list_des": {
+        "0": "Características completas para SEO y Speed",
+        "1": "Optimización y copia de seguridad de imágenes ilimitadas",
+        "2": "50,000 tokens chatgpt"
+      }
+    },
+    "descriptions_overview_swift_experts": {
+      "title": "Servicio de pago por uso, prioridad para su velocidad claramente mejor:",
+      "list_des": {
+        "0": "Consultoría individual",
+        "1": "Entrega en 3-7 días",
+        "2": "Reembolso completo si no está satisfecho"
+      }
+    },
+    "modal_promotion_form": {
+      "title": "Fijación de precios",
+      "plaholder": "Tienes un código?",
+      "btn_apply": "Aplica el código",
+      "terms_and_conditions": "Términos y condiciones",
+      "infor_price": {
+        "0": {
+          "col1": "Plan",
+          "col2": "De primera calidad"
+        },
+        "1": {
+          "col1": "Fijación de precios",
+          "col2": "Mensajero"
+        },
+        "2": {
+          "col1": "Prueba gratis",
+          "col2": "días"
+        },
+        "3": {
+          "col1": "Descuento de promoción"
+        },
+        "4": {
+          "col1": "Total"
+        }
+      },
+      "banner": {
+        "des": "No se le cobrará hasta que expire la prueba y la cancelación gratuita."
+      }
+    },
+    "modal_promotion_component": {
+      "error_0": "¡Esto es requerido!",
+      "error_1": "Este código no es válido.",
+      "error_2": "Este código no está disponible por ahora.",
+      "error_3": "Este código alcanzó el límite.",
+      "error_4": "Este código no está disponible ahora. Por favor, inténtelo de nuevo más tarde.",
+      "error_5": "Éste código ha expirado.",
+      "error_6": "No se encontraron tiendas.",
+      "error_7": "Este código no está disponible para esta tienda.",
+      "error_8": "Este código se aplicó a este dominio con esta aplicación.",
+      "error_9": "Este código se aplicó a este dominio.",
+      "error_10": "Este código no está disponible para esta aplicación.",
+      "error_11": "Este código no está disponible para su plan actual.",
+      "error_12": "No se encontraron aplicaciones.",
+      "error_13": "Este código no está disponible para su plan de Shopify actual."
+    },
+    "modal_confirm_downgrade": {
+      "title_head": "¿Renovado a {{plan_name}}?",
+      "des": "Si degradas, perderás acceso a algunas características actuales."
+    },
+    "modal_upgrade_success": {
+      "title_head": "Actualizar exitoso",
+      "des": "Disfrutemos de nuevas características y beneficios mejorados. Gracias por elegirnos. 🎉"
+    },
+    "modal_check_plan": {
+      "title_head": "Estás usando {{plan_name}}",
+      "des": "Vuelva a cargar la página para obtener actualizaciones."
+    },
+    "toggle_interval": {
+      "0": "Pagar anualmente",
+      "1": " Ahorre hasta el 20%"
+    },
+    "table": {
+      "compare_title": " Comparar planes",
+      "compare_des": "Pagar anualmente"
+    },
+    "modal_switch_interval": {
+      "title_head": "Cambiar el ciclo de facturación?",
+      "des_annual_to_month": "Cambiar a un pago mensual? Si acepta, la nueva facturación solo comenzará después de que expire su suscripción actual.",
+      "des_month_to_annual": "¿Cambiar a un pago anual? Si acepta, su próxima suscripción se facturará anualmente, ahorrándole más dinero."
+    },
+    "txt_badge_best_price": "Más popular",
+    "modal_free_ticket": {
+      "title": "¡Felicidades!",
+      "des": "Disfrute de los tiempos de carga más rápidos y un mejor rendimiento. <br /> ¡Gracias por elegir nuestra aplicación!"
+    },
+    "modal": {
+      "free_ticket": {
+        "banner": "Ha ganado un boleto gratis para optimizar la velocidad de su tienda."
+      }
+    },
+    "list_description_store_analysis": {
+      "0": {
+        "title": "Análisis de velocidad y SEO"
+      },
+      "1": {
+        "title": "Análisis mensual de la competencia"
+      },
+      "2": {
+        "title": "Análisis de palabras clave (próximamente)"
+      },
+      "3": {
+        "title": "Aplicación y sugerencias de temas"
+      },
+      "4": {
+        "title": "Chequeo mensual"
+      },
+      "title": "Análisis de tiendas"
+    },
+    "list_description_speed": {
+      "0": {
+        "title": "Carga de personalización de la pantalla"
+      },
+      "1": {
+        "title": "Recursos de la página precargables"
+      },
+      "2": {
+        "title": "Precarga basada en GA4"
+      },
+      "3": {
+        "title": "Optimizaciones de imágenes mensuales"
+      },
+      "4": {
+        "title": "Copia de seguridad de la nube de imágenes (días)"
+      },
+      "5": {
+        "title": "Optimización del código del tema"
+      },
+      "6": {
+        "title": "Minificación HTML"
+      },
+      "7": {
+        "title": "Velocidad automática"
+      },
+      "8": {
+        "title": "Optimización de imágenes, copia de seguridad"
+      },
+      "9": {
+        "title": "Imagen Carga perezosa"
+      },
+      "10": {
+        "title": "Minificación JS y CSS"
+      },
+      "11": {
+        "title": "Extraer CSS crítico"
+      },
+      "12": {
+        "title": "Fuentes web de precarga"
+      },
+      "title": "Velocidad"
+    },
+    "list_description_seo": {
+      "0": {
+        "title": "Sugerencia de contenido optimizado"
+      },
+      "1": {
+        "title": "Tokens de chatgpt mensuales"
+      },
+      "2": {
+        "title": "SEO Auto Scan"
+      },
+      "3": {
+        "title": "Encuentre el contenido de SEO faltante"
+      },
+      "4": {
+        "title": "Textos alternativos automáticos, metaetiquetas"
+      },
+      "5": {
+        "title": "Textos alternativos a granel, metaetiquetas"
+      },
+      "6": {
+        "title": "Fragmento de negocios locales"
+      },
+      "7": {
+        "title": "Faq Fragmentos"
+      },
+      "8": {
+        "title": "Fragmentos de calificación de productos"
+      },
+      "9": {
+        "title": "Sitemap Generación rápida"
+      },
+      "10": {
+        "title": "Sumisión de mapa del sitio"
+      },
+      "11": {
+        "title": "Detectar enlaces rotos"
+      },
+      "12": {
+        "title": "Redirecciones de la página"
+      },
+      "13": {
+        "title": "Mapa del sitio"
+      },
+      "title": "SEO"
+    },
+    "list_description_support": {
+      "0": {
+        "title": "Base de conocimiento y ayuda a los documentos"
+      },
+      "1": {
+        "title": "Soporte de correo electrónico"
+      },
+      "2": {
+        "title": "Chat en vivo"
+      },
+      "3": {
+        "title": "Chat en vivo y soporte por correo electrónico"
+      },
+      "4": {
+        "title": "Administrador de cuentas dedicado"
+      },
+      "5": {
+        "title": "Apoyo prioritario"
+      },
+      "title": "Apoyo"
+    },
+    "section_experts": {
+      "title": "Conoce a nuestros especialistas",
+      "link": "Personas reales para resultados reales",
+      "des": "Con una amplia experiencia en Shopify y Optimización del sistema, nuestros expertos identificarán rápidamente las oportunidades de optimización.",
+      "bub_des": "Confíe en más de {{ele_user}} marcas que se ejecutan en Shopify y otros canales."
+    }
+  },
+  "onboarding_page": {
+    "common": {
+      "step_start": "Comienzo",
+      "step_preview": "Avance",
+      "step_finish": "Finalizar"
+    },
+    "step1_component": {
+      "title": "Un clic para mejorar la velocidad",
+      "des": "Mejore la velocidad de su tienda y aumente la conversión de ventas",
+      "btn": "Velocidad de impulso",
+      "auto_boost": {
+        "title": "Velocidad de impulso automático todos los días",
+        "des": "Velocidad de impulso diario todos los días. ",
+        "sub_des": "Solo {{PlanPremiumPlus}} o {{PlanExpertCare}} Plan"
+      }
+    },
+    "step2_component": {
+      "title": "Vista previa de su tienda para verificar la velocidad",
+      "des": "Mejore la velocidad de su tienda y aumente la conversión de ventas",
+      "btn_learn": "Aprende más",
+      "btn_preview": "Vista previa de la tienda y regresa",
+      "box_note": {
+        "title": "NOTA IMPORTANTE:",
+        "note1": "La aplicación Swift primero precarga los enlaces y trabajará en la carga de la segunda página, por lo que su tienda se cargará más rápido",
+        "note2": "Este paso no tendrá ningún impacto en los puntajes de velocidad en herramientas como Google PageSpeed Insights, Gtmetrix, Pingdom",
+        "note3": "Para aumentar los puntajes de velocidad, vaya más allá en los siguientes pasos"
+      },
+      "pop_up": "Su tienda acelera con éxito"
+    },
+    "step3_component": {
+      "title": "¡Su tienda ahora se está cargando más rápido sin más configuración!",
+      "des": "¿Disfrutando de tu experiencia?",
+      "btn_yes": "Sí, dime más",
+      "btn_no": "No, necesito ayuda",
+      "modal": {
+        "title_header": "Apoyo",
+        "title": "Necesitas ayuda",
+        "des": "Lo conectaremos con nuestro especialista de soporte de chat en vivo para ayudarlo más",
+        "titlePrimaryAction": "Iniciar chat con Soporte"
+      }
+    },
+    "get_premium_plus": {
+      "title_header": "Plan de actualización",
+      "title": "La característica requiere {{plan_premium_plus}} o {{plan_expert_care}} paquete"
+    },
+    "copywriting": "Impulsado por OneCommerce",
+    "btn_re_boost": "Velocidad de reasentamiento"
+  },
+  "setting_page": {
+    "title": "Ajustes",
+    "language": {
+      "title": "Idiomas publicados",
+      "des": "Swift mostrará la interfaz de la aplicación en el idioma de su elección.",
+      "form": {
+        "lable": "Idioma",
+        "note": "Idioma para botones, títulos y otros textos de la aplicación Swift"
+      },
+      "save_bar": {
+        "title": "Cambios no guardados"
+      },
+      "toast": {
+        "title_success": "Ajustes guardados"
+      }
+    },
+    "uninstall": {
+      "title": "Desativar rápido",
+      "des": {
+        "0": "Para evitar que todos los activos de nuestra aplicación funcionen en su tienda, haga clic en el botón de abajo.",
+        "1": "Alternativamente, tienes la opción de eliminar manualmente los activos de nuestra aplicación usando el administrador de Shopify."
+      }
+    },
+    "preloading": {
+      "title": "Página de precarga"
+    }
+  },
+  "recommend_app_component": {
+    "title": "Integración",
+    "des": "Descubra aplicaciones para mantener su tienda en crecimiento",
+    "common": {
+      "link_reviews": "Reseñas"
+    },
+    "list_app": {
+      "0": {
+        "title": "Ali Reviews ‑ Product Reviews",
+        "des": "Revise la aplicación para recopilar revisiones por correo electrónico/SMS y revisiones Importador",
+        "sub_des": "Plan gratuito disponible"
+      },
+      "1": {
+        "title": "Transcy: AI Language Translate",
+        "des": "Caja de convertidor múltiple de lenguaje múltiple por geolocalización",
+        "sub_des": "Plan gratuito disponible.Prueba gratuita de 14 días."
+      },
+      "2": {
+        "title": "True Profit Calc & Analytics",
+        "des": "Calculadora de ganancias+rastreador de ganancias+pérdida de ganancias+ganancias netas y engranajes",
+        "sub_des": "De $ 19.95/mes.Prueba gratuita de 14 días.Se pueden aplicar cargos adicionales."
+      },
+      "3": {
+        "title": "Facebook, Google Shopping Feed",
+        "des": "Producto de sincronización para Google Feed, Facebook Feed y Tiktok Shop",
+        "sub_des": "Plan gratuito disponible.Prueba gratuita de 14 días."
+      },
+      "4": {
+        "title": "Instagram Feed, Story & TikTok",
+        "des": "Tienda de Instagram, Galería de Instagram, Feed de Instacesia y Sección",
+        "sub_des": "Plan gratuito disponible.Prueba gratuita de 14 días."
+      },
+      "5": {
+        "title": "SubBox: Subscriptions",
+        "des": "Aplicación de suscripciones para producir ingresos y pagos recurrentes",
+        "sub_des": "Plan gratuito disponible.Prueba gratuita de 14 días."
+      }
+    }
+  },
+  "boostSEO": {
+    "common": {
+      "btn_scan": "Sitio web de escaneo",
+      "btn_re_scan": "Escanea otra vez",
+      "btn_fix": "Arreglar",
+      "btn_view": "Ver detalles",
+      "btn_result": "Sitio web de escaneo",
+      "btn_setting": "Configuración",
+      "txt_before": "Antes",
+      "txt_after": "Después",
+      "txt_last_scan_time": "Último vistazo:",
+      "toast_message": {
+        "toast_auto_on": "Automático",
+        "toast_auto_off": "Apagado automático",
+        "toast_save_success": "Se guardo correctamente"
+      }
+    },
+    "list_tabs": {
+      "scan_website": {
+        "title": "Escaneo del sitio web",
+        "des": "Abordar problemas o áreas para mejorar con el verificador de SEO de seobility."
+      },
+      "alt_images": {
+        "title": "Textos alternativos de imagen",
+        "des": "Agregue el texto alternativo (o la etiqueta alt) a sus imágenes manualmente o automáticamente."
+      },
+      "meta_title": {
+        "title": "Metaetics",
+        "des": "Agregue el título, la meta descripción y las palabras clave meta a sus páginas."
+      },
+      "snippets": {
+        "title": "Fragmentos",
+        "des": "Personalice la apariencia de los resultados de búsqueda para aumentar la visibilidad y el CTR."
+      },
+      "monitor": {
+        "title": "Enlaces rotos",
+        "des": "Rastree y administre enlaces rotos o páginas faltantes para una mejor experiencia."
+      },
+      "redirections": {
+        "title": "Redirecciones",
+        "des": "Ayuda a los clientes y motores de búsqueda a navegar el contenido correcto."
+      },
+      "audit_product": {
+        "title": "Auditoría de productos",
+        "des": "Analice las páginas de productos individuales utilizando ChatGPT."
+      },
+      "site_map": {
+        "title": "Mapa del sitio",
+        "des": "Haga que sea más fácil acceder y rastrear contenido indexando la estructura del sitio."
+      }
+    },
+    "page_home": {
+      "title": "SEO",
+      "des": "Herramientas y características para optimizar el contenido de la tienda, metaetiquetas, URL y mejorar la visibilidad y clasificación del motor de búsqueda.",
+      "question_header": {
+        "title": "Auto",
+        "des": "Si no es un experto en el campo de SEO, abra el modo automático para que podamos optimizar el SEO para usted."
+      },
+      "list_title_score": {
+        "0": "Sin datos",
+        "1": "Tu puntaje de SEO es bajo. Vamos a mejorar y aumentar su visibilidad en línea.",
+        "2": "El puntaje de SEO es promedio.",
+        "3": "El puntaje de SEO es excelente."
+      }
+    },
+    "scan_web": {
+      "tabs": {
+        "0": "Buenos resultados",
+        "1": "Mejorar",
+        "2": "Problemas de must-fix",
+        "3": "Cheque manual"
+      }
+    },
+    "validate_alt_img_meta_tag": "Debe seleccionar al menos una opción a continuación",
+    "competitor": {
+      "btn_scan": "Escanear",
+      "title": "Escaneo de la competencia",
+      "input_placeholder": "Ingrese su dominio",
+      "input_validate_required": "Ingrese una URL válida",
+      "input_validate_format_url": "URL no válida, verifique la dirección web.",
+      "title_score": "Puntuación de SEO:",
+      "title_banner_scan": "Exploración..."
+    },
+    "title_question": "Preguntas frecuentes"
+  },
+  "smartSEO": {
+    "SEO_basic": {
+      "title": "SEO básico",
+      "des": "Acciones básicas que debe tomar para los motores de búsqueda para atraer tráfico orgánico."
+    },
+    "SEO_advance": {
+      "title": "SEO avanzado",
+      "des": "Técnicas avanzadas para garantizar que los resultados de búsqueda tengan una visibilidad convincente y proporcionen una experiencia fácil de usar."
+    },
+    "alt_images": {
+      "section_auto_setting": {
+        "title": "Textos automáticos",
+        "des": "Agregue automáticamente los textos alternativos a las imágenes recientemente cargadas utilizando el patrón de texto alternativo configurado antes."
+      },
+      "section_form": {
+        "lable_input": "Seleccione Información para el texto Alt",
+        "title": "Establecer el patrón de texto alternativo de la imagen"
+      },
+      "section_example": {
+        "des": "El texto alternativo sirve como texto descriptivo cuando no se puede cargar una imagen. Ayuda a los motores de búsqueda a comprender el contenido de su imagen, mejorar el rastreo y la clasificación."
+      },
+      "add_bulk": {
+        "title": "Textos alternativos a granel",
+        "des": "Detectar imágenes que faltan textos alternativos. Agregue rápidamente los textos alternativos a granel utilizando el patrón de texto ALT configurado antes.",
+        "sub_title": "Textos alternativos agregados a:",
+        "sub_des": "{{number}} imágenes",
+        "btn_scan_missing": "Escanee textos alternativos faltantes",
+        "btn_add": "Agregar textos alternativos faltantes",
+        "notify_bulk_add": "Agregar textos alternativos ...",
+        "notify_scan_missing": "Escanear textos alternativos faltantes ...",
+        "toast_bulk_success": "Textos alternativos agregados",
+        "toast_scan_missing_success": "Todas las imágenes escaneadas",
+        "title_btn": "Agregar textos alternativos faltantes",
+        "title_notify": "Agregar textos alternativos ...",
+        "toast_success": "Textos alternativos agregados"
+      },
+      "sub_title_scan_missing": "Número de falta:",
+      "add_bulk_no_image": {
+        "sub_des": "No faltan textos",
+        "sub_title": "Se ve bien"
+      },
+      "question": {
+        "0": {
+          "title": "¿Qué es el texto alternativo de la imagen?",
+          "des": "El texto alternativo de imagen, también conocido como texto alternativo o etiquetas alternativas, es un atributo de texto descriptivo que se utiliza para proporcionar información sobre una imagen en una página web. Es un atributo HTML que se agrega al código de la etiqueta de la imagen.  <break /> cuando una imagen no se puede mostrar en una página web por varias razones (como carga lenta, enlace roto o cuando usa un lector de pantalla), el texto alternativo sirve como un sustituto para describir el contenido de la imagen. Los lectores de pantalla leen en voz alta el texto alternativo, lo que permite que los usuarios con discapacidad visual comprendan el contexto y el significado de la imagen dentro de la página web. <break /> La inclusión de texto ALT apropiado para imágenes mejora la accesibilidad de una página web, garantiza una mejor experiencia de usuario para las personas con discapacidades visuales y ayuda a los motores de búsqueda a interpretar e indexar el contenido con precisión."
+        },
+        "1": {
+          "title": "¿Qué debo usar para el patrón de texto alternativo?",
+          "des": "Recomendamos encarecidamente seguir con nuestra plantilla predeterminada."
+        },
+        "2": {
+          "title": "¿Cuánto tiempo se tarda en actualizar mis textos alternativos?",
+          "des": "Esto depende de cuántas imágenes tenga. Los tiempos de espera pueden ser desde un par de minutos hasta un par de horas, dependiendo de la hora del día."
+        },
+        "3": {
+          "title": "¿Los textos alternativos automáticos y los textos alternativos a granel sobrescribirán mis textos alternativos actuales?",
+          "des": "No. Los textos alternativos automáticos y los textos alternativos a granel no sobrescribirán sus textos alternativos actuales. <break /> Estas características están diseñadas para complementar sus textos alternativos existentes agregando automáticamente los textos alternativos a las imágenes recién cargadas (textos alternativos automáticos) y permitiéndole agregar rápidamente textos alternativos a granel a las imágenes sin textos alternativos (textos alternativos a granel). <break /> Estas características tienen como objetivo ayudarlo a generar eficientemente textos alternativos para sus imágenes sin comprometer o alterar los textos alternativos preexistentes que ya puede tener en su lugar."
+        }
+      }
+    },
+    "meta_title": {
+      "section_auto_setting": {
+        "title": "Auto Meta Tags",
+        "des": "Agregue automáticamente el meta título y la meta descripción a los nuevos productos agregados utilizando el patrón de meta etiqueta configurado antes."
+      },
+      "section_example": {
+        "des": "Las metaetiquetas son cruciales para el SEO y la experiencia del usuario, influyendo en la indexación y la pantalla del motor de búsqueda. Proporcionan detalles sobre el contenido de una página web, incluido el título, la descripción y otra información relevante."
+      },
+      "list_question": {
+        "0": {
+          "title": "¿Cómo cambiar las etiquetas meta de la página de inicio?",
+          "des": "Shopify no permite cambiar las metaetiquetas de la página de inicio a través de la API de Shopify y, por lo tanto, solo puede cambiarlas a través del administrador de Shopify. "
+        },
+        "1": {
+          "title": "¿No veo las metaetiquetas en el administrador/backend de Shopify?",
+          "des": "El SEO inteligente genera las metaetiquetas sobre la marcha en lugar de alterar el backend de Shopify. <title>'. "
+        }
+      },
+      "add_bulk": {
+        "title": "Metaetiquetas a granel",
+        "des": "Detectar páginas que faltan meta título o meta descripción. Agrégelos rápidamente a los productos utilizando el patrón de meta etiqueta configurado antes.",
+        "sub_title": "Metaetiquetas agregadas a:",
+        "sub_des": "{{number}} páginas",
+        "btn_add": "Agregar metaetiquetas faltantes",
+        "btn_scan_missing": "Escanear metaetiquetas faltantes",
+        "notify_bulk_add": "Agregar metaetiquetas ...",
+        "notify_scan_missing": "Escaneo de metaetiquetas faltantes ...",
+        "toast_bulk_success": "Metaetiquetas agregadas",
+        "toast_scan_missing_success": "Todas las páginas escaneadas",
+        "title_btn": "Agregar metaetiquetas faltantes",
+        "title_notify": "Agregar metaetiquetas ...",
+        "toast_success": "Metaetiquetas agregadas"
+      },
+      "sub_title_scan_missing": "Número de falta:",
+      "add_bulk_no_image": {
+        "sub_des": "No faltan etiquetas",
+        "sub_title": "Se ve bien"
+      },
+      "form_label_meta_title": "Seleccione la información para el meta título",
+      "form_label_meta_des": "Seleccione Información para la meta descripción",
+      "form_title": "Establecer el patrón de metaetiqueta de la página",
+      "question": {
+        "0": {
+          "title": "¿Qué son las metaetiquetas?",
+          "des": "Las metaetiquetas de la página (incluido el meta título y la meta descripción) muestran cómo aparece su página en las páginas de resultados del motor de búsqueda para que las personas se inclinen a hacer clic."
+        },
+        "1": {
+          "title": "¿Por qué mis metaetiquetas de página son diferentes en las páginas de búsqueda de Google?",
+          "des": "Google tarda entre 7 y 14 días en actualizar su cambio. Google necesita un período de tiempo para rastrear todos los sitios que puede reconocer. Entonces, cuando Google ha hecho gatear, puede ver el cambio en las páginas de resultados de búsqueda de Google."
+        },
+        "2": {
+          "title": "¿Todavía faltan metaetiquetas a pesar de ser actualizado?",
+          "des": "Una razón para este problema es que su sitio es la página de protección de contraseña, por lo que la información no lee la información por la herramienta de ninguna extraña, incluida la nuestra. Otra posible razón es usar la carga perezosa para las mejoras de velocidad <break /> del sitio que evita que los motores de búsqueda rastreen toda la página y tampoco."
+        }
+      }
+    },
+    "redirections": {
+      "banner": {
+        "title": "¿Sabías que tu administrador de Shopify tiene una herramienta perfecta para administrar tus redireccionamientos? ",
+        "des": "Puede encontrarlo en Admin > Tienda en línea > Navegación > Ver redireccionamientos de URL (esquina superior derecha)"
+      },
+      "form": {
+        "field_domain": {
+          "lable": "redirección de dominio",
+          "help_text": "Introduzca la ruta completa. "
+        },
+        "field_translated_domain": {
+          "lable": "Estilo de dominio traducido",
+          "help_text": "Elija su estilo de dominio"
+        },
+        "field_create_redirects": {
+          "lable": "Crear redireccionamientos para idiomas"
+        }
+      },
+      "list_question": {
+        "0": {
+          "title": "¿Esta aplicación crea automáticamente redireccionamientos?",
+          "des": "SEO King crea automáticamente redireccionamientos cada vez que modifica las URL de la página. "
+        },
+        "1": {
+          "title": "¿Esta aplicación creará redireccionamientos para tiendas multilingües?",
+          "des": "Sí, cada vez que SEO King cambie el nombre de las URL de cualquier producto, colección, artículo y página, se creará una redirección para cada idioma publicado si usa el dominio de estilo 'carpeta' para tiendas multilingües. "
+        }
+      }
+    },
+    "site_map": {
+      "des": "Facilite el acceso y el rastreo del contenido mediante la indexación de la estructura del sitio.",
+      "txt_last_scan_time": "El sitemap de tu tienda se generó por última vez el ",
+      "section_generate": {
+        "title": "Generar mapa del sitio"
+      },
+      "section_google_search_console": {
+        "title": "Enviar mapa del sitio a Google Search Console",
+        "des": "Enviar el mapa del sitio de su tienda ayuda a mejorar la visibilidad y la indexación de su sitio web en los resultados de búsqueda de Google.",
+        "txt_task_complete": "{{numberComplete}} de {{total}} tareas completadas",
+        "task_connect": {
+          "title": "Conectarse a la consola de búsqueda de Google",
+          "des": "Asegúrese de marcar todas las casillas en la página de autorización de Google",
+          "btn": "Inicia sesión con Google",
+          "message_success": "Consola de búsqueda de Google conectada"
+        },
+        "task_add_site": {
+          "title": "Agrega el sitio web de tu tienda a Google",
+          "btn": "Agregar sitio web",
+          "message_success": "Sitio web agregado"
+        },
+        "task_verify_site": {
+          "title": "Verifica el sitio web de tu tienda con Google",
+          "btn": "Verificar sitio web",
+          "message_success": "Sitio web verificado"
+        },
+        "task_submit_sitemap": {
+          "title": "Envía tu mapa del sitio a Google",
+          "btn": "Enviar mapa del sitio",
+          "message_success": "Mapa del sitio enviado"
+        }
+      },
+      "list_question": {
+        "0": {
+          "title": "¿Qué es un mapa del sitio?",
+          "des": "Un mapa del sitio es un archivo que proporciona una lista de todas las páginas y el contenido significativo de un sitio web. "
+        },
+        "1": {
+          "title": "¿Cuál es la diferencia entre un mapa del sitio de Shopify y un mapa del sitio avanzado?",
+          "des": "Si bien cada comerciante cuenta con un mapa del sitio de Shopify predeterminado, es posible que no incluya todos los puntos de datos disponibles. "
+        }
+      },
+      "plan_not_use": {
+        "title": "Enviar mapa del sitio a la consola de búsqueda de Google",
+        "des": "Enviar el mapa del sitio de su tienda ayuda a mejorar la visibilidad e indexación de su sitio web en los resultados de búsqueda de Google.",
+        "btn": "Atualizar plano Premium"
+      },
+      "build_html": {
+        "title": "Construir mapa del sitio HTML para",
+        "label_input": "Limite los elementos a mostrar",
+        "btn": "Agregar enlaces",
+        "text": {
+          "only_premium": "Disponible para premium plus o planes superiores.",
+          "upgrade_now": "Actualizar ahora"
+        },
+        "invalid": {
+          "url": "¡Se requiere URL!",
+          "title": "¡Se requiere título!"
+        }
+      }
+    },
+    "audit_product": {
+      "btn_sync": "Cargar información de productos",
+      "btn_edit": "Analizar y optimizar",
+      "input_placeholder": "Buscar producto",
+      "assessment_status": {
+        "poorly_optimized": "Mejorar necesario",
+        "un_evaluated": "No analizado todavía",
+        "unknown": "Indefinido",
+        "well_optimized": "Óptimo",
+        "all": "Todo el estado"
+      },
+      "table_headings": {
+        "0": "Imagen",
+        "1": "Producto",
+        "2": "Estado de SEO"
+      },
+      "table_row_issues": "Total <span> {{number}} producto (s) </span>",
+      "notify_sync": "Cargando información ...",
+      "toast_sync_success": "Productos INFORMACIÓN INFORMACIÓN CARGADA",
+      "edit_audit_product": {
+        "btn_replace": "Aplicar sugerencia",
+        "btn_re_analyze": "Analizar",
+        "btn_analyze": "Analizar el producto",
+        "btn_generate_content": "ChatGPT sugerir",
+        "btn_view": "Ver Tienda",
+        "tabs_product": "Información del Producto",
+        "tabs_images": "Imágenes",
+        "txt_generated_chat": "Sugerencia de ChatGPT",
+        "input_meta_title": {
+          "label": "Página Meta título",
+          "tooltip": "Generar meta título"
+        },
+        "input_meta_description": {
+          "label": "Metadescripción",
+          "tooltip": "Generar meta descripción"
+        },
+        "input_title": {
+          "label": "Título",
+          "tooltip": "Generar título"
+        },
+        "input_description": {
+          "label": "Descripción",
+          "tooltip": "Generar descripción"
+        },
+        "preview_AI": {
+          "title_analyze": "Bienvenido a analizar chatgpt",
+          "title": "Análisis de chatgpt",
+          "des_analyze": "Obtenga información sobre el rendimiento de SEO de la página de su producto basado en los vastos datos de ChatGPT.",
+          "des_analyze_error": "Debido al alto tráfico de solicitudes, su solicitud no puede completarse en este momento. Por favor, inténtelo de nuevo más tarde.",
+          "title_issues": "Asuntos",
+          "title_suggestion": "Sugerencia",
+          "txt_missing": "Desaparecido"
+        },
+        "btn_re_generate": "Regenerado",
+        "txt_optimization_level": "Nivel de optimización",
+        "token_used": "Sugerencia generada, usando {{number}} tokens",
+        "token_analysis_used": "Análisis generado, usando {{number}} tokens"
+      },
+      "validate": {
+        "title_required": "El título del producto no puede estar en blanco",
+        "title_max": "Acortar el título de su producto a {{maxAdvise}} caracteres Max",
+        "title_tag_max": "Acorta tu página Meta Título a {{maxAdvise}} caracteres Max",
+        "description_tag_max": "Acorta tu meta descripción a {{maxAdvise}} caracteres Max"
+      },
+      "section_preview_title": "Vista previa de los resultados de búsqueda de Google",
+      "message_warning": {
+        "field_title": "Los buenos títulos a menudo vienen en 50-70 caracteres.",
+        "field_description_tag": "Las buenas descripciones a menudo vienen en 150-320 caracteres.",
+        "field_title_tag": "Los mejores resultados de SEO a menudo muestran 50-70 caracteres para el título."
+      },
+      "hint_characters_used": "de {{number}} caracteres utilizados",
+      "no_data_product": "Sin datos, cambie las palabras clave, los filtros o establezca productos en Shopify.",
+      "noti_using_token": "Usamos \"tokens\" como unidad para generar contenido con ChatGPT. Puede pensar en los tokens como piezas de palabras, donde una página A4 promedio que tenga alrededor de 300 palabras será de aproximadamente 400 fichas. Cada solicitud generalmente usa 30 a 500 tokens, dependiendo de su longitud.",
+      "btn_upgrade_premiu": "Hazte Premium",
+      "noti_upgrade_plan": "A un paso de distancia para obtener información sobre el rendimiento de SEO de la página de su producto.",
+      "btn_ask_chat_AI": "Pregúntale a Chatgpt",
+      "btn_get_suggest": "Obtener sugerencia",
+      "btn_get_another_suggest": "Conseguir otro",
+      "title_config_AI": "Recomendaciones de contenido",
+      "title_input_keyword": "Palabras clave",
+      "des_input_keyword": "Proporcione palabras clave objetivo y obtenga ideas basadas en el contenido de sus competidores.",
+      "error_max_input": "No más de 50 caracteres",
+      "title_input_tone_voice": "Tono de voz",
+      "sub_title_input_tone_voice": "Seleccionar tono de voz",
+      "select_expert": "Experto",
+      "select_darling": "Querida",
+      "select_playful": "Juguetón",
+      "select_sophisticated": "Sofisticado",
+      "select_persuasive": "Persuasivo",
+      "select_supportive": "Apoyo",
+      "select_custom": "Costumbre",
+      "title_input_custom_tone_voice": "Tono de voz personalizado",
+      "error_custom_tone_required": "¡Ingrese el tono de voz!",
+      "title_input_language": "",
+      "sub_title_input_language": ""
+    },
+    "web_scan": {
+      "auto_scan": {
+        "title": "Auto escáner",
+        "des": "Obtenga escaneos automatizados mensuales para mantenerse actualizado sobre el rendimiento de su tienda."
+      },
+      "btn_scan_competitor": "Escaneo de la competencia",
+      "no_data_must_fix": "No hay problema de must-fix",
+      "no_data_improve": "No para mejorar",
+      "no_data_good": "No hay buenos resultados",
+      "no_data_manual_check": "Sin resultados de ManauA-Check",
+      "tabs_scan": {
+        "0": "Problemas de must-fix",
+        "1": "Mejorar",
+        "2": "Buenos resultados"
+      },
+      "ingredient_page": {
+        "0": "Hogar",
+        "1": "Recopilación",
+        "2": "Producto",
+        "3": "Artículos"
+      },
+      "label_input_select": "Página de selección",
+      "txt_no_data": "Sin datos",
+      "txt_no_data_competitor": "No hay competidor de datos",
+      "banner_compare": {
+        "store_title": "Tú sitio",
+        "competitor_title": "Competidor",
+        "txt_score": "Puntaje",
+        "txt_issue": "Asuntos"
+      },
+      "title_btn_hide_competitor": "Ocultar escaneo de la competencia",
+      "des_competitor": "Obtenga información instantánea sobre las fortalezas y debilidades de su competidor o cliente potencial.",
+      "loading_scan_seo": {
+        "title": "Escanear en {{storeName}}",
+        "des": "Este proceso puede llevar algún tiempo. Recibirá una notificación una vez que se complete."
+      },
+      "des_upgrade": "Disponible para planes más altos",
+      "count_remain_competitor": "Tiene {{remain}}/{{total}} escaneos al mes.",
+      "unlimited_remain_competitor": "Tienes un escaneo de competidores ilimitado."
+    },
+    "snippet": {
+      "tabs": {
+        "0": "Perfil de almacenamiento",
+        "1": "Fragmentos enriquecidos",
+        "2": "Recopilación",
+        "3": "Preguntas frecuentes"
+      },
+      "btn_show": "Mostrar sección de fragmentos",
+      "btn_hide": "Ocultar la sección de fragmento",
+      "store_profile": {
+        "des": "Breve resumen del panel de detalles esenciales sobre su tienda en línea, mejorando su apariencia en los resultados de búsqueda.",
+        "industry": {
+          "title": "Industria",
+          "des": "Informe a Google a su industria para ayudar a mejorar los resultados de búsqueda."
+        },
+        "company": {
+          "title": "Logo de la compañía",
+          "des": "Google mejorará ciertos resultados de búsqueda mostrando su logotipo."
+        },
+        "brand": {
+          "title": "Nombre de la marca",
+          "des": "Informe a Google a su industria para ayudar a mejorar los resultados de búsqueda."
+        },
+        "reference": {
+          "title": "Página de referencia",
+          "des": "Contenido"
+        },
+        "social": {
+          "title": "Perfil social",
+          "des": "Hágale saber a Google que tiene una presencia en las redes sociales y que es una empresa real"
+        },
+        "invalid_logo_link": "Formato de URL incorrecto, intente nuevamente",
+        "invalid_facebook": "Formato de Facebook incorrecto!",
+        "invalid_ twitter": "¡Formato de Twitter incorrecto!",
+        "invalid_ instagram": "Formato de Instagram incorrecto!",
+        "invalid_youtube": "Formato de YouTube incorrecto!",
+        "invalid_linkedin": "Formato incorrecto de LinkedIn!",
+        "invalid_snapchat": "Formato incorrecto de Snapchat!"
+      },
+      "fqa_invalid_answer": "¡La respuesta es requerida!",
+      "fqa_invalid_question": "¡Se requiere una pregunta!",
+      "rich_store": {
+        "des": "Información adicional del producto, como calificaciones de estrellas, revisiones, precios y más.",
+        "upgrade": "Solo premium o más",
+        "review_app": {
+          "title": "Aplicación de revisión de productos",
+          "des": "Agregue revisiones a su resultado de búsqueda de Google y vea un aumento del 30% en las tasas de clics a través de."
+        }
+      },
+      "collection": {
+        "des": "Los fragmentos de colección proporcionan información detallada de la recopilación como resultado rico en la búsqueda de Google, incluida la lista de imágenes y productos"
+      },
+      "faq": {
+        "des": "La información detallada de la recopilación como resultado rico en la búsqueda de Google, incluidos el contenido, la imagen, el autor, la creación y la fecha de publicación.",
+        "question": "Pregunta {{number}}",
+        "label_question": "Pregunta",
+        "label_answer": "Respuesta",
+        "placeholder_question": "Ingresar la pregunta",
+        "placeholder_answer": "Ingrese la respuesta",
+        "btn_add": "Agregar nueva pregunta"
+      }
+    }
+  },
+  "": "",
+  "profile": {
+    "list": {
+      "title": {
+        "gpt_token_buy": "Comprar tokens chatgpt",
+        "evaluate_product_page": "Generar análisis de productos",
+        "product_meta_title": "Generar meta título",
+        "generate_product_meta_description": "Generar meta descripción",
+        "generate_product_title": "Generar título de producto",
+        "generate_product_description": "Generar la descripción del producto",
+        "gpt_token_free": "Obtener gratis ChatGPT tokens",
+        "token_new_cycle": "Tokens adicionales para suscripción mensual",
+        "token_upgrade_plan": "Tokens adicionales para el plan actualizado",
+        "token_downgrade_plan": "Token Disminución de la reducción del plan del plan",
+        "gpt_token_restored": "Tokens mensuales restaurados"
+      },
+      "detail": {
+        "type": "Tipo",
+        "date": "Fecha",
+        "balance": "Balance"
+      },
+      "no_data": "Sin datos",
+      "title_header": "Historia usando token"
+    },
+    "plan_current": {
+      "title": "Su tienda ahora está en {{plan}}"
+    },
+    "token": {
+      "expired_date": "Fecha de vencimiento de token: {{date}}",
+      "sub_title": "ChatGPT tokens",
+      "note": "Los tokens vienen con una fecha de vencimiento, y si caducan o caen por debajo de los 100, se congelarán. Deberá comprar nuevos tokens para continuar usándolos.",
+      "modal": {
+        "content": "Elija la cantidad de ChatGPT tokens que desea comprar."
+      },
+      "link_audit_product": "Detalles de Go",
+      "link_optimize_image": "Detalles de Go",
+      "tooltip": "El número de tokens disponibles para generar contenido de SEO.",
+      "tooltip_expired": "El tiempo de uso ha expirado. Para continuar usando, compre más tokens.",
+      "modal_buy_more": {
+        "title": "Obtener más ChatGPT tokens",
+        "sub_title": "Elija la cantidad de ChatGPT tokens que desea comprar."
+      }
+    },
+    "image": {
+      "expired_date": "Sin fecha de caducidad",
+      "title": "Optimización de imágenes",
+      "tooltip": "El número máximo de veces para optimizar las imágenes. El límite se restablece cada mes."
+    },
+    "modal_noti": {
+      "header": "Notificación",
+      "title": "No hay suficientes fichas para generar",
+      "description": "No tienes suficientes tokens para generar contenido. <break /> para optimizar sin interrupción, compremos más tokens."
+    },
+    "filter": {
+      "all_time": "Todo el tiempo",
+      "seven_day": "7 días",
+      "thirty_day": "30 dias",
+      "ninety_day": "90 dias",
+      "tabs": {
+        "all": "Todo",
+        "purchase": "Compra",
+        "usage": "Uso"
+      }
+    }
+  }
+}

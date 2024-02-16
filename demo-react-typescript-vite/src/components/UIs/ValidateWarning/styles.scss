@@ -1,0 +1,11 @@
+.ValidateWarning {
+  border-radius: 8px;
+  background: #fff7ec;
+  &__message{
+    width: 93%;
+  }
+  &__btn-cancel{
+    top: 8px;
+    right: 8px;
+  }
+}
