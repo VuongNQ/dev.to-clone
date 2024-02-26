@@ -7,7 +7,7 @@ type Routes =  {
 const routes: Routes = {
     home: '/',
     tags: '/tags',
-    about: '/about'
+    about: '/about',
 }
 
 export default routes;
