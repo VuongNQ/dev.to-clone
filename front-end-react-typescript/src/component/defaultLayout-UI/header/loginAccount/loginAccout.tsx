@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from './loginAccount.module.scss'
+import styles from './loginAccount.module.scss';
 const cx = classNames.bind(styles);
 
 function LoginAndAccount() {

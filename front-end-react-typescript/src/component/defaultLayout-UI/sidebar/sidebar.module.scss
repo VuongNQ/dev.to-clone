@@ -1,0 +1,31 @@
+.wrapper {
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .inner {
+    border-radius: 8px;
+    width: 240px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 1px 2px 7px rgba(5, 4, 1, 0.05);
+  }
+  .aside {
+    margin-top: 1.4rem;
+    cursor: pointer;
+    .sidebar-icon {
+      display: flex;
+      align-items: flex-end;
+      padding: 2px 0px;
+      &:hover {
+        background-color: var(--color-primary-hover-button);
+        text-decoration: underline;
+        border-radius: 4px;
+        color: var(--color-primary-hover-font);
+      }
+      p {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

@@ -1,70 +1,53 @@
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import myImage from '@/assets/image/resized_logo_UQww2soKuUsjaOGNB38o.png';
 import classNames from 'classnames/bind';
-import styles from './header.module.scss'
+import styles from './header.module.scss';
+import LoginAndAccount from './loginAccount/loginAccout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faYenSign } from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles);
 
-function OffcanvasExample() {
+function Header() {
   return (
-    <div className={cx('wrapper')}>
-       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-          <Container fluid>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Brand>
-              <img src={myImage} alt="logo"/>
-            </Navbar.Brand>
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
-                  <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar>
-      ))} 
+    <div className={cx('topbar')}>
+      <div className={cx('container')}>
+        {['md',].map((expand) => (
+          <Navbar key={expand} expand={expand} className="">
+            <Container fluid>
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <Navbar.Brand>
+                <img className={cx('header-img')} src={myImage} alt="logo" />
+              </Navbar.Brand>
+              <Navbar.Offcanvas
+                id={`offcanvasNavbar-expand-${expand}`}
+                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                placement="start"
+              >
+                <Offcanvas.Header closeButton>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                    Offcanvas
+                  </Offcanvas.Title>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
+                  {/* Form Header */}
+                  <div className={cx('header-search')}>
+                    <input type="text" className={cx('search-input')} />
+                    <button className={cx('button-search')}>
+                      <FontAwesomeIcon icon={faSearch} />
+                    </button>
+                  </div>
+                </Offcanvas.Body>
+              </Navbar.Offcanvas>
+              <LoginAndAccount />
+            </Container>
+          </Navbar>
+        ))}
+      </div>
     </div>
   );
 }
 
-export default OffcanvasExample;
+export default Header;
