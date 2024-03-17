@@ -3,7 +3,6 @@ type Example23 = {
         name: string
         age: string
         listing: string
-
     }
 }
 

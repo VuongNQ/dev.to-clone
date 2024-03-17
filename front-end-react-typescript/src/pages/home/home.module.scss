@@ -1,0 +1,24 @@
+.wrapper {
+   .header-content {
+    margin: -4px 0px;
+    padding: 4px 0px;
+    
+       .button-content {
+        color: #090909;
+        font-size: 1.8rem;
+        padding: 8px 12px;
+       }
+   }
+   .image-top {
+        aspect-ratio: auto 1000 / 42;
+        width: 100%;height: 100%;
+        object-fit: contain;
+        max-height: calc(90vh - 56px);
+        border-radius: 6px;
+    }
+
+    .title-page-content {
+        background-color: rgba(255,255,255,1);
+        padding: 20px;
+    }
+}

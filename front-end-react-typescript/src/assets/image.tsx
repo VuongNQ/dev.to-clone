@@ -1,11 +1,9 @@
-type Images = {
-    logo?: "resized_logo_UQww2soKuUsjaOGNB38o.png" | "undefined"
+interface Image {
+    src?: any
 }
 
-export const Image = (img: Images) => {
-    return (
-        <div>
-            {img.logo}
-        </div>
-    )
+export const Img = (n: Image) => {
+  return (
+    <img src={n.src}  />
+  )
 }
