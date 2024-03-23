@@ -5,6 +5,7 @@ import { Outlet, useLocation } from "react-router-dom";
 
 const Middleware = () => {
   const location = useLocation();
+  
   if (location.pathname.includes(EAppRouter.admin)) {
     console.log("admin >>> check token login");
     return <div>Login</div>;
