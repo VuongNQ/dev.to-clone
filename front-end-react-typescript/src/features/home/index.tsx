@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import styles from './home.module.scss';
 import { Link } from "react-router-dom";
-import routes from "@/config/routes";
+import routes from "@/constants/routes";
 import ImageContentHome from "@/assets/image/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ko14fygno7jgvo7gz8k9.gif";
 import { List } from "./homets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
