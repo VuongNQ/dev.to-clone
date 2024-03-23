@@ -1,24 +1,178 @@
 .wrapper {
-   .header-content {
+  .header-content {
     margin: -4px 0px;
     padding: 4px 0px;
-    
-       .button-content {
-        color: #090909;
-        font-size: 1.8rem;
-        padding: 8px 12px;
-       }
-   }
-   .image-top {
-        aspect-ratio: auto 1000 / 42;
-        width: 100%;height: 100%;
-        object-fit: contain;
-        max-height: calc(90vh - 56px);
-        border-radius: 6px;
-    }
 
-    .title-page-content {
-        background-color: rgba(255,255,255,1);
-        padding: 20px;
+    .button-content {
+      color: #090909;
+      font-size: 1.8rem;
+      padding: 8px 12px;
     }
+  }
+  .image-top {
+    aspect-ratio: auto 1000 / 42;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: calc(90vh - 56px);
+    border-radius: 6px;
+  }
+
+  .title-page-content {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+  }
+  .header-title {
+    height: 204px;
+    padding: 20px;
+    .ImgAndTitle {
+      display: flex;
+      margin: 0px 0px 16px;
+      .title-separateName {
+        margin-left: 1.5rem;
+        align-items: center;
+        position: relative;
+        button,
+        .title-inside {
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        span {
+          margin: 0 5px;
+        }
+        .title-time {
+          position: absolute;
+          left: 0px;
+          bottom: -7px;
+          font-size: 1.2rem;
+        }
+        /* Tippy inside title-separateName */
+        .wrapper-Tippy {
+          width: 349px;
+          
+          height: 369px;
+          border-radius: 8px;
+          background-color: #fff;
+          border-top: 34px solid #0c3ec6;
+          box-shadow: 0 10px 15px -3px rgba( 0, 0, 0 , 0.1), 0 4px 6px -2px rgba( 0, 0, 0 , 0.05), 0 0 0 1px rgba( 0, 0, 0 , 0.1);
+          .inner-Tippy {
+            margin: 12px 0px 0px 0px;
+            padding: 0 15px 16px;
+            position: relative;
+            top: -26px;
+            .header-Tippy {
+              display: flex;
+             cursor: pointer;
+              .image-Tippy {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                position: relative;
+                border: 1px solid black;
+              }
+              span {
+                font-weight: 600;
+                font-size: 20px;
+                margin: 20px 15px 0px;
+                color: #404040;
+              }
+            }
+            .button-Tippy {
+              width: 100%;
+              border-radius: 6px;
+              height: 40px;
+              margin: 15px 0px;
+              background: #3b49df;
+              color: #f9f9f9;
+              padding: 8px 16px;
+              font-size: 1.6rem;
+             cursor: pointer;
+              &:hover {
+                background-color: rgb(47, 58, 178);
+              }
+              &:focus {
+                background-color: rgb(47, 58, 178);
+              }
+            }
+            .color-base {
+              color: #575757;
+              margin-bottom: 10px;
+            }
+            ul {
+              list-style: none;
+              margin-bottom: 10px;
+              margin-left: -18px;
+              li {
+                margin-bottom: 5px;
+                .key {
+                  font-weight: 700;
+                  font-size: 1.2rem;
+                  color: #525252;
+                }
+                .value {
+                  color: #090909;
+                }
+              }
+            }
+          }
+        }
+      }
+      .image {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        border-radius: 50%;
+      }
+      .img-children {
+        img {
+          width: 20.8px;
+          height: 20.8px;
+          position: absolute;
+          right: 89rem;
+          top: 41.5rem;
+          border: 1px solid black;
+          border-radius: 50%;
+        }
+      }
+    }
+    .content {
+      padding: 0px 0px 0px 48px;
+      .title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1;
+        &:hover {
+          color: var(--color-primary-hover-font);
+          text-decoration: underline;
+        }
+      }
+      .tag {
+        margin: 16px 0px 16px -4px;
+        display: flex;
+
+        button {
+          font-size: 1.4rem;
+          margin-left: 10px;
+        }
+      }
+      .title-footer {
+        display: flex;
+        justify-content: space-between;
+        .title-left-footer {
+          display: flex;
+          .title-icon-footer {
+            span {
+              margin-left: 10px;
+            }
+          }
+          .title-icon-footer-comment {
+            margin-left: 30px;
+            span {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

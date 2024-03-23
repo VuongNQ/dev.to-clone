@@ -1,9 +1,21 @@
-type IconsType = {
-    width: string
-    height: string
+ export enum EIcons {
+    Icons1 = "icons1",
+    Icons2 = "icons2",
+    Icons3 = "icons3",
+    Icons4 = "icons4",
+    Icons5 = "icons5",
+    Icons6 = "icons6",
+ }
+
+ 
+ 
+ type IconsType = {
+    width?: string
+    height?: string
 }
 export const Icons1 = ({
-    width, height
+    width = "12px", 
+    height = "12px"
 }: IconsType) => (
     <svg width={width} height={height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
         <g className="nc-icon-wrapper">
