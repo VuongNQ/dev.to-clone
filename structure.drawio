@@ -1,103 +1,115 @@
-<mxfile host="app.diagrams.net" modified="2024-03-23T04:30:07.330Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="QVSZyVC5eUOPTpXJkgSU" version="24.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-23T04:59:05.774Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0" etag="nWDiuAznTDRnoU6YbiO2" version="24.0.8" type="github">
   <diagram name="Page-1" id="wrw0SfxO5_0Ca2JjUSIg">
     <mxGraphModel dx="1173" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-1" value="src" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-1" value="src" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry y="70" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-2" value="components&lt;div&gt;nơi chúa các component dùng cho toàn bộ app&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-2" value="components&lt;div&gt;nơi chúa các component dùng cho toàn bộ app&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="150" width="280" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-4" value="component chức năng&amp;nbsp; vd&lt;div&gt;auth , provider&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-4" value="component chức năng&amp;nbsp; vd&lt;div&gt;auth , provider&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="90" width="205" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-5" value="Ui&lt;div&gt;chứa các component chỉ lam UI&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-5" value="Ui&lt;div&gt;chứa các component chỉ lam UI&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="180" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-6" value="constants&lt;div&gt;nơi chứa biến mặc định&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-6" value="constants&lt;div&gt;nơi chứa biến mặc định&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="115" y="220" width="190" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-7" value="contexts&lt;div&gt;nơi define context toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-7" value="contexts&lt;div&gt;nơi define context toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="310" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-8" value="features&lt;div&gt;Nơi để code chính của các tính năng của app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-8" value="features&lt;div&gt;Nơi để code chính của các tính năng của app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="410" width="250" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-9" value="Feature giống như 1 mini app trong app lớn&lt;div&gt;nó cấu trúc tương tự như app, tuy nhiên phân component của nó gồm cả UI và component sử lí logic và ko cần tách nhỏ nữa&lt;/div&gt;&lt;div&gt;Còn lại các thành phần còn lại tương tự như ở ngoài src.&lt;/div&gt;&lt;div&gt;Có thể define child route trong feature nhưng khuyến khích để ở routes ở ngoài&lt;/div&gt;&lt;div&gt;&lt;br&gt;lưu ý: chỉ tạo thêm khi thật sự cần thiết, các feature là độc lập nên tuyệt đối không import từ fearure này sang feature khác&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-9" value="Feature giống như 1 mini app trong app lớn&lt;div&gt;nó cấu trúc tương tự như app, tuy nhiên phân component của nó gồm cả UI và component sử lí logic và ko cần tách nhỏ nữa&lt;/div&gt;&lt;div&gt;Còn lại các thành phần còn lại tương tự như ở ngoài src.&lt;/div&gt;&lt;div&gt;Có thể define child route trong feature nhưng khuyến khích để ở routes ở ngoài&lt;/div&gt;&lt;div&gt;&lt;br&gt;lưu ý: chỉ tạo thêm khi thật sự cần thiết, các feature là độc lập nên tuyệt đối không import từ fearure này sang feature khác&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="400" y="371.25" width="440" height="137.5" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-10" value="hooks&lt;div&gt;dùng cho toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-10" value="hooks&lt;div&gt;dùng cho toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="497.5" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-11" value="services&lt;div&gt;nơi chứa code gọi API&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-11" value="services&lt;div&gt;nơi chứa code gọi API&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="590" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-12" value="styles&lt;div&gt;nơi chứa code css dùng toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-12" value="styles&lt;div&gt;nơi chứa code css dùng toàn app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="680" width="210" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-13" value="types&lt;div&gt;nơi định nghĩa typescript&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-13" value="types&lt;div&gt;nơi định nghĩa typescript&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="770" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-14" value="routes&lt;div&gt;nơi định nghĩa routing cho toàn app&lt;br&gt;dung lazy load để các feature lên app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-14" value="routes&lt;div&gt;nơi định nghĩa routing cho toàn app&lt;br&gt;dung lazy load để các feature lên app&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="860" width="230" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-20" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-1" target="Rp1hxPwc3jwJhl6jkTWq-12">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-20" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-1" target="Rp1hxPwc3jwJhl6jkTWq-14" edge="1">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="340" y="380" as="sourcePoint" />
-            <mxPoint x="500" y="380" as="targetPoint" />
+            <mxPoint x="80" y="910" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="40" y="710" />
+              <mxPoint x="40" y="920" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-6">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="245" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-27" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="180" as="sourcePoint" />
             <mxPoint x="120" y="180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-28" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-7">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-28" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-7" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="340" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-8">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-8" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="440" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-10">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-10" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="528" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-11">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-11" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="40" y="620" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-2" target="Rp1hxPwc3jwJhl6jkTWq-4">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-2" target="Rp1hxPwc3jwJhl6jkTWq-4" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="340" y="380" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.002;entryY=0.628;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-2" target="Rp1hxPwc3jwJhl6jkTWq-5">
+        <mxCell id="Rp1hxPwc3jwJhl6jkTWq-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.002;entryY=0.628;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Rp1hxPwc3jwJhl6jkTWq-2" target="Rp1hxPwc3jwJhl6jkTWq-5" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="340" y="380" as="sourcePoint" />
             <mxPoint x="500" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J_ycGdUMu7clSVDDcu-x-1" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="40" y="720" as="sourcePoint" />
+            <mxPoint x="120" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J_ycGdUMu7clSVDDcu-x-2" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Rp1hxPwc3jwJhl6jkTWq-13">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="40" y="799.5" as="sourcePoint" />
+            <mxPoint x="200" y="799.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
