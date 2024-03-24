@@ -47,7 +47,7 @@ interface ListPersonContent {
 const Person1: PersonContent[] = [
         {
             id: 0,
-            iconEnum: EIcons.Icons1,
+            iconEnum: EIcons.IconHeart,
             name: "Anmol Baranwal",
             nameMedium: "Taipy",
             since: "Mar 14",
@@ -76,7 +76,7 @@ const Person1: PersonContent[] = [
         {
             id: 1,
             name: "Fernando Gonzalez Tostado",
-            iconEnum: EIcons.Icons2,
+            iconEnum: EIcons.IconHeart,
             nameMedium: "",
             since: "Mar 18",
             title: "AI Automated Engineers - Are We Dommed",
@@ -103,7 +103,7 @@ const Person1: PersonContent[] = [
         },
         {
             id: 2,
-            iconEnum: EIcons.Icons3,
+            iconEnum: EIcons.IconHeart,
             name: "dev.to staff",
             nameMedium: "The DEV Team",
             since: "Mar 18",
@@ -133,7 +133,7 @@ const Person1: PersonContent[] = [
             id: 3,
             name: "Suraj Vishwakarma",
             nameMedium: "",
-            iconEnum: EIcons.Icons4,
+            iconEnum: EIcons.IconHeart,
             since: "Mar 18",
             title: "Debugging Techniques Every Developer Should Know",
             tags: "#beginners",
@@ -161,7 +161,7 @@ const Person1: PersonContent[] = [
             id: 4,
 
             name: "Cherlock Code 🔎",
-            iconEnum: EIcons.Icons5,
+            iconEnum: EIcons.IconHeart,
             nameMedium: "",
             since: "Mar 14",
             title: "🙋 How to Show Up Daily as a Newbie Dev",
@@ -189,7 +189,7 @@ const Person1: PersonContent[] = [
         {
             id: 5,
             name: "Shubham Tiwari",
-            iconEnum: EIcons.Icons6,
+            iconEnum: EIcons.IconHeart,
             nameMedium: "",
             since: "Mar 18",
             title: "TypeScript | Beginner",
@@ -217,7 +217,7 @@ const Person1: PersonContent[] = [
         {
             id: 4,
             name: "Cherlock Code 🔎",
-            iconEnum: EIcons.Icons1,
+            iconEnum: EIcons.IconHeart,
             nameMedium: "",
             since: "Mar 14",
             title: "🙋 How to Show Up Daily as a Newbie Dev",
@@ -244,8 +244,7 @@ const Person1: PersonContent[] = [
         },
         {
             id: 4,
-            iconEnum: EIcons.Icons1,
-
+            iconEnum: EIcons.IconHeart,
             name: "Cherlock Code 🔎",
             nameMedium: "",
             since: "Mar 14",
@@ -273,7 +272,7 @@ const Person1: PersonContent[] = [
         },
         {
             id: 4,
-            iconEnum: EIcons.Icons1,
+            iconEnum: EIcons.IconHeart,
             name: "Cherlock Code 🔎",
             nameMedium: "",
             since: "Mar 14",
