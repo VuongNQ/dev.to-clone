@@ -1,5 +1,5 @@
 import ImageContentHome from "@/assets/image/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ko14fygno7jgvo7gz8k9.gif";
-import { EIcons, IconHeart, Icons2 } from "@/component/component-children/icons/icons";
+import { EIcons, IconHeart, Icons2 } from "@/component/UI/GlobalStyle/icons/icons";
 import { EAppRouter } from "@/types/app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from '@tippyjs/react/headless';
@@ -7,10 +7,12 @@ import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
 import styles from './home.module.scss';
 import { List } from "./homets";
+import Button from "@/component/UI/GlobalStyle/button/button";
 const cx = classNames.bind(styles);
 
 
 function Home() {
+
   const ListNew = List.flatMap((item) => (item.type.map((i) => {
     const iconComponent = (() => {
       switch (i.iconEnum) {
@@ -25,11 +27,11 @@ function Home() {
   return (
     <div className={cx("wrapper")}>
       <div className={cx('header-content')}>
-        <button className={cx('button-content')}>Relavant</button>
+        <Button headerButton="Relevant" >Relevant</Button>
         <Link to={EAppRouter.about}>
-          <button className={cx('button-content')}>Latest</button>
+          <Button headerButton="Latest" >Latest</Button>
         </Link>
-        <button className={cx('button-content')}>Top</button>
+        <Button headerButton="Top" >Top</Button>
       </div>
       <img className={cx('image-top')} src={ImageContentHome} alt="image header" />
       {
@@ -91,16 +93,27 @@ function Home() {
                 <div className={cx('content')}>
                   <a href="" className={cx('title')}>{item.title}</a>
                   <div className={cx('tag')}>
-                    <button>{item.tags}</button>
-                    <button>{item.tags1}</button>
-                    <button>{item.tags2}</button>
-                    <button>{item.tags3}</button>
+                    <Button pink="pink">{item.tagThan}
+                      <span>{item.tags}</span>
+                    </Button>
+                    <Button OceanBlue="OceanBlue" >
+                      {item.tagThan}
+                      <span>{item.tags1}</span>
+                    </Button>
+                    <Button yellow="yellow">
+                      {item.tagThan}
+                      <span> {item.tags2}</span>
+                    </Button>
+                    <Button green="green" >
+                      {item.tagThan}
+                      <span>{item.tags3}</span>
+                    </Button>
                   </div>
                   <div className={cx('title-footer')}>
                     <a href="">
                       <button className={cx('title-left-footer')} >
                         <div className={cx('title-icon-footer')}>
-                            {item.iconComponent}
+                          {item.iconComponent}
                           <span>21 reactions</span>
                         </div>
                         <div className={cx('title-icon-footer-comment')}>

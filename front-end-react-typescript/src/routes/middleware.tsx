@@ -1,5 +1,5 @@
-import DefaulLayout from "@/component/defaultLayout-UI/defaultLayout";
-import GlobalStyles from "@/component/GlobalStyle/GlobalStyles";
+import DefaulLayout from "@/component/UI/GlobalStyle/defaultLayout.tsx/defaultLayout";
+import GlobalStyles from "@/component/UI/GlobalStyle/GlobalStyles";
 import { EAppRouter } from "@/types/app";
 import { Outlet, useLocation } from "react-router-dom";
 

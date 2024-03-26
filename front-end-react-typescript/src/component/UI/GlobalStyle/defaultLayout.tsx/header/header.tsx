@@ -1,12 +1,12 @@
+import myImage from '@/assets/image/resized_logo_UQww2soKuUsjaOGNB38o.png';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames/bind';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import myImage from '@/assets/image/resized_logo_UQww2soKuUsjaOGNB38o.png';
-import classNames from 'classnames/bind';
+import LoginAndAccount from '../loginAccount/loginAccout';
 import styles from './header.module.scss';
-import LoginAndAccount from './loginAccount/loginAccout';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faYenSign } from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles);
 

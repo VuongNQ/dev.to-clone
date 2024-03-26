@@ -1,14 +1,14 @@
 import classNames from "classnames/bind";
 import styles from './sidebar.module.scss';
-import LoginAndAccount from "../header/loginAccount/loginAccout";
+import LoginAndAccount from "../loginAccount/loginAccout";
 import { SbarType } from "./sidebarType";
 import {
    IconFacebook, IconGithub
    , IconInsTagram,
    IconMastodon, IconTwitch,
    IconTwitter
-} from "@/component/component-children/icons/icons";
-import Button from "@/component/component-children/button/button";
+} from "@/component/UI/GlobalStyle/icons/icons";
+import Button from "@/component/UI/GlobalStyle/button/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import Tippy from '@tippyjs/react/headless';
@@ -121,7 +121,7 @@ export const SiderBarType = (props: SbarType) => {
                      placement="bottom-end"
                      trigger="click"
                      render={attrs => (
-                        <div className={cx('siderbarTippy')} tabIndex="-1" {...attrs} >
+                        <div className={cx('siderbarTippy')} tabIndex={-1} {...attrs} >
                            {NewDallad.map((item, index) => {
                               return (
                                  <div className={cx('wrapperTippy')} key={index}>

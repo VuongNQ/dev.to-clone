@@ -1,9 +1,6 @@
  export enum EIcons {
     IconHeart = "iconHeart",
  }
-
- 
- 
  type IconsType = {
     width?: string
     height?: string
@@ -239,5 +236,7 @@ export const IconHeart= ({
     </defs>
 </svg>
 )
+
+
 
 

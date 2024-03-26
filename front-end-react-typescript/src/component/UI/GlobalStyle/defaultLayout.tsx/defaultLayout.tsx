@@ -3,7 +3,8 @@ import classNames from "classnames/bind";
 import styles from './defaultLayout.module.scss';
 import Header from "./header/header";
 import { SiderBarType } from "./sidebar/sidebar";
-import { Icons1, Icons2, Icons3, Icons4, Icons5, Icons6, Icons7, Icons8, Icons9, IconsOther1, IconsOther2, IconsOther3 } from "../component-children/icons/icons";
+import { Icons1, Icons2, Icons3, Icons4, Icons5, Icons6, Icons7, Icons8, Icons9, IconsOther1, IconsOther2, IconsOther3 } from "../icons/icons";
+import SidebarRight from "./sidebar/sidebarRight";
 
 const cx = classNames.bind(styles);
 
@@ -249,7 +250,7 @@ const DefaulLayout = ({ children }: DefaulLayoutChildren) => {
                 />
                 <div className={cx('content')}>{children}</div>
                 <div>
-                    <h1>siderbar Right</h1>
+                    <SidebarRight/>
                 </div>
             </div>
         </div>
