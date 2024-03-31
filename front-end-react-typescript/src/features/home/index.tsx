@@ -1,33 +1,36 @@
 import ImageContentHome from "@/assets/image/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ko14fygno7jgvo7gz8k9.gif";
-import { EIcons, IconHeart, Icons2 } from "@/component/UI/GlobalStyle/icons/icons";
+import Button from "@/component/UI/GlobalStyle/button/button";
+import { EIcons, IconComment, IconFuture } from "@/component/UI/GlobalStyle/icons/icons";
 import { EAppRouter } from "@/types/app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from '@tippyjs/react/headless';
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
 import styles from './home.module.scss';
-import { List } from "./homets";
-import Button from "@/component/UI/GlobalStyle/button/button";
+import { List, Person2 } from "./homets";
 const cx = classNames.bind(styles);
 
 
-function Home() {
 
+function Home() {
   const ListNew = List.flatMap((item) => (item.type.map((i) => {
     const iconComponent = (() => {
       switch (i.iconEnum) {
-        case EIcons.IconHeart:
-          return <IconHeart />;
+        case EIcons.IconComment:
+          return <IconComment />;
         default:
-          return <Icons2 />;
+          return <IconFuture />;
       }
-    })()
+    })();
+    if(EIcons.IconFuture) {
+      return ()
+    }
     return { ...i, iconComponent }
   })));
   return (
     <div className={cx("wrapper")}>
       <div className={cx('header-content')}>
-        <Button headerButton="Relevant" >Relevant</Button>
+        <Button headerButton="Relevant">Relevant</Button>
         <Link to={EAppRouter.about}>
           <Button headerButton="Latest" >Latest</Button>
         </Link>
@@ -38,7 +41,7 @@ function Home() {
         ListNew.map((item, index) => {
           return (
             <div key={index} className={cx('header-title')}>
-              <div className="inner">
+              <div className={cx("inner")}>
                 <div className={cx('ImgAndTitle')}>
                   <a href="">
                     <img className={cx('image')} src={item.hinhanh} alt="" />
@@ -110,26 +113,74 @@ function Home() {
                     </Button>
                   </div>
                   <div className={cx('title-footer')}>
-                    <a href="">
+                    <a href="" className={cx('title-link-One')} >
                       <button className={cx('title-left-footer')} >
                         <div className={cx('title-icon-footer')}>
-                          {item.iconComponent}
-                          <span>21 reactions</span>
+                          <span className={cx('IconFull')}>
+                            <span>
+                              <img src={item.iconReactionOne} alt="" />
+                            </span>
+                            <span>
+                              <img src={item.iconReactionTwo} alt="" />
+                            </span>
+                            <span>
+                              <img src={item.iconReactionThree} alt="" />
+                            </span>
+                            <span>
+                              <img src={item.iconReactionFour} alt="" />
+                            </span>
+                            <span>
+                              <img src={item.iconReactionFive} alt="" />
+                            </span>
+                          </span>
+                          <span className={cx('title-reactions')} >21 reactions</span>
                         </div>
+                      </button>
+                    </a>
+                    <a href="" className={cx('title-link-Two')} >
+                      <button>
                         <div className={cx('title-icon-footer-comment')}>
-                          <FontAwesomeIcon icon={item.iconHeart} />
-                          <span>10 comments</span>
+                          <span className={cx('icon-reaction-comment')}>
+                            {item.iconComponent}
+                          </span>
+                          <span>5 comments</span>
                         </div>
                       </button>
                     </a>
                     <a href="">
                       <button>
                         <div className={cx('title-icon-footer')}>
-                          <FontAwesomeIcon icon={item.iconHeart} />
+                          <button>
+                            {false || item.iconEnum1}
+                          </button>
                         </div>
                       </button>
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          )
+        })
+      }
+      {
+        Person2.map((item, index) => {
+          return (
+            <div className={cx('header-title')} key={index}>
+              <div className={cx('inner')} >
+                <div className={cx('header-icon')}>
+                  <p>{item.name}</p>
+                  <button>
+                    <FontAwesomeIcon icon={item.icons} />
+                  </button>
+                </div>
+                <div className={cx('content-community')}>
+                  <img src={item.image} alt="" />
+                  <h3>{item.content}</h3>
+                  <p>{item.contentchidlrenOne}</p>
+                  <p>{item.contentchildrenTwo}</p>
+                  <a className={cx('tag-link')} href="">{item.tags}</a>
+                  <p>{item.iconsTitle}</p>
                 </div>
               </div>
             </div>

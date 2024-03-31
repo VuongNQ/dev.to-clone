@@ -1,4 +1,5 @@
 .wrapper {
+  margin-right: 6px;
   h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -10,6 +11,7 @@
     background-color: #fff;
     box-shadow: 1px 2px 7px rgba(5, 4, 1, 0.05);
   }
+
   .aside {
     margin-top: 1.4rem;
     cursor: pointer;
@@ -149,6 +151,65 @@
     color: var(--color-primary-hover-font);
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.inner-right {
+  border-radius: 8px;
+  width: 368px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 1px 2px 7px rgba(5, 4, 1, 0.05);
+  margin-left: 1.5rem;
+  .name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #404040;
+    &:hover {
+      color: var(--color-primary-hover-font)
+    }
+  }
+  .title {
+    font-size: 1.2rem;
+    color: #575757;
+  }
+  .nameless {
+    &:hover {
+      color: var(--color-primary-hover-font);
+      div {
+        color: #404040;
+      }
+    }
+  }
+  .buttonNew {
+    background-color: #fcd34d;
+    padding: 4px;
+    border-radius: 4px;
+    color: #78350f;
+    font-size: 1.4rem;
+  }
+}
+
+.header-right-content, .header-right-bottom {
+  margin: 0px 0px 15px;
+  padding: 11px 43px;
+  width: 368px;
+  h4 {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: 600;
+    padding: 10px;
+    color: #171717;
+  }
+  button {
+    width: 100%;
+    padding: 17px 23px;
+    text-align: unset;
+    margin-bottom: 10px;
+    background-color: rgba(245,245,245,1);
+    &:hover {
+      background-color: #fff;
+      color: var(--color-primary-hover-font);
     }
   }
 }

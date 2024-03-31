@@ -17,7 +17,6 @@
     max-height: calc(90vh - 56px);
     border-radius: 6px;
   }
-
   .title-page-content {
     background-color: rgba(255, 255, 255, 1);
     padding: 20px;
@@ -164,24 +163,116 @@
       .title-footer {
         display: flex;
         justify-content: space-between;
-        .title-left-footer {
-          background-color: rgba(255, 255, 255, 1);
-          display: flex;
-          &:hover {
-            background-color: #0c3ec6;
-          }
-          .title-icon-footer {
+        .title-link-One {
+          .title-left-footer {
+            background-color: rgba(255, 255, 255, 1);
             display: flex;
-            span {
-              margin-left: 10px;
+            &:hover {
+              background-color: rgba(0,0,0,0.035);
+              border-radius: 6px;
+            }
+            .title-icon-footer {
+              display: flex;
+              align-items: center;
+              padding: 4px 12px 4px 8px;
+              .IconFull {
+                span {
+                  img {
+                    padding: 2px;
+                    width: 2rem;
+                    border-radius: 50%;
+                    background-color: rgba(0,0,0,0.035);
+                  }
+                }
+              }
+              .title-reactions {
+                font-size: 1.4rem;
+                color: #3d3d3d;
+                margin-left: 1rem;
+              }
+            }
+            .title-icon-footer-comment {
+              margin-left: 30px;
+              span {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .title-link-Two {
+          button {
+            background-color: rgba(255, 255, 255, 1);
+         padding: 4px 12px 4px 8px;
+            &:hover {
+              background-color: rgba(0,0,0,0.035);
+              border-radius: 6px;
             }
           }
           .title-icon-footer-comment {
-            margin-left: 30px;
-            span {
-              margin-left: 10px;
+            display: flex;
+            align-items: center;
+            .icon-reaction-comment {
+              margin-right: 0.5rem;
+              color: #3d3d3d;
             }
           }
+          span {
+            color: #3d3d3d;
+            font-size: 1.4rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+  /* ở đây là PersonCommunity  */
+  .header-title {
+    .header-community {
+      padding: auto;
+      margin-right: 20px;
+    }
+    .header-icon {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      p {
+        color: #171717;
+        font-size: 1.4rem;
+      }
+      button {
+        background-color: #fff;
+        padding: 8px;
+        &:hover {
+          background-color: #f6f6f6;
+          border-radius: 6px;
+        }
+      }
+    }
+    .content-community {
+      padding: 0px 40px;
+      img {
+        width: 520px;
+        height: 273px;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #171717;
+      }
+      p {
+        color: #171717
+      }
+      .tag-link {
+         color: #3B49DF;
+         font-size: 2.4rem;
+         font-weight: 800;
+         text-decoration: underline;
+         margin-bottom: 10px;
+         &:hover {
+         color: rgb(47,58,147); 
         }
       }
     }
