@@ -15,8 +15,6 @@ import { EIcons } from "@/component/UI/GlobalStyle/icons/icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { fa1, fa6, faAdd, faEllipsisH, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-
-
 interface PersonContent {
   id: number
   name: string

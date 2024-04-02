@@ -8,6 +8,7 @@ export interface ButtonChildren {
     yellow?: string;
     green? : string;
     headerButton?: "Relevant" | "Latest" | "Top";
+    fontWeight?: "fontWeight"
     title?: string;
     to?: string;
     onClick? : () => void;

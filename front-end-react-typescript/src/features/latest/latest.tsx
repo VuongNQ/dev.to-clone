@@ -6,11 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from '@tippyjs/react/headless';
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
-import styles from './home.module.scss';
-import { List, ListTheDiv, Person2 } from "./homets";
+import styles from './latest.module.scss';
+import { List, ListTheDiv, Person2 } from "./index";
 const cx = classNames.bind(styles);
 
-function Home() {
+
+
+function Latest() {
   const ListNew = List.flatMap((item) => (item.type.map((i) => {
     const iconComponent = (() => {
       switch (i.iconEnum) {
@@ -20,14 +22,15 @@ function Home() {
           return <IconFuture />;
       }
     })();
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     return { ...i, iconComponent }
   })));
 
   return (
     <div className={cx("wrapper")}>
       <div className={cx('header-content')}>
+        <Link to={EAppRouter.root}>
         <Button fontWeight="fontWeight" headerButton="Relevant">Relevant</Button>
+        </Link>
         <Link to={EAppRouter.latest}>
           <Button headerButton="Latest" >Latest</Button>
         </Link>
@@ -476,4 +479,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Latest;
