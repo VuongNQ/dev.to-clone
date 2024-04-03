@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from './tags.module.scss';
+import styles from '@/styles/tags.module.scss';
 
 const cx = classNames.bind(styles);
 

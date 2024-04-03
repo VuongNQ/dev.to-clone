@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from '@tippyjs/react/headless';
 import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
-import styles from './latest.module.scss';
+import styles from '@/styles/latest.module.scss';
 import { List, ListTheDiv, Person2 } from "./index";
 const cx = classNames.bind(styles);
 
