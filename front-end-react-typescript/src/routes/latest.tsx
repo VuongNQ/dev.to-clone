@@ -1,4 +1,4 @@
-import Latest from "@/features/latest/latest";
+import Latest from "@/features/latest/index";
 
 export function Component() {
   return <Latest/>

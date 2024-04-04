@@ -1,13 +1,13 @@
-import ImageContentHome from "@/assets/image/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ko14fygno7jgvo7gz8k9.gif";
+import latest from '@/assets/image/latest.avif';
 import Button from "@/component/UI/GlobalStyle/button/button";
+import Tippy from '@tippyjs/react/headless';
+import styles from '@/styles/latest.module.scss';
+import classNames from "classnames/bind";
 import { EIcons, IconComment, IconFuture } from "@/component/UI/GlobalStyle/icons/icons";
 import { EAppRouter } from "@/types/app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Tippy from '@tippyjs/react/headless';
-import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
-import styles from '@/styles/latest.module.scss';
-import { List, ListTheDiv, Person2 } from "./index";
+import { List, ListTheDiv, Person2 } from "./latest";
 const cx = classNames.bind(styles);
 
 
@@ -32,11 +32,14 @@ function Latest() {
         <Button fontWeight="fontWeight" headerButton="Relevant">Relevant</Button>
         </Link>
         <Link to={EAppRouter.latest}>
-          <Button headerButton="Latest" >Latest</Button>
+          <Button headerButton="Latest">Latest</Button>
         </Link>
-        <Button headerButton="Top" >Top</Button>
+        <Button headerButton="Top">Top</Button>
       </div>
-      <img className={cx('image-top')} src={ImageContentHome} alt="image header" />
+      <div className={cx('post-Sign')}>
+          <p className={cx('post')}>Some latest posts are only visible for members. <a className={cx('post-link')}  href="">Sign in</a> to see all latest</p>
+      </div>
+      <img className={cx('image-top')} src={latest} alt="image header" />
       {
         ListNew.map((item, index) => {
           return (
@@ -57,7 +60,7 @@ function Latest() {
                         <div className={cx('wrapper-Tippy')} tabIndex={index} {...attr}  >
                           <div className={cx('inner-Tippy')}>
                             <div className={cx('header-Tippy')}>
-                              <img className={cx('image-Tippy')} src={item.hinhanh} alt="" />
+                              <img className={cx('image-Tippy')} src={item.hinhanh1} alt="" />
                               <span>{item.name}</span>
                             </div>
                             <button className={cx('button-Tippy')} >{item.button}</button>
@@ -133,7 +136,7 @@ function Latest() {
                               <img src={item.iconReactionFive} alt="" />
                             </span>
                           </span>
-                          <span className={cx('title-reactions')} >21 reactions</span>
+                          <span className={cx('title-reactions')}>21 reactions</span>
                         </div>
                       </button>
                     </a>
@@ -143,7 +146,7 @@ function Latest() {
                           <span className={cx('icon-reaction-comment')}>
                             {item.iconComponent}
                           </span>
-                          <span>5 comments</span>
+                          <span>Add comment</span>
                         </div>
                       </button>
                     </a>

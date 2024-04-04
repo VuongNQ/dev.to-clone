@@ -2,11 +2,21 @@
   .header-content {
     margin: -4px 0px;
     padding: 4px 0px;
-
     .button-content {
       color: #090909;
       font-size: 1.8rem;
       padding: 8px 12px;
+    }
+  }
+  .post-Sign {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    .post {
+      color: #171717;
+      padding: 20px;
+    }
+    .post-link {
+      color: #3b49df;
     }
   }
   .image-top {
@@ -53,8 +63,7 @@
         /* Tippy inside title-separateName */
         .wrapper-Tippy {
           width: 349px;
-
-          height: 369px;
+          height: auto;
           border-radius: 8px;
           background-color: #fff;
           border-top: 34px solid #0c3ec6;
@@ -307,7 +316,7 @@
         display: flex;
         align-items: center;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.1);
+          0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.1);
         margin-top: 5rem;
         border-radius: 6px;
         border-top: 3rem solid black;
@@ -316,18 +325,18 @@
           width: 94.28px;
           height: 94.28px;
           border-radius: 50%;
-          padding:1rem;
+          padding: 1rem;
         }
         .title-span {
           padding: 1rem;
           .title-father {
-           color:  #171717;
-           font-weight: 700;
+            color: #171717;
+            font-weight: 700;
             font-size: 2.4rem;
           }
           .title-children {
             font-size: 1.3rem;
-          } 
+          }
         }
       }
     }

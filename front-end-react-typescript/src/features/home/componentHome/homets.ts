@@ -53,7 +53,6 @@ interface PersonContent {
   iconReactionFive?: string
   Array?: PersonCommunity[]
 }
-
 interface ListPersonContent {
   type: PersonContent[]
   dataBuy: string
@@ -365,7 +364,6 @@ export const List: Array<ListPersonContent> = [
   }
 
 ]
-
 export interface PersonCommunity {
   id: number
   name: string
@@ -397,7 +395,6 @@ export const Person2: PersonCommunity[] = [
     introduce2: "This week's featured authors: ",
   },
 ]
-
 export interface TheDiv {
   id: number
   image: string

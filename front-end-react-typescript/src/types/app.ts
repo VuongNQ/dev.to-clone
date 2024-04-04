@@ -3,5 +3,6 @@ export enum EAppRouter {
   about = "/about",
   tags = "/tags",
   admin = "/admin",
-  latest = "/latest"
+  latest = "/latest",
+  login = "/loginForm"
 }
