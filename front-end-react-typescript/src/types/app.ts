@@ -4,5 +4,5 @@ export enum EAppRouter {
   tags = "/tags",
   admin = "/admin",
   latest = "/latest",
-  login = "/loginForm"
+  top = "/top/week",
 }

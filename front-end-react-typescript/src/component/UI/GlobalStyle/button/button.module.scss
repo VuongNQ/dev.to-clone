@@ -26,12 +26,9 @@
 .variant {
   font-size: 1.6rem;
   font-weight: 600;
-
   color: #3b49df;
-
   border: 1px solid #3b49df;
   border-radius: 6px;
-
   height: 40px;
   margin: 0px 7px 0px 8px;
   padding: 7px 15px;
@@ -40,6 +37,20 @@
     background-color: #3b49df;
     color: var(--color-white);
     text-decoration-line: underline;
+  }
+}
+
+.Follow {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 6px;
+  height: 48px;
+  margin: 0px 7px 0px 8px;
+  padding: 7px 15px;
+  background-color: #3b49df;
+  &:hover {
+    background-color: rgba(47,58,178);
   }
 }
 

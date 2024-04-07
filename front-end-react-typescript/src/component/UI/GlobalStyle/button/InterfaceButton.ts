@@ -1,9 +1,10 @@
 import { ReactNode } from 'react'
 
 export interface ButtonChildren {
-    variant?: 'primary' | 'secondary' | "Follow";
+    variant?: 'primary' | 'secondary' ;
     outline?: 'outline';
     pink?: string;
+    Follow: string
     OceanBlue?: string;
     yellow?: string;
     green? : string;

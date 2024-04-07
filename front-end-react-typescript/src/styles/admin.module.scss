@@ -1,0 +1,66 @@
+@import url("./home.module.scss");
+@import url("../component/UI/GlobalStyle/defaultLayout.tsx/sidebar/sidebar.module.scss");
+.header-title {
+  text-align: center;
+}
+
+.button-one {
+  border-radius: 8px;
+}
+
+.rely {
+  display: flex;
+  align-items: center;
+  padding: 1.1rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+  border: 1px solid  rgba(212,212,212) ;
+  &:hover {
+    background-color: var(--color-primary-hover-button);
+  }
+}
+
+.input {
+  height: 40px;
+  margin-bottom: 10px;
+  &:focus {
+    border: 2px solid #2f3ab2;
+  }
+}
+.form-label {
+  position: relative;
+  top: -79px;
+  p {
+    font-weight: 700;
+  }
+}
+
+.checkbox-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  a {
+    color: #2f3ab2;
+    font-weight: 400;
+  }
+}
+
+.footer-login {
+  text-align: center;
+  margin-top: 10px;
+  color: #737373;
+  font-size: 1.4rem;
+  a {
+    color: #2f3ab2;
+  }
+}
+
+.footer-new {
+  text-align: center;  
+  a {
+    color: #2f3ab2;
+  }
+}
