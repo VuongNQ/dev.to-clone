@@ -38,6 +38,9 @@ function Top() {
         <Button headerButton="Top">Top</Button>
         </Link>
       </div>
+      <div className={cx('header-content-top')}>
+          <Link></Link>
+      </div>
       <div className={cx('post-Sign')}>
         <p className={cx('post')}>Some latest posts are only visible for members. <a className={cx('post-link')} href="">Sign in</a> to see all latest</p>
       </div>
