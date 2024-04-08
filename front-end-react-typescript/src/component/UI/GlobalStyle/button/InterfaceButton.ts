@@ -4,12 +4,12 @@ export interface ButtonChildren {
     variant?: 'primary' | 'secondary' ;
     outline?: 'outline';
     pink?: string;
-    Follow: string
+    Follow?: "follow"
     OceanBlue?: string;
     yellow?: string;
     green? : string;
     headerButton?: "Relevant" | "Latest" | "Top";
-    fontWeight?: "fontWeight"
+    fontWeight?: "fontWeight";
     title?: string;
     to?: string;
     onClick? : () => void;

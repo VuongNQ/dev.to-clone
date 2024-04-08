@@ -7,12 +7,12 @@ import { EIcons, IconComment, IconFuture } from "@/component/UI/GlobalStyle/icon
 import { EAppRouter } from "@/types/app";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { List, ListTheDiv, Person2 } from "./latest";
+import { List, ListTheDiv, Person2 } from "./top";
 const cx = classNames.bind(styles);
 
 
 
-function Latest() {
+function Top() {
   const ListNew = List.flatMap((item) => (item.type.map((i) => {
     const iconComponent = (() => {
       switch (i.iconEnum) {
@@ -484,4 +484,4 @@ function Latest() {
   );
 }
 
-export default Latest;
+export default Top;
