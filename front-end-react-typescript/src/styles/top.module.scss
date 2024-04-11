@@ -1,4 +1,8 @@
 .wrapper {
+  .header-full {
+    display: flex;
+    justify-content: space-between;
+  }
   .header-content {
     margin: -4px 0px;
     padding: 4px 0px;
@@ -6,6 +10,11 @@
       color: #090909;
       font-size: 1.8rem;
       padding: 8px 12px;
+    }
+  }
+  .img-top {
+    &:focus {
+      border: 2px solid #2f3ab2;
     }
   }
   .post-Sign {
@@ -19,13 +28,21 @@
       color: #3b49df;
     }
   }
+  .img-title-footer {
+    padding-left: calc(2rem + 0.5rem);
+    padding-right: calc(2rem + 0.5rem);
+  }
+  .footer {
+    padding-left: 2rem;
+  }
   .image-top {
-    aspect-ratio: auto 1000 / 42;
-    width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: contain;
-    max-height: calc(90vh - 56px);
-    border-radius: 6px;
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 90%;
+    max-height: calc(50vh + 180px);
+    border-radius: 8px;
   }
   .title-page-content {
     background-color: rgba(255, 255, 255, 1);

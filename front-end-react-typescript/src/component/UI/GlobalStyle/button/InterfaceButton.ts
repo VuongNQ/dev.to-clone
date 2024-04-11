@@ -8,7 +8,7 @@ export interface ButtonChildren {
     OceanBlue?: string;
     yellow?: string;
     green? : string;
-    headerButton?: "Relevant" | "Latest" | "Top";
+    headerButton?: "Relevant" | "Latest" | "Top" | "Week" | "Month" |  "Month" | "Year" | "Year" | "Infinity";
     fontWeight?: "fontWeight";
     title?: string;
     to?: string;
