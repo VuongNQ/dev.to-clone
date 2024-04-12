@@ -1,14 +1,9 @@
+
+
 @import url("./home.module.scss");
 @import url("../component/UI/GlobalStyle/defaultLayout.tsx/sidebar/sidebar.module.scss");
 .header-title {
   text-align: center;
-  h1 {
-    margin-bottom: 1rem;
-    font-weight: 700;
-  }
-  p {
-    margin-bottom: 2rem;
-  }
 }
 
 .button-one {
@@ -22,7 +17,7 @@
   font-size: 1.4rem;
   background-color: #fff;
   border-radius: 6px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
   border: 1px solid  rgba(212,212,212) ;
   &:hover {
     background-color: var(--color-primary-hover-button);

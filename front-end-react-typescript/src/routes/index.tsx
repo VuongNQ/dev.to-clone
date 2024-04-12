@@ -26,6 +26,10 @@ export const router = createBrowserRouter(
       <Route path={EAppRouter.admin}>
         <Route index lazy={() => import("./admin")} />
       </Route>
+      <Route path={EAppRouter.enter}>
+        <Route index lazy={() => import("./enter")} />
+      </Route>
+      
     </Route>
   )
 );

@@ -10,7 +10,9 @@ function LoginAndAccount() {
             <Link to={EAppRouter.admin}>
             <button className={cx("left")}>Log in</button>
             </Link>
+            <Link to={EAppRouter.enter}>
             <button className={cx("right")}>Create account</button>
+            </Link>
         </div>
     );
 }

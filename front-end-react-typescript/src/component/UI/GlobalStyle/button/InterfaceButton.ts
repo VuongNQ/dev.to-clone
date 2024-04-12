@@ -4,7 +4,7 @@ export interface ButtonChildren {
     variant?: 'primary' | 'secondary' ;
     outline?: 'outline';
     pink?: string;
-    Follow?: "follow"
+    Follow?: string
     OceanBlue?: string;
     yellow?: string;
     green? : string;
