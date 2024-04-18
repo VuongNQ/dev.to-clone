@@ -9,6 +9,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends BaseController
 
@@ -35,8 +36,9 @@ class RegisterController extends BaseController
     public function login(Request $request): JsonResponse
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            $user = Auth::user();
-            $success['token'] =  $user->createToken('MyAppToken')->accessToken;
+            $user = User::find(1);
+            //find đến người dùng
+            $success['token'] = $user->createToken('MyAppToken')->accessToken;
             $success['name'] =  $user->name;
 
             return $this->sendResponse($success, 'User login successfully.');

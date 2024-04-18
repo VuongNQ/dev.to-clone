@@ -15,7 +15,7 @@ function SidebarRight() {
           <div key={index} className={cx('wrapper')}>
             <div className={cx('inner-right')}>
               <div className={cx('header-right')}>
-                <a className={cx('name')} href="">{item.name}</a>
+                <a href="" className={cx('name')}>{item.name}</a>
                 <p className={cx('title')}>{item.title}</p>
                 <a className={cx('nameless')} href="">
                   <p>{item.nameless}</p>

@@ -25,8 +25,9 @@ class ProductController extends BaseController
      */
     public function store(Request $request): JsonResponse
     {
+        
         $input = $request->all();
-       
+        
         $validator = Validator::make($input, [
             'name' => 'required',
             'detail' => 'required'
@@ -68,7 +69,6 @@ class ProductController extends BaseController
     public function update(Request $request, Product $product): JsonResponse
     {
         $input = $request->all();
-       
         $validator = Validator::make($input, [
             'name' => 'required',
             'detail' => 'required'

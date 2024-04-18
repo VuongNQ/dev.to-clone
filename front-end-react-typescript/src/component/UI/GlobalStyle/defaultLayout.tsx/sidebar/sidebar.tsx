@@ -12,6 +12,7 @@ import Button from "@/component/UI/GlobalStyle/button/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
 import Tippy from '@tippyjs/react/headless';
+import { SideBarName } from "./sidebarType";
 
 const cx = classNames.bind(styles);
 
@@ -39,8 +40,16 @@ export const SiderBarType = (props: SbarType) => {
       <>
          <div className={cx('wrapper')}>
             <div className={cx('inner')}>
-               <h2>{props.names.name}</h2>
-               <p>{props.names.title}</p>
+               {
+                  SideBarName.map((item,index) => {
+                     return (
+                        <div key={index} >
+                           <h2>{item.name}</h2>
+                           <p>{item.title}</p>
+                        </div>
+                     )
+                  })
+               }
                <LoginAndAccount />
             </div>
             <aside className={cx('aside')} >

@@ -12,10 +12,6 @@ interface DefaulLayoutChildren {
     children?: ReactNode;
 }
 
-const SiderBarName = {
-    name: "DEV Community is a community of 1,286,889 amazing developers",
-    title: "We're a place where coders share, stay up-to-date and grow their careers."
-}
 
 const IconsTypeChildren = [
     {
@@ -243,7 +239,6 @@ const DefaulLayout = ({ children }: DefaulLayoutChildren) => {
             <Header />
             <div className={cx(`container mt-5 d-flex pt-5`)}>
                 <SiderBarType
-                    names={SiderBarName}
                     icons={IconsTypeChildren}
                     other={IconsTypeOther}
                     tag={IconsTags}
