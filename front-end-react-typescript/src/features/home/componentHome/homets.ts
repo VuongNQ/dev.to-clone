@@ -15,8 +15,6 @@ import { EIcons } from "@/component/UI/GlobalStyle/icons/icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { fa1, fa6, faAdd, faEllipsisH, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-
-
 interface PersonContent {
   id: number
   name: string
@@ -375,7 +373,7 @@ export interface PersonCommunity {
   tags: string
   iconsTitle: string
   name2: string
-  week2: string 
+  week2: string
   introduce2: string
 }
 
@@ -402,13 +400,13 @@ export interface TheDiv {
   titleSpan: string
 }
 
-export const ListTheDiv : TheDiv[] = [
+export const ListTheDiv: TheDiv[] = [
   {
-    id:0,
+    id: 0,
     image: ImageTitle,
     title: "Piotr Kulpinski",
     titleSpan: "/piotrkulpinski"
-  }, 
+  },
   {
     id: 1,
     image: ImageTitle1,

@@ -1,19 +1,18 @@
-import classNames from "classnames/bind";
-import styles from './sidebar.module.scss';
-import LoginAndAccount from "../loginAccount/loginAccout";
-import { SbarType } from "./sidebarType";
+import Button from "@/component/UI/GlobalStyle/button/button";
 import {
-   IconFacebook, IconGithub
-   , IconInsTagram,
+   IconFacebook, IconGithub,
+   IconInsTagram,
    IconMastodon, IconTwitch,
    IconTwitter
 } from "@/component/UI/GlobalStyle/icons/icons";
-import Button from "@/component/UI/GlobalStyle/button/button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Tippy from '@tippyjs/react/headless';
-import { SideBarName } from "./sidebarType";
-
+import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
+import LoginAndAccount from "../loginAccount/loginAccout";
+import styles from './sidebar.module.scss';
+import { IconsTypeChildren, SbarType, SideBarName } from "./sidebarType";
 const cx = classNames.bind(styles);
 
 const NewDallad = [
@@ -54,12 +53,14 @@ export const SiderBarType = (props: SbarType) => {
             </div>
             <aside className={cx('aside')} >
                {
-                  props.icons.map((item, index) => {
+                  IconsTypeChildren.map((item, index) => {
                      return (
                         <div className={cx('sidebar-icon')} key={index}>
+                          <Link to={item.to} >
                            <p>
                               {item.icon}
                            </p>
+                          </Link>
                            <p>
                               {item.title}
                            </p>

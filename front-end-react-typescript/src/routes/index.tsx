@@ -23,6 +23,12 @@ export const router = createBrowserRouter(
       <Route path={EAppRouter.tags} lazy={() => import("./tag")} />
       <Route path={EAppRouter.latest} lazy={() => import("./latest")} />
       <Route path={EAppRouter.top} lazy={() => import("./top")} />
+      <Route path={EAppRouter.podcasts} lazy={() => import("./podcasts")} />
+      <Route path={EAppRouter.videos} lazy={() => import("./videos")} />
+      <Route path={EAppRouter.help} lazy={() => import("./help")} />
+      <Route path={EAppRouter.advertise} lazy={() => import("./advertise")} />
+      <Route path={EAppRouter.devshowcase} lazy={() => import("./devshowcase")} />
+      <Route path={EAppRouter.contact} lazy={() => import("./contact")} />
       <Route path={EAppRouter.admin}>
         <Route index lazy={() => import("./admin")} />
       </Route>
