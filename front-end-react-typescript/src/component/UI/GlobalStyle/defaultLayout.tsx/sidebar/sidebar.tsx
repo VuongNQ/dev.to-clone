@@ -1,8 +1,9 @@
 import Button from "@/component/UI/GlobalStyle/button/button";
 import {
+   EIcons,
    IconFacebook, IconGithub,
    IconInsTagram,
-   IconMastodon, IconTwitch,
+   IconMastodon, Icons1, Icons2, Icons3, Icons4, Icons5, Icons6, Icons7, Icons8, Icons9, IconsOther1, IconsOther2, IconsOther3, IconTwitch,
    IconTwitter
 } from "@/component/UI/GlobalStyle/icons/icons";
 import { faEllipsisH } from "@fortawesome/free-solid-svg-icons";
@@ -12,35 +13,59 @@ import classNames from "classnames/bind";
 import { Link } from "react-router-dom";
 import LoginAndAccount from "../loginAccount/loginAccout";
 import styles from './sidebar.module.scss';
-import { IconsTypeChildren, SbarType, SideBarName } from "./sidebarType";
+import { IconsTags, IconsTypeChildren, IconsTypeOther, NewDallad, SideBarName } from "./sidebarType";
 const cx = classNames.bind(styles);
 
-const NewDallad = [
-   {
-      id: 0,
-      icon: <IconFacebook width="2.4rem" height="2.4rem" />,
-      title: "What's a billboard?"
-   },
-   {
-      id: 1,
-      icon: <IconGithub width="2.4rem" height="2.4rem" />,
-      title: "Manage preferences"
-   },
-   {
-      id: 2,
-      icon: <IconInsTagram width="2.4rem" height="2.4rem" />,
-      title: "Report billbloard"
-   }
 
-]
-
-export const SiderBarType = (props: SbarType) => {
+export const SiderBarType = () => {
+   const ListBar = IconsTypeChildren.map((item) => {
+      const iconCom = (() => {
+         switch (item.icon) {
+            case EIcons.Icons1:
+               return <Icons1 />
+            case EIcons.Icons2:
+               return <Icons2 />;
+            case EIcons.Icons3:
+               return <Icons3 />;
+            case EIcons.Icons4:
+               return <Icons4 />;
+            case EIcons.Icons5:
+               return <Icons5 />;
+            case EIcons.Icons6:
+               return <Icons6 />;
+            case EIcons.Icons7:
+               return <Icons7 />;
+            case EIcons.Icons8:
+               return <Icons8 />;
+            case EIcons.Icons9:
+               return <Icons9 />;
+            default:
+               return;
+         }
+      })();
+      return { ...item, iconCom }
+   })
+   const ListOther = IconsTypeOther.map((item) => {
+      const IconOther = (() => {
+         switch (item.icon) {
+            case EIcons.IconsOther1:
+               return <IconsOther1 />;
+            case EIcons.IconsOther2:
+               return <IconsOther2 />;
+            case EIcons.IconsOther3:
+               return <IconsOther3 />;
+            default:
+               return;
+         }
+      })();
+      return { ...item, IconOther }
+   })
    return (
       <>
          <div className={cx('wrapper')}>
             <div className={cx('inner')}>
                {
-                  SideBarName.map((item,index) => {
+                  SideBarName.map((item, index) => {
                      return (
                         <div key={index} >
                            <h2>{item.name}</h2>
@@ -53,35 +78,33 @@ export const SiderBarType = (props: SbarType) => {
             </div>
             <aside className={cx('aside')} >
                {
-                  IconsTypeChildren.map((item, index) => {
+                  ListBar.map((item, index) => {
                      return (
-                        <div className={cx('sidebar-icon')} key={index}>
-                          <Link to={item.to} >
+                        <Link key={index} className={cx('sidebar-icon')} to={item.to}>
                            <p>
-                              {item.icon}
+                              {item.iconCom}
                            </p>
-                          </Link>
                            <p>
                               {item.title}
                            </p>
-                        </div>
+                        </Link>
                      )
                   })
                }
-            </aside>
+            </aside >
             <aside className={cx('aside')} >
                <strong>Other</strong>
                {
-                  props.other.map((item, index) => {
+                  ListOther.map((item, index) => {
                      return (
-                        <div className={cx('sidebar-icon')} key={index}>
+                        <Link to={item.to} key={index} className={cx('sidebar-icon')} >
                            <p>
-                              {item.icon}
+                              {item.IconOther}
                            </p>
                            <p>
                               {item.title}
                            </p>
-                        </div>
+                        </Link>
                      )
                   })
                }
@@ -109,7 +132,7 @@ export const SiderBarType = (props: SbarType) => {
             <aside className={cx('aside-Popular')} >
                <strong>Popular Tags</strong>
                {
-                  props.tag.map((item, index) => {
+                  IconsTags.map((item, index) => {
                      return (
                         <div className={cx('sidebar-icon-Popular')} key={index}>
                            <p>
@@ -172,7 +195,7 @@ export const SiderBarType = (props: SbarType) => {
                   DEV Community  © 2016 - 2024.
                </p>
             </div>
-         </div>
+         </div >
       </>
    )
 }

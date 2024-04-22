@@ -1,5 +1,6 @@
 import { EAppRouter } from "@/types/app"
 import { EIcons } from "../../icons/icons"
+import React from "react"
 
 export enum ETolink {
    toHome = EAppRouter.root,
@@ -9,100 +10,345 @@ export enum ETolink {
    toVideos = EAppRouter.videos,
    toContact = EAppRouter.contact,
    toTags = EAppRouter.tags,
-   toDevshowcase = EAppRouter.devshowcase
+   toDevshowcase = EAppRouter.devshowcase,
+   toCodeOfConduct = EAppRouter.codeofconduct,
+   toPrivacy = EAppRouter.privacy,
+   toTerms = EAppRouter.terms,
 }
 export interface SbarType {
+   children?: React.ReactNode
    id: number
    icon: EIcons
    title?: string
    to: ETolink
-   other: {
-      id?: number
-      icon: React.ReactNode
-      title?: string
-   }[]
-   tag: {
-      id?: number
-      tag?: string
-      title?: string
-   }[]
+   tag?: string
 }
 export const IconsTypeChildren: SbarType[] = [
    {
       id: 0,
-      icon: EIcons.IconApple,
+      icon: EIcons.Icons1,
       title: "Home",
       to: ETolink.toHome,
-      other: [],
-      tag: []
+      tag: "",
    },
    {
       id: 1,
       icon: EIcons.Icons2,
       title: "Podscasts",
       to: ETolink.toPodcast,
-      other: [],
-      tag: []
+      tag: ""
    },
    {
       id: 2,
       icon: EIcons.Icons3,
       title: "Vidseos",
       to: ETolink.toVideos,
-      other: [],
-      tag: []
+      tag: ""
    },
    {
       id: 3,
       icon: EIcons.Icons4,
       title: "Tags",
-      other: [],
       to: ETolink.toTags,
-      tag: []
+      tag: ""
    },
    {
       id: 4,
       icon: EIcons.Icons5,
       title: "DEVs Help",
-      other: [],
       to: ETolink.toHelp,
-      tag: []
+      tag: ""
    },
    {
       id: 5,
       icon: EIcons.Icons6,
       title: "Forsem Shop",
-      other: [],
       to: ETolink.toHome,
-      tag: []
+      tag: ""
    },
    {
       id: 6,
       icon: EIcons.Icons7,
       title: "Advsertise on DEV",
-      other: [],
       to: ETolink.toAdvertise,
-      tag: []
+      tag: ""
    },
    {
       id: 7,
       icon: EIcons.Icons8,
       title: "DEVs Showcase",
-      other: [],
       to: ETolink.toDevshowcase,
-      tag: []
+      tag: ""
    },
    {
       id: 8,
       icon: EIcons.Icons9,
       title: "Constact",
-      other: [],
       to: ETolink.toContact,
-      tag: []
+      tag: ""
    },
 ]
 
+export const IconsTypeOther: SbarType[] = [
+   {
+      id: 0,
+      icon: EIcons.IconsOther1,
+      title: "Code of Conduct",
+      tag: "",
+      to: ETolink.toCodeOfConduct
+   },
+   {
+      id: 1,
+      icon: EIcons.IconsOther2,
+      title: "Privacy Policy",
+      tag: "",
+      to: ETolink.toPrivacy
+   },
+   {
+      id: 2,
+      icon: EIcons.IconsOther3,
+      title: "Term of use",
+      tag: "",
+      to: ETolink.toTerms
+   },
+]
 
+export const IconsTags: SbarType[] = [
+   {
+      id: 0,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "webdev"
+   },
+   {
+      id: 1,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "javascript"
+   },
+   {
+      id: 2,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "beginners"
+   },
+   {
+      id: 3,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "programming"
+   },
+   {
+      id: 4,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "tutorial"
+   },
+   {
+      id: 5,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "react"
+   },
+   {
+      id: 6,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "python"
+   },
+   {
+      id: 7,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "productivity"
+   },
+   {
+      id: 8,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "devops"
+   },
+   {
+      id: 9,
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      tag: "#",
+      title: "discuss"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 10,
+      tag: "#",
+      title: "aws"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 11,
+      tag: "#",
+      title: "ai"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 12,
+      tag: "#",
+      title: "opensource"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 13,
+      tag: "#",
+      title: "career"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 14,
+      tag: "#",
+      title: "node"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 15,
+      tag: "#",
+      title: "css"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 16,
+      tag: "#",
+      title: "typescript"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 17,
+      tag: "#",
+      title: "news"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 18,
+      tag: "#",
+      title: "learning"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 19,
+      tag: "#",
+      title: "testing"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 20,
+      tag: "#",
+      title: "cloud"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 21,
+      tag: "#",
+      title: "api"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 22,
+      tag: "#",
+      title: "html"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 23,
+      tag: "#",
+      title: "development"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 24,
+      tag: "#",
+      title: "java"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 25,
+      tag: "#",
+      title: "security"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 26,
+      tag: "#",
+      title: "php"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 27,
+      tag: "#",
+      title: "database"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 28,
+      tag: "#",
+      title: "android"
+   },
+   {
+      icon: EIcons.Icons1,
+      to: ETolink.toAdvertise,
+      id: 29,
+      tag: "#",
+      title: "dotnet"
+   },
+]
+
+export const NewDallad: SbarType[] = [
+   {
+      id: 0,
+      icon: EIcons.IconFacebook,
+      tag: "",
+      to: ETolink.toContact,
+      title: "What's a billboard?"
+   },
+   {
+      id: 1,
+      icon: EIcons.IconGithub,
+      tag: "",
+      to: ETolink.toContact,
+      title: "Manage preferences"
+   },
+   {
+      id: 2,
+      icon: EIcons.IconInsTagram,
+      tag: "",
+      to: ETolink.toContact,
+      title: "Report billbloard"
+   }
+]
 export interface Giaodien {
    name: string,
    title: string

@@ -11,5 +11,8 @@ export enum EAppRouter {
   help = "/help",
   advertise = "/advertise",
   devshowcase = "/devshowcase",
-  contact = "/contact"
+  contact = "/contact",
+  codeofconduct="/code-of-conduct",
+  privacy = "/privacy",
+  terms = "/terms"
 }

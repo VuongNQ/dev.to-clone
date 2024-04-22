@@ -29,6 +29,9 @@ export const router = createBrowserRouter(
       <Route path={EAppRouter.advertise} lazy={() => import("./advertise")} />
       <Route path={EAppRouter.devshowcase} lazy={() => import("./devshowcase")} />
       <Route path={EAppRouter.contact} lazy={() => import("./contact")} />
+      <Route path={EAppRouter.codeofconduct} lazy={() => import("./codeOfConduct")} />
+      <Route path={EAppRouter.privacy} lazy={() => import("./privacy")} />
+      <Route path={EAppRouter.terms} lazy={() => import("./terms")} />
       <Route path={EAppRouter.admin}>
         <Route index lazy={() => import("./admin")} />
       </Route>
