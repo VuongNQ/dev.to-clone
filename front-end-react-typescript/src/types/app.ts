@@ -14,5 +14,9 @@ export enum EAppRouter {
   contact = "/contact",
   codeofconduct="/code-of-conduct",
   privacy = "/privacy",
-  terms = "/terms"
+  terms = "/terms",
+}
+
+export enum EapBook {
+  about = "/number"
 }

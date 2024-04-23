@@ -64,6 +64,7 @@ export const SiderBarType = () => {
       <>
          <div className={cx('wrapper')}>
             <div className={cx('inner')}>
+              
                {
                   SideBarName.map((item, index) => {
                      return (

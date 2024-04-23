@@ -1,6 +1,7 @@
 import imagecontent from "@/assets/image/https___dev-to-uploads.s3.amazonaws.com_uploads_organization_profile_image_1_d908a186-5651-4a5a-9f76-15200bc6801f.avif";
 import Button from "@/component/UI/GlobalStyle/button/button";
 import DefaulLayout from "@/component/UI/GlobalStyle/defaultLayout.tsx/defaultLayout";
+import Header from "@/component/UI/GlobalStyle/defaultLayout.tsx/header/header";
 import GlobalStyles from "@/component/UI/GlobalStyle/GlobalStyles";
 import { IconApple, IconEmail, IconForum, IconGithub, IconTwitter } from "@/component/UI/GlobalStyle/icons/icons";
 import styles from '@/styles/admin.module.scss';
@@ -151,7 +152,16 @@ const Middleware = () => {
       </MDBContainer>
     )
   }
+  if(location.pathname.includes(EAppRouter.podcasts)) {
+    return (
+      <>
+      <Header/>
+      <div className={cx('container')}>
 
+      </div>
+      </>
+    )
+  }
   return (
     <GlobalStyles>
       <DefaulLayout>

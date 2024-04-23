@@ -167,7 +167,7 @@
     font-weight: 700;
     color: #404040;
     &:hover {
-      color: var(--color-primary-hover-font)
+      color: var(--color-primary-hover-font);
     }
   }
   .title {
@@ -191,12 +191,14 @@
   }
 }
 
-.header-right-content, .header-right-bottom {
+.header-right-content,
+.header-right-bottom {
   margin: 0px 0px 15px;
   padding: 11px 43px;
   width: 368px;
   h4 {
-    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+      monospace;
     font-weight: 600;
     padding: 10px;
     color: #171717;
@@ -206,7 +208,7 @@
     padding: 17px 23px;
     text-align: unset;
     margin-bottom: 10px;
-    background-color: rgba(245,245,245,1);
+    background-color: rgba(245, 245, 245, 1);
     &:hover {
       background-color: #fff;
       color: var(--color-primary-hover-font);

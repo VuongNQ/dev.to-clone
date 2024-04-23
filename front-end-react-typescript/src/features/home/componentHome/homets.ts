@@ -51,10 +51,12 @@ interface PersonContent {
   iconReactionFive?: string
   Array?: PersonCommunity[]
 }
+
 interface ListPersonContent {
   type: PersonContent[]
   dataBuy: string
 }
+
 const Person1: PersonContent[] = [
   {
 
@@ -376,7 +378,6 @@ export interface PersonCommunity {
   week2: string
   introduce2: string
 }
-
 export const Person2: PersonCommunity[] = [
   {
     id: 0,
