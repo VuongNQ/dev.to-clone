@@ -1,5 +1,5 @@
 import { EAppRouter } from "@/types/app"
-import { EIcons } from "../../icons/icons"
+import { EIcons } from "../../../icons/icons"
 import React from "react"
 
 export enum ETolink {

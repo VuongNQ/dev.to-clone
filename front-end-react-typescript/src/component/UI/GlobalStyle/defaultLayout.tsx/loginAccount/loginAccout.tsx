@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from './loginAccount.module.scss';
+import styles from '@/styles/loginAccount.module.scss';
 import { Link } from "react-router-dom";
 import { EAppRouter } from "@/types/app";
 const cx = classNames.bind(styles);

@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import classNames from "classnames/bind";
-import styles from "./sidebar.module.scss";
-import { NumberTwo } from "./Right";
-import { ESidebarRight } from "./Right";
+import styles from "../sidebar.module.scss";
+import { NumberTwo } from "../type/Right";
+import { ESidebarRight } from "../type/Right";
 const cx = classNames.bind(styles);
 function SidebarRight() {
   const List = NumberTwo.flatMap((item) => (item.type.map((_i) => {

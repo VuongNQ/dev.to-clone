@@ -1,4 +1,4 @@
-import Header from "@/component/UI/GlobalStyle/defaultLayout.tsx/header/header";
+import Header from "@/component/UI/GlobalStyle/defaultLayout.tsx/header";
 import styles from "./postcasts.module.scss";
 import classNames from "classnames/bind";
 

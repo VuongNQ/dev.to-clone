@@ -1,8 +1,8 @@
 import classNames from "classnames/bind";
-import styles from './defaultLayout.module.scss';
-import Header from "./header/header";
-import { SiderBarType } from "./sidebar/sidebar";
-import SidebarRight from "./sidebar/sidebarRight";
+import styles from '@/styles/defaultLayout.module.scss';
+import Header from "./header";
+import { SiderBarType } from "./sidebar";
+import SidebarRight from "./sidebar/component/sidebarRight";
 
 const cx = classNames.bind(styles);
 

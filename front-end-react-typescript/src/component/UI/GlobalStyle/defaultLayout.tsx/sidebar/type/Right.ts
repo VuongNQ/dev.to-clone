@@ -62,7 +62,6 @@ export const Person2: SideBarRight[] = [
      buttonNew: "New"
   }
 ]
-
 export interface ListSidebarRight {
   type: SideBarRight[]
   data2: string
