@@ -5,6 +5,8 @@ import classNames from "classnames/bind";
 import styles from '@/styles/latest.module.scss';
 import latest from "@/assets/image/latest.avif";
 import React from "react";
+import { SiderBarType } from "@/component/UI/GlobalStyle/defaultLayout.tsx/sidebar";
+import SidebarRight from "@/component/UI/GlobalStyle/defaultLayout.tsx/sidebar/component/sidebarRight";
 
 const cx = classNames.bind(styles);
 interface Father {
@@ -13,7 +15,8 @@ interface Father {
 
 function LatestHeaderContent({ children }: Father) {
   return (
-    <div className={cx('container')}>
+    <div className={cx('container mt-5 d-flex pt-5')}>
+      <SiderBarType />
       <div className={cx('wrapper')}>
         <div className={cx('header-content')}>
           <Link to={EAppRouter.root}>
@@ -32,6 +35,7 @@ function LatestHeaderContent({ children }: Father) {
         <img className={cx('image-top')} src={latest} alt="image header" />
         {children}
       </div>
+      <SidebarRight />
     </div>
   );
 }

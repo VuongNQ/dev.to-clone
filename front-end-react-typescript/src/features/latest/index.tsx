@@ -6,12 +6,12 @@ import LatestPersonDiv from "./component/latestPersonDiv";
 function Latest() {
   return (
     <LatestHeaderContent>
-      <LastestListNew/>
-      <LatestPerson/>
-      <LatestPersonDiv/>
-      <LastestListNew/>
-      <LastestListNew/>
-      </LatestHeaderContent>
+      <LastestListNew />
+      <LatestPerson />
+      <LatestPersonDiv />
+      <LastestListNew />
+      <LastestListNew />
+    </LatestHeaderContent>
   );
 }
 

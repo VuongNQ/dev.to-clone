@@ -17,6 +17,3 @@ export enum EAppRouter {
   terms = "/terms",
 }
 
-export enum EapBook {
-  about = "/number"
-}

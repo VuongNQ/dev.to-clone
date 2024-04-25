@@ -1,4 +1,4 @@
-import Podcasts from "@/features/podcatsts/podcasts";
+import Podcasts from "@/features/podcatsts";
 
 export function Component() {
   return <Podcasts/>;

@@ -5,13 +5,13 @@ import ListPersonContent from "./componentHome/ListPersonHome";
 
 function Home() {
   return (
-    <ContainerHome>
-      <HeaderContent />
-      <ListHome />
-      <ListPersonContent />
-      <ListHome />
-      <ListHome />
-    </ContainerHome>
+      <ContainerHome>
+        <HeaderContent />
+        <ListHome />
+        <ListPersonContent />
+        <ListHome />
+        <ListHome />
+      </ContainerHome>
   );
 }
 

@@ -1,7 +1,8 @@
 import HeaderNavbar from "./component/headerNavbar";
 
 function Header() {
-  return <HeaderNavbar/>
+  return (<HeaderNavbar/>
+  )
 }
 
 export default Header;
