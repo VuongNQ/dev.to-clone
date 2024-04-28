@@ -1,4 +1,4 @@
-import Videos from "@/features/videos/videos";
+import Videos from "@/features/videos";
 
 export function Component() {
   return <Videos/>
