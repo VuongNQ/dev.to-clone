@@ -1,0 +1,67 @@
+.Tag-Filter {
+  .Tag-left {
+    h1 {
+      font-weight: 700;
+    }
+  }
+  .Tag-right {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    .Search-Result {
+      display: flex;
+      position: relative;
+      column-width: 100%;
+      .search {
+        height: 38px;
+        border-radius: 6px;
+        margin-left: 1rem;
+        padding: 1rem;
+        width: 100%;
+        resize: vertical;
+        &:hover {
+          border: 1.5px solid rgba(212, 212, 212);
+        }
+      }
+      button {
+        position: absolute;
+        right: 0.1px;
+        top: 1px;
+        padding: 0.9rem;
+        border-radius: 6px;
+        background-color: #fff;
+        z-index: 0;
+        &:hover {
+          background-color: rgba(59, 73, 223, 0.1);
+          color: rgba(47, 58, 178);
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+.listTags {
+  .container-Tag {
+    .inner-Tag {
+      width: 100%;
+      margin-top: 1.2rem;
+      height: 195px;
+      background-color: #fff;
+      border-radius: 6px;
+      .tag-view {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+      .tag-title {
+        p {
+          margin: 0px 0px 24px;
+        }
+      }
+    }
+    .button {
+    }
+  }
+}

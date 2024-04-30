@@ -1,4 +1,4 @@
-import Tags from "@/features/tags/tags";
+import Tags from "@/features/tags";
 
 export function Component() {
   return (

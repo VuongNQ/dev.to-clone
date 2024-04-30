@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 export interface ButtonChildren {
     variant?: 'primary' | 'secondary' ;
     outline?: 'outline';
+    tagButton?: string;
     pink?: string;
     Follow?: string
     OceanBlue?: string;

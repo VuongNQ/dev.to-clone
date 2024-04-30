@@ -12,9 +12,9 @@ const cx = classNames.bind(styles);
 function Videos() {
   return (
     <>
-      <Container>
-        <h1 style={{ marginTop: "2rem" ,fontWeight: "700" }}>Featured shows</h1>
-        <Row xl={3} lg={3} md={2} xs={1}>
+      <Container style={{ marginTop: "7rem"}}  >
+        <h1 style={{ fontWeight: "700" }}>Featured shows</h1>
+        <Row    xl={3} lg={3} md={2} xs={1}>
           {
             ListVideo.map((item, index) => {
               return (
