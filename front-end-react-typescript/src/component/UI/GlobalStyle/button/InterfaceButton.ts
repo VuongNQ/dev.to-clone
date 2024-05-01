@@ -6,6 +6,8 @@ export interface ButtonChildren {
     tagButton?: string;
     pink?: string;
     Follow?: string
+    followTag?: string
+    hideTag?: string
     OceanBlue?: string;
     yellow?: string;
     green? : string;

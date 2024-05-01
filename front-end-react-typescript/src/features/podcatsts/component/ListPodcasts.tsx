@@ -3,11 +3,10 @@ import classNames from "classnames/bind";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import styles from "../podcasts.module.scss";
-
-
 import { ListPodcastsFour, ListPodcastsOne, ListPodcastsThree, ListPodcastsTwo } from "../type/podcasts";
 import { Link } from "react-router-dom";
 import { EAppRouter } from "@/types/app";
+
 const cx = classNames.bind(styles);
 
 function ListPodcasts() {

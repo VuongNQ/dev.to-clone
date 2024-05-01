@@ -7,6 +7,9 @@ import Button from "@/component/UI/GlobalStyle/button/button";
 import { ListTags } from "./type/tags";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import { EAppRouter } from "@/types/app";
+import { ListPodcastsFour } from "../podcatsts/type/podcasts";
 
 const cx = classNames.bind(styles);
 
@@ -29,10 +32,10 @@ function Tags() {
                     </div>
                 </Col>
             </Row>
-            <Row xl={4} lg={2} md={1} xs={1} className={cx('listTags')} >
+            <Row xl={4} lg={3} md={2} xs={1} className={cx('listTags')} >
                 {ListTags.map((item, index) => {
                     return (
-                        <Col className={cx("container-Tag")} key={index}>
+                        <Col key={index}>
                             <div className={cx("inner-Tag")}>
                                 <div className={cx("ful-Tag")}>
                                     <div className={cx("tag-view")}>
@@ -45,16 +48,46 @@ function Tags() {
                                         <p>{item.content}</p>
                                     </div>
                                 </div>
-                                <div className={cx('button')}>
-                                    <Button variant="primary" >{item.follow}</Button>
-                                    <Button headerButton="Relevant">{item.hide}</Button>
+                                <div className={cx('tag-button')}>
+                                    <Button followTag="followtag" >{item.follow}</Button>
+                                    <Button hideTag="hideTag" >{item.hide}</Button>
                                 </div>
                             </div>
                         </Col>
-
                     )
                 })}
             </Row>
+            <Row style={{ width: "100%" }} >
+                <Col className={cx("podcasts-footer")}>
+                    <Link to={EAppRouter.root}>
+                        <a href="">DEV Community</a>-- A constructive and inclusive social network for software developers. With you every step of your journey.
+                    </Link>
+                    <ul className={cx('footer')}>
+                        {
+                            ListPodcastsFour.map((item, index) => {
+                                return (
+                                    <li key={index} >
+                                        <a href="">
+                                            {item.title}
+                                        </a>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+                    <div className={cx(('footer-close'))}>
+                        <span>
+                            Built on <a href="">Forem -- </a> the <a href="">open source </a>
+                            software that powers <a href="">DEV</a> and other inclusive
+                            communities.
+                        </span>
+                        <p>
+                            Made with love and <a href=""> Ruby on Rails. </a>
+                            DEV Community © 2016 - 2024.
+                        </p>
+                    </div>
+                </Col>
+            </Row >
         </Container>
     );
 }

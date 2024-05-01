@@ -5,13 +5,15 @@ import styles from './button.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Button : React.FC<ButtonChildren> = ({variant, Follow, tagButton ,fontWeight , headerButton , OceanBlue, green , yellow , title ,pink , to , outline , onClick, children}) => {
+const Button : React.FC<ButtonChildren> = ({variant, Follow, tagButton, followTag, hideTag ,fontWeight , headerButton , OceanBlue, green , yellow , title ,pink , to , outline , onClick, children}) => {
     const classes = cx('wrapper', {
         variant,
         fontWeight,
         tagButton,
         pink,
         Follow,
+        followTag,
+        hideTag,
         OceanBlue,
         yellow,
         headerButton,
