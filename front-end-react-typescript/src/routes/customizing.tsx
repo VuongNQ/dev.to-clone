@@ -1,4 +1,4 @@
-import Customizing from "@/features/help/component/customizing/customizing";
+import Customizing from "@/features/help/customizing/customizing";
 
 export function Component() {
   return <Customizing/>

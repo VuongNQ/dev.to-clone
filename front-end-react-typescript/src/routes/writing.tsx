@@ -1,4 +1,4 @@
-import Writing from "@/features/help/component/writing/writing";
+import Writing from "@/features/help/writing/writing";
 
 export function Component () {
   return <Writing/>

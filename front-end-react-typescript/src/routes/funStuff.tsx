@@ -1,4 +1,4 @@
-import FunStuff from "@/features/help/component/funStuff/funStuff";
+import FunStuff from "@/features/help/funStuff/funStuff";
 
 export function Component() 
 {

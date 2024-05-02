@@ -1,4 +1,4 @@
-import Badges from "@/features/help/component/badges/badges";
+import Badges from "@/features/help/badges/badges";
 
 export function Component() {
   return <Badges/>

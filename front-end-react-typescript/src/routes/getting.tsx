@@ -1,4 +1,4 @@
-import Getting from "@/features/help/component/getting/getting";
+import Getting from "@/features/help/getting/getting";
 
 export function Component() {
   return <Getting/>

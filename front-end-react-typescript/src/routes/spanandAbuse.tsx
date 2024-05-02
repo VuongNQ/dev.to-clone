@@ -1,4 +1,4 @@
-import SpamAndAbuse from "@/features/help/component/spamandAbuse/spamandAbuse";
+import SpamAndAbuse from "@/features/help/spamandAbuse/spamandAbuse";
 
 export function Component() {
   return <SpamAndAbuse/>

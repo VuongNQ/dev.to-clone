@@ -1,4 +1,4 @@
-import Reacting from "@/features/help/component/reacting/reacting";
+import Reacting from "@/features/help/reacting/reacting";
 
 export function Component() {
   return <Reacting/>
